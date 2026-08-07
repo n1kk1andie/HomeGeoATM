@@ -113,7 +113,7 @@ export default function HomePage() {
       {/* ---------- Two audiences ---------- */}
       <section className="section">
         <div className="wrap">
-          <h2 className="center">Built for two audiences</h2>
+          <h2 className="center">Built for the whole cash ecosystem</h2>
           <div className="aud-grid">
             {/* Consumers */}
             <div className="aud-card">
@@ -147,6 +147,42 @@ export default function HomePage() {
               <DashboardMock />
               <a className="link-red" href="#institutions">
                 Become a Participant <IconArrowRight />
+              </a>
+            </div>
+            {/* Industry Associations */}
+            <div className="aud-card">
+              <div className="aud-head">
+                <span className="aud-ic"><IconNetwork /></span>
+                <h3 className="red">Industry Associations</h3>
+              </div>
+              <p className="aud-lead">See cash access across your membership.</p>
+              <p className="aud-body">
+                Understand coverage, demand, resilience and emerging gaps across participating
+                institutions.
+              </p>
+              <a
+                className="link-red"
+                href={`mailto:${CONTACT_EMAIL}?subject=GeoATM%20Industry%20Association%20Access`}
+              >
+                Explore Industry Access <IconArrowRight />
+              </a>
+            </div>
+            {/* Central Banks & Public Authorities */}
+            <div className="aud-card">
+              <div className="aud-head">
+                <span className="aud-ic"><IconScales /></span>
+                <h3 className="red">Central Banks &amp; Public Authorities</h3>
+              </div>
+              <p className="aud-lead">Understand cash access at market level.</p>
+              <p className="aud-body">
+                See geographic coverage, resilience, service availability and emerging access gaps
+                across the financial system.
+              </p>
+              <a
+                className="link-red"
+                href={`mailto:${CONTACT_EMAIL}?subject=GeoATM%20Institutional%20Briefing%20Request`}
+              >
+                Request an Institutional Briefing <IconArrowRight />
               </a>
             </div>
           </div>
@@ -502,6 +538,12 @@ function IconBank(p: React.SVGProps<SVGSVGElement>) {
 }
 function IconBankBig(p: React.SVGProps<SVGSVGElement>) {
   return <svg {...S(p)}><path d="M3 10 12 4l9 6" /><path d="M5 10v8M10 10v8M14 10v8M19 10v8M3 21h18" /></svg>;
+}
+function IconNetwork(p: React.SVGProps<SVGSVGElement>) {
+  return <svg {...S(p)}><circle cx="12" cy="5" r="2.4" /><circle cx="5" cy="19" r="2.4" /><circle cx="19" cy="19" r="2.4" /><path d="M10.6 6.9 6.4 17.1M13.4 6.9l4.2 10.2M7.4 19h9.2" /></svg>;
+}
+function IconScales(p: React.SVGProps<SVGSVGElement>) {
+  return <svg {...S(p)}><path d="M12 3v18M7 21h10M5 7h14M8.5 6 5 7m3.5-1L12 5l3.5 1M19 7l-3.5-1" /><path d="M5 7 2.5 12.5a2.5 2.5 0 0 0 5 0L5 7ZM19 7l-2.5 5.5a2.5 2.5 0 0 0 5 0L19 7Z" /></svg>;
 }
 function IconShield({ solid, ...p }: { solid?: boolean } & React.SVGProps<SVGSVGElement>) {
   return (
