@@ -510,22 +510,26 @@ function WorldArcs() {
   );
 }
 
+// Illustrative product UI — shows the shape of each view, not real metrics.
+// No figures are shown (nothing here should read as live data).
 function DashboardMock() {
   return (
     <div className="dash">
       <div className="dash-head"><IconShield solid /> GeoATM Verified</div>
       <div className="dash-row">
-        <div className="dash-label">Live ATM Status</div>
+        <div className="dash-label">Live ATM status</div>
         <div className="ring">
           <svg viewBox="0 0 44 44">
             <circle cx="22" cy="22" r="18" className="ring-bg" />
-            <circle cx="22" cy="22" r="18" className="ring-fg" strokeDasharray="113" strokeDashoffset="4" />
+            <circle cx="22" cy="22" r="18" className="ring-fg" strokeDasharray="113" strokeDashoffset="0" />
           </svg>
-          <div className="ring-num">98%</div>
+          <div className="ring-num">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#17A45B" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 12 5 5L20 7" /></svg>
+          </div>
         </div>
       </div>
-      <div className="dash-avail">Availability</div>
-      <div className="dash-label">Customer Reach</div>
+      <div className="dash-avail">Verified live</div>
+      <div className="dash-label">Customer reach</div>
       <div className="bars">
         {[38, 30, 52, 44, 60, 50, 72, 66, 84].map((h, i) => (
           <span key={i} style={{ height: `${h}%` }} />
@@ -535,47 +539,35 @@ function DashboardMock() {
   );
 }
 
-// Association-level network dashboard — many member institutions consolidated
-// into one sector view: coverage, member reporting status, access gaps.
-// Illustrative figures.
+// Association-level view: many member institutions consolidated into one sector
+// picture — reporting status, coverage and gaps. Illustrative, no figures.
 function AssociationMock() {
-  // Member reporting status (one dot per member institution).
   const members = ["ok", "ok", "ok", "ok", "ok", "ok", "ok", "late", "ok"] as const;
-  const reporting = members.filter((m) => m === "ok").length;
   return (
     <div className="dash">
       <div className="dash-head"><IconNetwork /> Sector network view</div>
-      <div className="statrow">
-        <div className="stat-tile">
-          <div className="st-n">{reporting}/{members.length}</div>
-          <div className="st-l">Members reporting</div>
-        </div>
-        <div className="stat-tile">
-          <div className="st-n">86%</div>
-          <div className="st-l">Network coverage</div>
-        </div>
-        <div className="stat-tile">
-          <div className="st-n">3</div>
-          <div className="st-l">Access gaps</div>
-        </div>
-      </div>
-      <div className="dash-label" style={{ marginTop: 12 }}>Member reporting status</div>
+      <div className="dash-label">Member reporting status</div>
       <div className="memberdots">
         {members.map((m, i) => (
           <span key={i} className={`mdot ${m}`} />
         ))}
       </div>
+      <div className="legendrow">
+        <span><i className="lg green" /> Reporting</span>
+        <span><i className="lg amber" /> Late</span>
+      </div>
+      <div className="dash-label" style={{ marginTop: 12 }}>Network coverage</div>
+      <div className="covbar"><i style={{ width: "72%" }} /></div>
       <div className="dash-foot">
-        <span className="gapdot" /> Gaps flagged: Rural, St. James, Portland
+        <span className="gapdot" /> Emerging access gaps flagged
       </div>
     </div>
   );
 }
 
-// National cash-access command view — map coverage heat, verified/live status,
-// underserved areas, resilience and demand consolidated. Illustrative figures.
+// National command view: coverage heat, what's verified vs located, underserved
+// areas and resilience — the shape of the view, no figures.
 function AuthorityMock() {
-  // Coverage heat cells (a stylised national map). Higher = better coverage.
   const heat = [
     0.9, 0.8, 0.6, 0.5, 0.7, 0.9,
     0.8, 0.7, 0.4, 0.3, 0.6, 0.8,
@@ -592,13 +584,15 @@ function AuthorityMock() {
           ))}
         </div>
         <div className="cmdstats">
-          <div className="cmd-stat"><div className="cs-n">62%</div><div className="cs-l">Verified live</div></div>
-          <div className="cmd-stat"><div className="cs-n">4</div><div className="cs-l">Underserved areas</div></div>
-          <div className="cmd-stat"><div className="cs-n cs-green">Stable</div><div className="cs-l">Resilience</div></div>
+          <div className="cmd-stat2"><span className="csdot green" /> Verified &amp; live</div>
+          <div className="cmd-stat2"><span className="csdot amber" /> Located, not verified</div>
+          <div className="cmd-stat2"><span className="csdot gap" /> Underserved areas</div>
+          <div className="cmd-stat2"><span className="csdot line" /> Network resilience</div>
         </div>
       </div>
+      <div className="heatlegend"><span>Lower coverage</span><i /><span>higher</span></div>
       <div className="dash-foot">
-        <span className="gapdot" /> Demand concentrated in 3 urban corridors
+        <span className="gapdot" /> Demand concentrated in urban corridors
       </div>
     </div>
   );
