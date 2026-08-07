@@ -239,7 +239,9 @@ img { max-width: 100%; display: block; }
 .footer-col a:hover { color: #fff; }
 .footer-contact { font-size: 14px; margin-bottom: 10px; }
 .footer-col .btn { margin-top: 8px; }
-.footer-bottom { border-top: 1px solid rgba(255, 255, 255, .1); padding: 20px 0; font-size: 13px; color: rgba(255, 255, 255, .5); }
+.footer-bottom { border-top: 1px solid rgba(255, 255, 255, .1); padding: 22px 0; font-size: 13px; color: rgba(255, 255, 255, .5); line-height: 1.6; }
+.footer-bottom a { color: rgba(255, 255, 255, .8); font-weight: 600; }
+.footer-bottom a:hover { color: #fff; text-decoration: underline; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {

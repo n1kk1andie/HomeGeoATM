@@ -300,7 +300,7 @@ export default function HomePage() {
               { label: "About GeoATM", href: "#about" },
               { label: "News", href: "#top" },
               { label: "Careers", href: `mailto:${CONTACT_EMAIL}` },
-              { label: "Tumblehill Holdings", href: "https://www.tumblehillholdings.com/research/labs/geoatm" },
+              { label: "Tumblehill Holdings", href: "https://www.tumblehillholdings.com" },
             ]}
           />
           <div className="footer-col">
@@ -313,7 +313,20 @@ export default function HomePage() {
           </div>
         </div>
         <div className="footer-bottom">
-          <div className="wrap">© {new Date().getFullYear()} GeoATM. All rights reserved. · GeoATM™ by Tumblehill Labs</div>
+          <div className="wrap">
+            GeoATM&trade; by{" "}
+            <a href="https://www.tumblehillholdings.com/research/labs/geoatm" target="_blank" rel="noopener noreferrer">
+              Tumblehill Labs
+            </a>
+            <br />
+            A product studio of{" "}
+            <a href="https://www.tumblehillholdings.com" target="_blank" rel="noopener noreferrer">
+              Tumblehill Holdings Limited
+            </a>
+            <br />
+            <br />
+            © 2026 Tumblehill Holdings Limited. All rights reserved.
+          </div>
         </div>
       </footer>
     </>
