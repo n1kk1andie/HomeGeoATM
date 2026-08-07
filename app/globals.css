@@ -13,6 +13,7 @@
   --dim-2: #8A93A3;
   --green: #17A45B;
   --green-bg: #E4F6EC;
+  --amber: #C98A00;
   --shadow: 0 18px 50px rgba(18, 32, 54, 0.12);
   --shadow-sm: 0 6px 18px rgba(18, 32, 54, 0.08);
 }
@@ -171,21 +172,27 @@ img { max-width: 100%; display: block; }
 .bars { display: flex; align-items: flex-end; gap: 5px; height: 46px; margin-top: 8px; }
 .bars span { flex: 1; background: var(--red); border-radius: 3px 3px 0 0; opacity: .9; }
 
-/* Horizontal coverage bars (Industry Associations mock) */
-.hbars { display: flex; flex-direction: column; gap: 9px; margin: 8px 0 12px; }
-.hbar { display: grid; grid-template-columns: 78px 1fr 34px; align-items: center; gap: 9px; font-size: 11.5px; }
-.hbar .hbl { color: var(--dim); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.hbar .hbt { height: 7px; background: var(--mist-2); border-radius: 99px; overflow: hidden; }
-.hbar .hbt i { display: block; height: 100%; background: var(--red); border-radius: 99px; }
-.hbar .hbv { text-align: right; font-family: "Sora"; font-weight: 700; color: var(--ink); }
-.dash-foot { font-size: 11.5px; color: var(--dim); border-top: 1px solid var(--line); padding-top: 10px; margin-top: 2px; }
+.dash-foot { font-size: 11.5px; color: var(--dim); border-top: 1px solid var(--line); padding-top: 10px; margin-top: 12px; display: flex; align-items: center; gap: 7px; line-height: 1.3; }
+.gapdot { width: 8px; height: 8px; border-radius: 2px; background: var(--amber); flex-shrink: 0; }
 
-/* Resilience sparkline (Central Banks mock) */
-.dash-big { font-family: "Sora"; font-weight: 800; font-size: 26px; color: var(--ink); line-height: 1; }
-.trendbadge { align-self: flex-start; background: var(--green-bg); color: var(--green); font-weight: 700; font-size: 11px; padding: 5px 10px; border-radius: 999px; white-space: nowrap; }
-.spark { width: 100%; height: 46px; margin-top: 8px; display: block; }
-.spark polyline { fill: none; stroke: var(--red); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
-.spark .area { fill: rgba(228, 1, 43, .08); stroke: none; }
+/* Association: sector network view — stat tiles + member reporting dots */
+.statrow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.stat-tile { background: var(--mist); border: 1px solid var(--line); border-radius: 10px; padding: 10px 6px; text-align: center; }
+.st-n { font-family: "Sora"; font-weight: 800; font-size: 19px; color: var(--ink); line-height: 1; }
+.st-l { font-size: 10.5px; color: var(--dim); font-weight: 600; margin-top: 4px; line-height: 1.2; }
+.memberdots { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.mdot { width: 16px; height: 16px; border-radius: 5px; background: var(--green); }
+.mdot.late { background: var(--amber); }
+
+/* Authority: national command view — coverage heat map + command stats */
+.cmdgrid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 14px; align-items: center; }
+.heatmap { display: grid; grid-template-columns: repeat(6, 1fr); gap: 3px; }
+.heatmap i { display: block; aspect-ratio: 1; border-radius: 3px; }
+.cmdstats { display: flex; flex-direction: column; gap: 9px; }
+.cmd-stat { display: flex; align-items: baseline; gap: 8px; }
+.cs-n { font-family: "Sora"; font-weight: 800; font-size: 18px; color: var(--ink); line-height: 1; min-width: 42px; }
+.cs-n.cs-green { color: var(--green); font-size: 15px; }
+.cs-l { font-size: 11px; color: var(--dim); font-weight: 600; }
 
 /* Why grid */
 .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }

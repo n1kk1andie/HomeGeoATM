@@ -155,16 +155,18 @@ export default function HomePage() {
                 <span className="aud-ic"><IconNetwork /></span>
                 <h3 className="red">Industry Associations</h3>
               </div>
-              <p className="aud-lead">See cash access across your membership.</p>
+              <p className="aud-lead">Coordinate cash access across your membership.</p>
               <p className="aud-body">
-                Understand coverage, demand, resilience and emerging gaps across participating
-                institutions.
+                Give members and the public a shared, current view of the sector's ATM network while
+                reducing duplicated data collection and publishing.
               </p>
               <ul className="ticks">
-                <li><IconCheck /> Coverage across every member</li>
-                <li><IconCheck /> Demand &amp; usage trends</li>
-                <li><IconCheck /> Resilience &amp; service continuity</li>
-                <li><IconCheck /> Emerging access gaps, flagged early</li>
+                <li><IconCheck /> Maintain one consolidated view of member ATM networks</li>
+                <li><IconCheck /> Reduce duplicated collection and reconciliation of ATM information</li>
+                <li><IconCheck /> Publish consistent ATM and cash-access information for the sector</li>
+                <li><IconCheck /> See which institutions and regions provide coverage—and where gaps remain</li>
+                <li><IconCheck /> Track changes in network availability and geographic reach</li>
+                <li><IconCheck /> Give members shared intelligence on consumer cash demand and access patterns</li>
               </ul>
               <AssociationMock />
               <a
@@ -180,16 +182,21 @@ export default function HomePage() {
                 <span className="aud-ic"><IconScales /></span>
                 <h3 className="red">Central Banks &amp; Public Authorities</h3>
               </div>
-              <p className="aud-lead">Understand cash access at market level.</p>
+              <p className="aud-lead">Manage the national picture of cash access.</p>
               <p className="aud-body">
-                See geographic coverage, resilience, service availability and emerging access gaps
-                across the financial system.
+                For authorities that already collect, maintain, monitor or publish ATM information,
+                GeoATM can become a common infrastructure layer for keeping that information current,
+                understanding whether infrastructure is actually available, and communicating cash
+                access to the public.
               </p>
               <ul className="ticks">
-                <li><IconCheck /> Market-level geographic coverage</li>
-                <li><IconCheck /> System resilience &amp; continuity</li>
-                <li><IconCheck /> Service availability trends</li>
-                <li><IconCheck /> Emerging access gaps across the system</li>
+                <li><IconCheck /> Maintain a consolidated national view of ATM infrastructure</li>
+                <li><IconCheck /> Reduce manual collection, reconciliation and publication of ATM information</li>
+                <li><IconCheck /> Distinguish ATM locations from machines actually available to consumers</li>
+                <li><IconCheck /> Monitor geographic coverage and emerging cash-access gaps</li>
+                <li><IconCheck /> Understand network resilience when institutions or areas experience disruption</li>
+                <li><IconCheck /> Publish trusted, current cash-access information through a consumer-facing network</li>
+                <li><IconCheck /> Use aggregated demand and journey intelligence to see where people seek cash</li>
               </ul>
               <AuthorityMock />
               <a
@@ -528,60 +535,71 @@ function DashboardMock() {
   );
 }
 
-// Insight mock for Industry Associations — coverage across the membership,
-// by area, with gaps surfaced. Illustrative figures.
+// Association-level network dashboard — many member institutions consolidated
+// into one sector view: coverage, member reporting status, access gaps.
+// Illustrative figures.
 function AssociationMock() {
-  const rows = [
-    { label: "Kingston", pct: 94 },
-    { label: "St. Andrew", pct: 88 },
-    { label: "St. Catherine", pct: 76 },
-    { label: "St. James", pct: 61 },
-    { label: "Rural", pct: 48 },
-  ];
+  // Member reporting status (one dot per member institution).
+  const members = ["ok", "ok", "ok", "ok", "ok", "ok", "ok", "late", "ok"] as const;
+  const reporting = members.filter((m) => m === "ok").length;
   return (
     <div className="dash">
-      <div className="dash-head"><IconNetwork /> Membership coverage</div>
-      <div className="dash-label">Coverage by area</div>
-      <div className="hbars">
-        {rows.map((r) => (
-          <div className="hbar" key={r.label}>
-            <span className="hbl">{r.label}</span>
-            <span className="hbt"><i style={{ width: `${r.pct}%` }} /></span>
-            <span className="hbv">{r.pct}%</span>
-          </div>
+      <div className="dash-head"><IconNetwork /> Sector network view</div>
+      <div className="statrow">
+        <div className="stat-tile">
+          <div className="st-n">{reporting}/{members.length}</div>
+          <div className="st-l">Members reporting</div>
+        </div>
+        <div className="stat-tile">
+          <div className="st-n">86%</div>
+          <div className="st-l">Network coverage</div>
+        </div>
+        <div className="stat-tile">
+          <div className="st-n">3</div>
+          <div className="st-l">Access gaps</div>
+        </div>
+      </div>
+      <div className="dash-label" style={{ marginTop: 12 }}>Member reporting status</div>
+      <div className="memberdots">
+        {members.map((m, i) => (
+          <span key={i} className={`mdot ${m}`} />
         ))}
       </div>
-      <div className="dash-foot">3 access gaps flagged this month</div>
+      <div className="dash-foot">
+        <span className="gapdot" /> Gaps flagged: Rural, St. James, Portland
+      </div>
     </div>
   );
 }
 
-// Insight mock for Central Banks & Public Authorities — market-level coverage
-// and a resilience trend. Illustrative figures.
+// National cash-access command view — map coverage heat, verified/live status,
+// underserved areas, resilience and demand consolidated. Illustrative figures.
 function AuthorityMock() {
-  const pts = [22, 26, 24, 30, 34, 33, 40, 44, 50, 56, 60, 66];
-  const w = 260;
-  const h = 46;
-  const max = 72;
-  const line = pts
-    .map((p, i) => `${(i / (pts.length - 1)) * w},${h - (p / max) * h}`)
-    .join(" ");
-  const area = `0,${h} ${line} ${w},${h}`;
+  // Coverage heat cells (a stylised national map). Higher = better coverage.
+  const heat = [
+    0.9, 0.8, 0.6, 0.5, 0.7, 0.9,
+    0.8, 0.7, 0.4, 0.3, 0.6, 0.8,
+    0.6, 0.5, 0.3, 0.2, 0.4, 0.7,
+    0.7, 0.6, 0.5, 0.4, 0.6, 0.8,
+  ];
   return (
     <div className="dash">
-      <div className="dash-head"><IconScales /> Market coverage</div>
-      <div className="dash-row">
-        <div>
-          <div className="dash-big">94%</div>
-          <div className="dash-label">Nationwide coverage</div>
+      <div className="dash-head"><IconScales /> National cash-access</div>
+      <div className="cmdgrid">
+        <div className="heatmap" aria-hidden>
+          {heat.map((v, i) => (
+            <i key={i} style={{ background: `rgba(228,1,43,${0.12 + v * 0.78})` }} />
+          ))}
         </div>
-        <span className="trendbadge">Resilience ↑</span>
+        <div className="cmdstats">
+          <div className="cmd-stat"><div className="cs-n">62%</div><div className="cs-l">Verified live</div></div>
+          <div className="cmd-stat"><div className="cs-n">4</div><div className="cs-l">Underserved areas</div></div>
+          <div className="cmd-stat"><div className="cs-n cs-green">Stable</div><div className="cs-l">Resilience</div></div>
+        </div>
       </div>
-      <div className="dash-label" style={{ marginTop: 12 }}>Access resilience · 12&nbsp;mo</div>
-      <svg className="spark" viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" aria-hidden>
-        <polygon className="area" points={area} />
-        <polyline points={line} />
-      </svg>
+      <div className="dash-foot">
+        <span className="gapdot" /> Demand concentrated in 3 urban corridors
+      </div>
     </div>
   );
 }
