@@ -14,6 +14,41 @@ const NAV = [
   { label: "Contact", href: "#contact" },
 ];
 
+// Single source of truth for the FAQ — rendered on the page AND emitted as
+// FAQPage structured data so Google can show rich results.
+const FAQ_ITEMS: { q: string; a: string }[] = [
+  {
+    q: "What is GeoATM?",
+    a: "GeoATM is an intelligent cash-access platform. It combines one of the world's largest ATM directories with verified live availability from participating institutions, so you can find the best place to withdraw cash — not just the nearest pin.",
+  },
+  {
+    q: "How does GeoATM know if cash is available?",
+    a: "Participating institutions publish verified live status for their machines directly to GeoATM. Where a machine isn't yet part of a live feed, it's shown from public map data and clearly marked as estimated — GeoATM never claims a live cash status it can't confirm.",
+  },
+  {
+    q: "Is GeoATM free to use?",
+    a: "Yes. Finding ATMs and checking availability in the consumer app is free, everywhere GeoATM operates.",
+  },
+  {
+    q: "How do institutions participate?",
+    a: "Banks, ATM operators, processors and central banks can join the GeoATM network to publish verified availability and gain visibility. Request participation and our team will be in touch.",
+  },
+  {
+    q: "Which countries are covered?",
+    a: "GeoATM's directory spans 195+ countries. Verified live availability expands as more institutions join the network.",
+  },
+];
+
+const FAQ_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_ITEMS.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function HomePage() {
   return (
     <>
@@ -201,30 +236,14 @@ export default function HomePage() {
         <div className="wrap faq-wrap">
           <h2 className="center">Frequently asked questions</h2>
           <div className="faq">
-            <Faq q="What is GeoATM?">
-              GeoATM is an intelligent cash-access platform. It combines one of the world's largest ATM
-              directories with verified live availability from participating institutions, so you can
-              find the best place to withdraw cash — not just the nearest pin.
-            </Faq>
-            <Faq q="How does GeoATM know if cash is available?">
-              Participating institutions publish verified live status for their machines directly to
-              GeoATM. Where a machine isn't yet part of a live feed, it's shown from public map data and
-              clearly marked as estimated — GeoATM never claims a live cash status it can't confirm.
-            </Faq>
-            <Faq q="Is GeoATM free to use?">
-              Yes. Finding ATMs and checking availability in the consumer app is free, everywhere GeoATM
-              operates.
-            </Faq>
-            <Faq q="How do institutions participate?">
-              Banks, ATM operators, processors and central banks can join the GeoATM network to publish
-              verified availability and gain visibility. Request participation and our team will be in
-              touch.
-            </Faq>
-            <Faq q="Which countries are covered?">
-              GeoATM's directory spans 195+ countries. Verified live availability expands as more
-              institutions join the network.
-            </Faq>
+            {FAQ_ITEMS.map((f) => (
+              <Faq key={f.q} q={f.q}>{f.a}</Faq>
+            ))}
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_JSON_LD) }}
+          />
         </div>
       </section>
 
