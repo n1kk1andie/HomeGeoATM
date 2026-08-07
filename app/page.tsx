@@ -160,6 +160,13 @@ export default function HomePage() {
                 Understand coverage, demand, resilience and emerging gaps across participating
                 institutions.
               </p>
+              <ul className="ticks">
+                <li><IconCheck /> Coverage across every member</li>
+                <li><IconCheck /> Demand &amp; usage trends</li>
+                <li><IconCheck /> Resilience &amp; service continuity</li>
+                <li><IconCheck /> Emerging access gaps, flagged early</li>
+              </ul>
+              <AssociationMock />
               <a
                 className="link-red"
                 href={`mailto:${CONTACT_EMAIL}?subject=GeoATM%20Industry%20Association%20Access`}
@@ -178,6 +185,13 @@ export default function HomePage() {
                 See geographic coverage, resilience, service availability and emerging access gaps
                 across the financial system.
               </p>
+              <ul className="ticks">
+                <li><IconCheck /> Market-level geographic coverage</li>
+                <li><IconCheck /> System resilience &amp; continuity</li>
+                <li><IconCheck /> Service availability trends</li>
+                <li><IconCheck /> Emerging access gaps across the system</li>
+              </ul>
+              <AuthorityMock />
               <a
                 className="link-red"
                 href={`mailto:${CONTACT_EMAIL}?subject=GeoATM%20Institutional%20Briefing%20Request`}
@@ -510,6 +524,64 @@ function DashboardMock() {
           <span key={i} style={{ height: `${h}%` }} />
         ))}
       </div>
+    </div>
+  );
+}
+
+// Insight mock for Industry Associations — coverage across the membership,
+// by area, with gaps surfaced. Illustrative figures.
+function AssociationMock() {
+  const rows = [
+    { label: "Kingston", pct: 94 },
+    { label: "St. Andrew", pct: 88 },
+    { label: "St. Catherine", pct: 76 },
+    { label: "St. James", pct: 61 },
+    { label: "Rural", pct: 48 },
+  ];
+  return (
+    <div className="dash">
+      <div className="dash-head"><IconNetwork /> Membership coverage</div>
+      <div className="dash-label">Coverage by area</div>
+      <div className="hbars">
+        {rows.map((r) => (
+          <div className="hbar" key={r.label}>
+            <span className="hbl">{r.label}</span>
+            <span className="hbt"><i style={{ width: `${r.pct}%` }} /></span>
+            <span className="hbv">{r.pct}%</span>
+          </div>
+        ))}
+      </div>
+      <div className="dash-foot">3 access gaps flagged this month</div>
+    </div>
+  );
+}
+
+// Insight mock for Central Banks & Public Authorities — market-level coverage
+// and a resilience trend. Illustrative figures.
+function AuthorityMock() {
+  const pts = [22, 26, 24, 30, 34, 33, 40, 44, 50, 56, 60, 66];
+  const w = 260;
+  const h = 46;
+  const max = 72;
+  const line = pts
+    .map((p, i) => `${(i / (pts.length - 1)) * w},${h - (p / max) * h}`)
+    .join(" ");
+  const area = `0,${h} ${line} ${w},${h}`;
+  return (
+    <div className="dash">
+      <div className="dash-head"><IconScales /> Market coverage</div>
+      <div className="dash-row">
+        <div>
+          <div className="dash-big">94%</div>
+          <div className="dash-label">Nationwide coverage</div>
+        </div>
+        <span className="trendbadge">Resilience ↑</span>
+      </div>
+      <div className="dash-label" style={{ marginTop: 12 }}>Access resilience · 12&nbsp;mo</div>
+      <svg className="spark" viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" aria-hidden>
+        <polygon className="area" points={area} />
+        <polyline points={line} />
+      </svg>
     </div>
   );
 }

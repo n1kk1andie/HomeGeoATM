@@ -171,6 +171,22 @@ img { max-width: 100%; display: block; }
 .bars { display: flex; align-items: flex-end; gap: 5px; height: 46px; margin-top: 8px; }
 .bars span { flex: 1; background: var(--red); border-radius: 3px 3px 0 0; opacity: .9; }
 
+/* Horizontal coverage bars (Industry Associations mock) */
+.hbars { display: flex; flex-direction: column; gap: 9px; margin: 8px 0 12px; }
+.hbar { display: grid; grid-template-columns: 78px 1fr 34px; align-items: center; gap: 9px; font-size: 11.5px; }
+.hbar .hbl { color: var(--dim); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hbar .hbt { height: 7px; background: var(--mist-2); border-radius: 99px; overflow: hidden; }
+.hbar .hbt i { display: block; height: 100%; background: var(--red); border-radius: 99px; }
+.hbar .hbv { text-align: right; font-family: "Sora"; font-weight: 700; color: var(--ink); }
+.dash-foot { font-size: 11.5px; color: var(--dim); border-top: 1px solid var(--line); padding-top: 10px; margin-top: 2px; }
+
+/* Resilience sparkline (Central Banks mock) */
+.dash-big { font-family: "Sora"; font-weight: 800; font-size: 26px; color: var(--ink); line-height: 1; }
+.trendbadge { align-self: flex-start; background: var(--green-bg); color: var(--green); font-weight: 700; font-size: 11px; padding: 5px 10px; border-radius: 999px; white-space: nowrap; }
+.spark { width: 100%; height: 46px; margin-top: 8px; display: block; }
+.spark polyline { fill: none; stroke: var(--red); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.spark .area { fill: rgba(228, 1, 43, .08); stroke: none; }
+
 /* Why grid */
 .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .why { text-align: left; }
