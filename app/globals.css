@@ -301,7 +301,10 @@ img { max-width: 100%; display: block; }
 .nl { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; padding-bottom: 36px; margin-bottom: 40px; border-bottom: 1px solid rgba(255, 255, 255, .1); }
 .nl-copy h3 { color: #fff; font-family: "Sora"; font-size: 20px; margin-bottom: 4px; }
 .nl-copy p { font-size: 14.5px; color: rgba(255, 255, 255, .68); }
-.nl-form { display: flex; gap: 10px; flex-wrap: wrap; flex: 1; max-width: 480px; position: relative; }
+.nl-form { display: flex; gap: 10px; flex-wrap: wrap; flex: 1; max-width: 620px; position: relative; }
+.nl-form .nl-area { flex: 0 1 190px; min-width: 150px; font: inherit; font-size: 15px; padding: 13px 16px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .22); background: rgba(255, 255, 255, .08); color: #fff; }
+.nl-form .nl-area option { color: #111; }
+.nl-form .nl-area:focus { outline: 2px solid #fff; outline-offset: 1px; }
 .nl-form input[type="email"] { flex: 1; min-width: 200px; font: inherit; font-size: 15px; padding: 13px 16px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .22); background: rgba(255, 255, 255, .08); color: #fff; }
 .nl-form input[type="email"]::placeholder { color: rgba(255, 255, 255, .45); }
 .nl-form input[type="email"]:focus { outline: 2px solid #fff; outline-offset: 1px; }
