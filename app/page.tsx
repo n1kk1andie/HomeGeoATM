@@ -1,6 +1,8 @@
 /* GeoATM marketing site — home.geoatm.app
  * A static informational landing page. No data, cash or admin code here. */
 
+import Subscribe from "@/components/Subscribe";
+
 const APP_URL = "https://geoatm.app";
 const CONTACT_EMAIL = "info@geoatm.app";
 const PARTICIPATE_MAILTO = `mailto:${CONTACT_EMAIL}?subject=GeoATM%20Participation%20Enquiry`;
@@ -320,6 +322,7 @@ export default function HomePage() {
 
       {/* ---------- Footer ---------- */}
       <footer className="footer">
+        <Subscribe />
         <div className="wrap footer-grid">
           <div className="footer-brand">
             <img src="/geoatm-lockup-white.png" alt="GeoATM" />
