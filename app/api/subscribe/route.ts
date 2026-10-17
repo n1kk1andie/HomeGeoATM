@@ -18,13 +18,13 @@ function throttled(ip: string): boolean {
 export async function POST(req: Request) {
   const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "anon";
   if (throttled(ip)) return NextResponse.json({ error: "Too many attempts. Please wait a minute." }, { status: 429 });
-  let body: { email?: unknown; website?: unknown } = {};
+  let body: { email?: unknown; area?: unknown; website?: unknown } = {};
   try { body = await req.json(); } catch { /* ignore */ }
   try {
     const res = await fetch(`${APP_URL}/api/subscribe`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: body.email, website: body.website, source: "site" }),
+      body: JSON.stringify({ email: body.email, area: body.area, website: body.website, source: "site" }),
       cache: "no-store",
     });
     const data = await res.json().catch(() => ({}));
