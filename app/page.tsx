@@ -21,11 +21,11 @@ const NAV = [
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {
     q: "What is GeoATM?",
-    a: "GeoATM is an intelligent cash-access platform. It combines one of the world's largest ATM directories with verified live availability from participating institutions, so you can find the best place to withdraw cash — not just the nearest pin.",
+    a: "GeoATM is an intelligent cash-access platform. It combines one of the world's largest ATM directories with live availability reported by participating institutions, so you can find the best place to withdraw cash — not just the nearest pin.",
   },
   {
     q: "How does GeoATM know if cash is available?",
-    a: "Participating institutions publish verified live status for their machines directly to GeoATM. Where a machine isn't yet part of a live feed, it's shown from public map data and clearly marked as estimated — GeoATM never claims a live cash status it can't confirm.",
+    a: "Participating institutions publish live status for their machines directly to GeoATM, and GeoATM shows it as operator reported. Where a machine isn't yet part of a live feed, it's shown from public map data and clearly marked as estimated — GeoATM never claims a live cash status it can't confirm.",
   },
   {
     q: "Is GeoATM free to use?",
@@ -33,11 +33,11 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: "How do institutions participate?",
-    a: "Banks, ATM operators, processors and central banks can join the GeoATM network to publish verified availability and gain visibility. Request participation and our team will be in touch.",
+    a: "Banks, ATM operators, processors and central banks can join the GeoATM network to publish live availability and gain visibility. Request participation and our team will be in touch.",
   },
   {
     q: "Which countries are covered?",
-    a: "GeoATM's directory spans 195+ countries. Verified live availability expands as more institutions join the network.",
+    a: "GeoATM's directory spans 195+ countries. Operator-reported live availability expands as more institutions join the network.",
   },
 ];
 
@@ -108,7 +108,7 @@ export default function HomePage() {
           <Stat icon={<IconGlobe />} big="195+" mid="Countries" sub="Global coverage" />
           <Stat icon={<IconPin />} big="Millions" mid="of ATM Locations" sub="One of the world's largest directories" />
           <Stat icon={<IconBank />} big="Growing" mid="Network" sub="of participating institutions" />
-          <Stat icon={<IconShield />} big="GeoATM" mid="Verified" sub="Expanding globally" />
+          <Stat icon={<IconShield />} big="Live" mid="Operator-reported status" sub="Expanding globally" />
         </div>
       </section>
 
@@ -126,7 +126,7 @@ export default function HomePage() {
               <p className="aud-lead">Find the best ATM nearby—not just the nearest one.</p>
               <ul className="ticks">
                 <li><IconCheck /> Find nearby ATMs</li>
-                <li><IconCheck /> GeoATM Verified locations</li>
+                <li><IconCheck /> Live status from participating banks</li>
                 <li><IconCheck /> Compare nearby cash access</li>
                 <li><IconCheck /> Smart recommendations</li>
                 <li><IconCheck /> Available in 195+ countries</li>
@@ -143,7 +143,7 @@ export default function HomePage() {
               </div>
               <p className="aud-lead">Join the GeoATM network.</p>
               <p className="aud-body">
-                Provide verified ATM availability, improve customer experience, and increase
+                Publish live ATM availability, improve customer experience, and increase
                 visibility across the world's first intelligent cash-access platform.
               </p>
               <DashboardMock />
@@ -224,8 +224,8 @@ export default function HomePage() {
             />
             <Why
               icon={<IconShield />}
-              title="GeoATM Verified"
-              body="Participating institutions can publish verified live ATM availability directly to customers."
+              title="Operator-reported status"
+              body="Participating institutions publish live ATM availability directly to customers."
             />
             <Why
               icon={<IconBulb />}
@@ -246,7 +246,7 @@ export default function HomePage() {
               <IconArrowRight className="step-arrow" />
               <Step n="2" icon={<IconPin />} title="GeoATM finds nearby ATMs" sub="Search by location or allow GPS" />
               <IconArrowRight className="step-arrow" />
-              <Step n="3" icon={<IconShield solid />} title="Verified institutions publish live status" sub="Live availability from participating partners" />
+              <Step n="3" icon={<IconShield solid />} title="Participating institutions publish live status" sub="Live availability from participating partners" />
               <IconArrowRight className="step-arrow" />
               <Step n="4" icon={<IconCheckCircle />} title="Choose the best place to get cash" sub="Go with confidence" />
             </div>
@@ -261,7 +261,7 @@ export default function HomePage() {
               institutions to deliver trusted live ATM information.
             </p>
             <ul className="ticks two-col">
-              <li><IconCheck /> GeoATM Verified</li>
+              <li><IconCheck /> Operator-reported status</li>
               <li><IconCheck /> Global visibility</li>
               <li><IconCheck /> Better customer experience</li>
               <li><IconCheck /> Secure integration</li>
@@ -281,7 +281,7 @@ export default function HomePage() {
             <h3 className="panel-title">About GeoATM</h3>
             <p>
               GeoATM is building the world's trusted cash-access network. By combining a global ATM
-              directory with verified live availability from participating institutions, GeoATM helps
+              directory with live availability reported by participating institutions, GeoATM helps
               consumers make better decisions while helping financial institutions better serve their
               customers.
             </p>
@@ -349,7 +349,7 @@ export default function HomePage() {
             title="For Institutions"
             links={[
               { label: "Become a Participant", href: "#institutions" },
-              { label: "GeoATM Verified", href: "#about" },
+              { label: "Operator-reported status", href: "#about" },
               { label: "Partner Benefits", href: "#institutions" },
               { label: "Contact Partnerships", href: PARTICIPATE_MAILTO },
             ]}
@@ -522,7 +522,7 @@ function WorldArcs() {
 function DashboardMock() {
   return (
     <div className="dash">
-      <div className="dash-head"><IconShield solid /> GeoATM Verified</div>
+      <div className="dash-head"><IconShield solid /> Operator reported</div>
       <div className="dash-row">
         <div className="dash-label">Live ATM status</div>
         <div className="ring">
@@ -535,7 +535,7 @@ function DashboardMock() {
           </div>
         </div>
       </div>
-      <div className="dash-avail">Verified live</div>
+      <div className="dash-avail">Live from the bank</div>
       <div className="dash-label">Customer reach</div>
       <div className="bars">
         {[38, 30, 52, 44, 60, 50, 72, 66, 84].map((h, i) => (
@@ -572,7 +572,7 @@ function AssociationMock() {
   );
 }
 
-// National command view: coverage heat, what's verified vs located, underserved
+// National command view: coverage heat, what's operator-reported vs located, underserved
 // areas and resilience — the shape of the view, no figures.
 function AuthorityMock() {
   const heat = [
@@ -591,8 +591,8 @@ function AuthorityMock() {
           ))}
         </div>
         <div className="cmdstats">
-          <div className="cmd-stat2"><span className="csdot green" /> Verified &amp; live</div>
-          <div className="cmd-stat2"><span className="csdot amber" /> Located, not verified</div>
+          <div className="cmd-stat2"><span className="csdot green" /> Operator-reported &amp; live</div>
+          <div className="cmd-stat2"><span className="csdot amber" /> Located, no live status</div>
           <div className="cmd-stat2"><span className="csdot gap" /> Underserved areas</div>
           <div className="cmd-stat2"><span className="csdot line" /> Network resilience</div>
         </div>
