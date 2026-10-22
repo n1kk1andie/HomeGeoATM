@@ -75,6 +75,8 @@ export default function HomePage() {
 
       {/* ---------- Hero ---------- */}
       <section className="hero">
+        {/* An illustrative city map behind the phone, fading out under the headline */}
+        <div className="hero-map" aria-hidden />
         <div className="wrap hero-grid">
           <div className="hero-copy">
             <h1>
@@ -96,7 +98,6 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-visual" aria-hidden>
-            <WorldArcs />
             <Phone />
           </div>
         </div>
@@ -470,8 +471,6 @@ function Phone() {
     <div className="phone">
       <div className="phone-notch" />
       <div className="phone-screen">
-        {/* Status bar: the notch sits here, so the logo starts below it */}
-        <div className="pstatus"><span>9:41</span><span className="psig" /></div>
         <div className="pscreen-top">
           <img src="/geoatm-lockup.png" alt="GeoATM" />
         </div>
@@ -501,21 +500,6 @@ function Phone() {
         </div>
       </div>
     </div>
-  );
-}
-
-function WorldArcs() {
-  return (
-    <svg className="world" viewBox="0 0 620 460" fill="none" aria-hidden>
-      <path className="arc" d="M60 250 Q 250 60 470 150" />
-      <path className="arc" d="M90 330 Q 300 420 540 300" />
-      <path className="arc" d="M120 180 Q 320 120 500 260" />
-      <circle className="arc-dot" cx="60" cy="250" r="4" />
-      <circle className="arc-dot" cx="470" cy="150" r="4" />
-      <circle className="arc-dot" cx="540" cy="300" r="4" />
-      <circle className="arc-dot" cx="90" cy="330" r="4" />
-      <circle className="arc-dot" cx="500" cy="260" r="4" />
-    </svg>
   );
 }
 
