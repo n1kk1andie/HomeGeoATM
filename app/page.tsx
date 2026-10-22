@@ -75,8 +75,6 @@ export default function HomePage() {
 
       {/* ---------- Hero ---------- */}
       <section className="hero">
-        {/* An illustrative city map behind the phone, fading out under the headline */}
-        <div className="hero-map" aria-hidden />
         <div className="wrap hero-grid">
           <div className="hero-copy">
             <h1>
@@ -98,6 +96,8 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-visual" aria-hidden>
+            {/* The city map, pins and links from the design mock, aligned to the phone */}
+            <div className="hero-scene" />
             <Phone />
           </div>
         </div>
@@ -474,14 +474,7 @@ function Phone() {
         <div className="pscreen-top">
           <img src="/geoatm-lockup.png" alt="GeoATM" />
         </div>
-        <div className="pmap">
-          <span className="ppin p1"><PinGlyph /></span>
-          <span className="ppin p2"><PinGlyph /></span>
-          <span className="ppin p3"><PinGlyph /></span>
-          <span className="ppin p4"><PinGlyph /></span>
-          <span className="ppin p5"><PinGlyph ink /></span>
-          <span className="pme" />
-        </div>
+        <div className="pmap" />
         <div className="pcard">
           <div className="pcard-row">
             <div>
@@ -665,14 +658,6 @@ function IconHeart(p: React.SVGProps<SVGSVGElement>) {
 }
 function IconMore(p: React.SVGProps<SVGSVGElement>) {
   return <svg {...S(p)}><circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none" /><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" /><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none" /></svg>;
-}
-function PinGlyph({ ink }: { ink?: boolean }) {
-  return (
-    <svg viewBox="0 0 24 32" fill={ink ? "#122036" : "#E4012B"} aria-hidden>
-      <path d="M12 0C5.4 0 0 5.2 0 11.7 0 20 12 32 12 32s12-12 12-20.3C24 5.2 18.6 0 12 0Z" />
-      <circle cx="12" cy="11.5" r="4.2" fill="#fff" />
-    </svg>
-  );
 }
 function IconFacebook(p: React.SVGProps<SVGSVGElement>) {
   return <svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z" /></svg>;
