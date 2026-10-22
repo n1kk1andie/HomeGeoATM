@@ -37,7 +37,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: "Which countries are covered?",
-    a: "GeoATM's directory spans 195+ countries. Operator-reported live availability expands as more institutions join the network.",
+    a: "GeoATM's directory maps more than 238,000 ATM locations in 219 countries and territories. Operator-reported live availability expands as more institutions join the network.",
   },
 ];
 
@@ -105,8 +105,8 @@ export default function HomePage() {
       {/* ---------- Stats bar ---------- */}
       <section className="stats">
         <div className="wrap stats-grid">
-          <Stat icon={<IconGlobe />} big="195+" mid="Countries" sub="Global coverage" />
-          <Stat icon={<IconPin />} big="Millions" mid="of ATM Locations" sub="One of the world's largest directories" />
+          <Stat icon={<IconGlobe />} big="219" mid="Countries & territories" sub="With mapped ATM locations" />
+          <Stat icon={<IconPin />} big="238,000+" mid="ATM locations" sub="Mapped worldwide, refreshed weekly" />
           <Stat icon={<IconBank />} big="Growing" mid="Network" sub="of participating institutions" />
           <Stat icon={<IconShield />} big="Live" mid="Operator-reported status" sub="Expanding globally" />
         </div>
@@ -129,7 +129,7 @@ export default function HomePage() {
                 <li><IconCheck /> Live status from participating banks</li>
                 <li><IconCheck /> Compare nearby cash access</li>
                 <li><IconCheck /> Smart recommendations</li>
-                <li><IconCheck /> Available in 195+ countries</li>
+                <li><IconCheck /> Available in 219 countries and territories</li>
               </ul>
               <a className="link-red" href={APP_URL} target="_blank" rel="noopener noreferrer">
                 Launch App <IconArrowRight />
