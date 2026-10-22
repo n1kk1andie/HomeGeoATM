@@ -78,44 +78,34 @@ img { max-width: 100%; display: block; }
 .nav-cta { margin-left: 4px; padding: 10px 18px; font-size: 14px; }
 
 /* ---------- Hero ---------- */
-.hero { padding: 48px 0 40px; overflow: hidden; }
+/* Spacing matches the design mock: the map runs from the menu bar to the stats bar. */
+.hero { position: relative; padding: 21px 0 20px; overflow: hidden; }
+.hero-grid { position: relative; z-index: 1; }
 .hero-grid { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 36px; align-items: center; }
 .hero-copy h1 { font-size: clamp(44px, 6.2vw, 78px); font-weight: 800; letter-spacing: -2.6px; line-height: .98; }
 .hero-sub { margin: 24px 0 32px; font-size: 20px; color: var(--dim); max-width: 520px; }
 .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.hero-visual { position: relative; min-height: 440px; display: flex; align-items: center; justify-content: center; }
-.world {
-  position: absolute; inset: -20px -40px; width: calc(100% + 80px); height: calc(100% + 40px);
-  background-image: radial-gradient(rgba(18, 32, 54, .13) 1.3px, transparent 1.3px);
-  background-size: 15px 15px; -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 45%, #000 55%, transparent 100%);
-  mask-image: radial-gradient(ellipse 70% 70% at 50% 45%, #000 55%, transparent 100%);
+.hero-copy { position: relative; z-index: 2; }
+.hero-visual { position: relative; min-height: 494px; display: flex; align-items: center; justify-content: center; }
+/* From the mock (scaled 0.815 so its phone is exactly ours): the map's phone
+   centre is at (350.5, 267.7) of the 711 x 535 picture. */
+.hero-scene {
+  position: absolute; z-index: 0; left: calc(50% - 350.5px); top: calc(50% - 267.7px); width: 711px; height: 535px;
+  background: url(/hero-scene.webp) 0 0 / 100% 100% no-repeat; pointer-events: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 90%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 90%, transparent 100%);
 }
-.world .arc { stroke: rgba(228, 1, 43, .45); stroke-width: 1.4; stroke-dasharray: 3 5; fill: none; }
-.world .arc-dot { fill: var(--red); }
 
 .phone {
-  position: relative; z-index: 2; width: 260px; height: 528px; border-radius: 42px;
-  background: #10192b; padding: 10px; box-shadow: var(--shadow); transform: translateY(6px);
+  position: relative; z-index: 2; width: 260px; height: 494px; border-radius: 42px;
+  background: #10192b; padding: 10px; box-shadow: var(--shadow);
 }
-.phone-notch { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); width: 92px; height: 20px; background: #10192b; border-radius: 0 0 12px 12px; z-index: 3; }
+.phone-notch { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 88px; height: 24px; background: #10192b; border-radius: 14px; z-index: 3; }
 .phone-screen { position: relative; height: 100%; background: #fff; border-radius: 33px; overflow: hidden; display: flex; flex-direction: column; }
-.pscreen-top { padding: 14px 16px 8px; display: flex; align-items: center; }
-.pscreen-top img { height: 20px; width: auto; }
-.pmap { position: relative; flex: 1; background: linear-gradient(160deg, #E9F0EA 0%, #DCE7F0 60%, #E7EEF4 100%); }
-.pmap::before {
-  content: ""; position: absolute; inset: 0;
-  background:
-    linear-gradient(90deg, transparent 46%, rgba(210, 176, 120, .55) 47%, rgba(210, 176, 120, .55) 49%, transparent 50%),
-    linear-gradient(20deg, transparent 62%, rgba(150, 180, 210, .5) 63%, rgba(150, 180, 210, .5) 65%, transparent 66%);
-}
-.ppin { position: absolute; width: 22px; transform: translate(-50%, -100%); filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .25)); }
-.ppin.p1 { left: 26%; top: 34%; }
-.ppin.p2 { left: 52%; top: 26%; }
-.ppin.p3 { left: 70%; top: 40%; }
-.ppin.p4 { left: 40%; top: 54%; }
-.ppin.p5 { left: 60%; top: 60%; width: 18px; }
-.pme { position: absolute; left: 48%; top: 48%; width: 16px; height: 16px; border-radius: 50%; background: #1D6FE0; border: 3px solid #fff; box-shadow: 0 0 0 3px rgba(29, 111, 224, .3); transform: translate(-50%, -50%); }
+.pscreen-top { padding: 42px 16px 8px; display: flex; align-items: center; }
+.pscreen-top img { height: 22px; width: auto; }
+.pmap { position: relative; flex: 1; background: #EEF1F4 url(/phone-map.webp) top center / 100% auto no-repeat; }
 .pcard { position: absolute; left: 12px; right: 12px; bottom: 60px; background: #fff; border-radius: 16px; padding: 12px; box-shadow: 0 10px 26px rgba(0, 0, 0, .16); }
 .pcard-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
 .pcard-name { font-family: "Sora"; font-weight: 800; font-size: 14px; color: var(--ink); }
