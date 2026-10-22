@@ -332,6 +332,7 @@ export default function HomePage() {
             <div className="socials" aria-label="Social links">
               <a href="https://www.facebook.com/profile.php?id=61595043167041" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><IconFacebook /></a>
               <a href="https://www.instagram.com/tumblehill.labs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><IconInstagram /></a>
+              <a href="https://www.linkedin.com/company/tumblehillholdings/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><IconLinkedIn /></a>
             </div>
           </div>
 
@@ -669,6 +670,9 @@ function IconMore(p: React.SVGProps<SVGSVGElement>) {
 }
 function IconInstagram(p: React.SVGProps<SVGSVGElement>) {
   return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...p}><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>;
+}
+function IconLinkedIn(p: React.SVGProps<SVGSVGElement>) {
+  return <svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M6.5 8H4v11h2.5V8ZM5.2 3.5A1.5 1.5 0 1 0 5.2 6.5 1.5 1.5 0 0 0 5.2 3.5ZM20 19h-2.5v-5.5c0-1.4-.9-2-1.7-2s-1.8.6-1.8 2V19H11.5V8H14v1.3c.4-.7 1.5-1.5 2.9-1.5 2 0 3.1 1.4 3.1 4V19Z" /></svg>;
 }
 function IconFacebook(p: React.SVGProps<SVGSVGElement>) {
   return <svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z" /></svg>;
