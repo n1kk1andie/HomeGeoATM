@@ -100,8 +100,10 @@ img { max-width: 100%; display: block; }
 }
 .phone-notch { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); width: 92px; height: 20px; background: #10192b; border-radius: 0 0 12px 12px; z-index: 3; }
 .phone-screen { position: relative; height: 100%; background: #fff; border-radius: 33px; overflow: hidden; display: flex; flex-direction: column; }
-.pscreen-top { padding: 14px 16px 8px; display: flex; align-items: center; }
-.pscreen-top img { height: 20px; width: auto; }
+.pstatus { display: flex; justify-content: space-between; align-items: center; padding: 9px 22px 0; height: 26px; font-family: "Sora"; font-weight: 700; font-size: 11px; color: var(--ink); }
+.psig { width: 30px; height: 9px; border-radius: 3px; background: linear-gradient(90deg, #10192b 70%, transparent 70%); opacity: .8; }
+.pscreen-top { padding: 10px 16px 8px; display: flex; align-items: center; }
+.pscreen-top img { height: 22px; width: auto; }
 .pmap { position: relative; flex: 1; background: linear-gradient(160deg, #E9F0EA 0%, #DCE7F0 60%, #E7EEF4 100%); }
 .pmap::before {
   content: ""; position: absolute; inset: 0;

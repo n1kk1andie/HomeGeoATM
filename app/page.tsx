@@ -470,6 +470,8 @@ function Phone() {
     <div className="phone">
       <div className="phone-notch" />
       <div className="phone-screen">
+        {/* Status bar: the notch sits here, so the logo starts below it */}
+        <div className="pstatus"><span>9:41</span><span className="psig" /></div>
         <div className="pscreen-top">
           <img src="/geoatm-lockup.png" alt="GeoATM" />
         </div>
