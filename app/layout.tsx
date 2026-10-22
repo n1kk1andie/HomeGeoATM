@@ -6,7 +6,7 @@ const SITE = "https://home.geoatm.app";
 const APP = "https://geoatm.app";
 const TITLE = "GeoATM — Know where cash is, before you go";
 const DESC =
-  "GeoATM helps people find nearby ATMs, see where cash is available, and choose the best place to withdraw cash with confidence — across 195+ countries.";
+  "GeoATM helps people find nearby ATMs, see where cash is available, and choose the best place to withdraw cash with confidence — across 219 countries and territories.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
