@@ -21,7 +21,7 @@ const NAV = [
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {
     q: "What is GeoATM?",
-    a: "GeoATM is an intelligent cash-access platform. It combines one of the world's largest ATM directories with live availability reported by participating institutions, so you can find the best place to withdraw cash — not just the nearest pin.",
+    a: "GeoATM is an intelligent cash-access platform. It combines a directory of more than 238,000 ATM locations with live availability reported by participating institutions, so you can find the best place to withdraw cash — not just the nearest pin.",
   },
   {
     q: "How does GeoATM know if cash is available?",
@@ -132,6 +132,7 @@ export default function HomePage() {
                 <li><IconCheck /> Smart recommendations</li>
                 <li><IconCheck /> Available in 219 countries and territories</li>
               </ul>
+              <ConsumerMock />
               <a className="link-red" href={APP_URL} target="_blank" rel="noopener noreferrer">
                 Launch App <IconArrowRight />
               </a>
@@ -144,8 +145,8 @@ export default function HomePage() {
               </div>
               <p className="aud-lead">Join the GeoATM network.</p>
               <p className="aud-body">
-                Publish live ATM availability, improve customer experience, and increase
-                visibility across the world's first intelligent cash-access platform.
+                Publish live ATM availability, improve customer experience, and reach customers
+                across 238,000+ mapped ATM locations in 219 countries and territories.
               </p>
               <DashboardMock />
               <a className="link-red" href="#institutions">
@@ -214,14 +215,14 @@ export default function HomePage() {
       </section>
 
       {/* ---------- Why GeoATM ---------- */}
-      <section className="section" id="about">
+      <section className="section why-band" id="about">
         <div className="wrap">
           <h2 className="center">Why GeoATM?</h2>
           <div className="why-grid">
             <Why
               icon={<IconGlobe />}
               title="Global Directory"
-              body="Access one of the world's largest and most comprehensive ATM directories."
+              body="238,000+ ATM locations mapped in 219 countries and territories, refreshed weekly."
             />
             <Why
               icon={<IconShield />}
@@ -249,7 +250,7 @@ export default function HomePage() {
               <IconArrowRight className="step-arrow" />
               <Step n="3" icon={<IconShield solid />} title="Participating institutions publish live status" sub="Live availability from participating partners" />
               <IconArrowRight className="step-arrow" />
-              <Step n="4" icon={<IconCheckCircle />} title="Choose the best place to get cash" sub="Go with confidence" />
+              <Step n="4" icon={<IconCheck />} title="Choose the best place to get cash" sub="Go with confidence" />
             </div>
           </div>
 
@@ -329,10 +330,8 @@ export default function HomePage() {
             <img src="/geoatm-lockup-white.png" alt="GeoATM" />
             <p>The world's intelligent cash-access network.</p>
             <div className="socials" aria-label="Social links">
-              <a href="#" aria-label="Facebook"><IconFacebook /></a>
-              <a href="#" aria-label="X"><IconX /></a>
-              <a href="#" aria-label="LinkedIn"><IconLinkedIn /></a>
-              <a href="#" aria-label="YouTube"><IconYouTube /></a>
+              <a href="https://www.facebook.com/profile.php?id=61595043167041" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><IconFacebook /></a>
+              <a href="https://www.instagram.com/tumblehill.labs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><IconInstagram /></a>
             </div>
           </div>
 
@@ -361,19 +360,10 @@ export default function HomePage() {
               { label: "About GeoATM", href: "#about" },
               { label: "GeoEV: EV charging", href: "https://evhome.geoatm.app" },
               { label: "Geo API for developers", href: "https://geoatm.app/developers" },
-              { label: "News", href: "#top" },
               { label: "Careers", href: `mailto:${CONTACT_EMAIL}` },
               { label: "Tumblehill Holdings", href: "https://www.tumblehillholdings.com" },
             ]}
           />
-          <div className="footer-col">
-            <h4>Contact</h4>
-            <p className="footer-contact">Email: {CONTACT_EMAIL}</p>
-            <p className="footer-contact">We'd love to hear from you.</p>
-            <a className="btn btn-outline-red" href={`mailto:${CONTACT_EMAIL}`}>
-              Contact Us <IconArrowRight />
-            </a>
-          </div>
         </div>
         <div className="footer-bottom">
           <div className="wrap">
@@ -386,11 +376,11 @@ export default function HomePage() {
             <br />
             A product studio of{" "}
             <a href="https://www.tumblehillholdings.com" target="_blank" rel="noopener noreferrer">
-              Tumblehill Holdings Limited
+              Tumblehill Holdings LLC
             </a>
             <br />
             <br />
-            © 2026 Tumblehill Holdings Limited. All rights reserved.
+            © 2026 Tumblehill Holdings LLC. All rights reserved.
           </div>
         </div>
       </footer>
@@ -498,6 +488,27 @@ function Phone() {
 
 // Illustrative product UI — shows the shape of each view, not real metrics.
 // No figures are shown (nothing here should read as live data).
+// Consumer view: the best place for cash nearby, not just the nearest pin.
+// Illustrative.
+function ConsumerMock() {
+  return (
+    <div className="dash">
+      <div className="dash-head"><IconPin /> Best places for cash nearby</div>
+      <div className="cm-row best">
+        <span className="cm-rank">1</span>
+        <span className="cm-txt"><b>New Kingston</b><small>0.3 km · 3 ATMs · 24-hour</small></span>
+        <span className="cm-badge ok">Cash available</span>
+      </div>
+      <div className="cm-row">
+        <span className="cm-rank">2</span>
+        <span className="cm-txt"><b>Half Way Tree</b><small>1.1 km · 2 ATMs</small></span>
+        <span className="cm-badge">Location only</span>
+      </div>
+      <div className="dash-foot"><IconBulb /> Recommended for cash, not just distance</div>
+    </div>
+  );
+}
+
 function DashboardMock() {
   return (
     <div className="dash">
@@ -635,9 +646,6 @@ function IconPhone(p: React.SVGProps<SVGSVGElement>) {
 function IconCheck(p: React.SVGProps<SVGSVGElement>) {
   return <svg {...S(p)}><path d="m5 12 5 5L20 7" /></svg>;
 }
-function IconCheckCircle(p: React.SVGProps<SVGSVGElement>) {
-  return <svg {...S(p)} fill="currentColor" stroke="#fff"><circle cx="12" cy="12" r="10" stroke="none" /><path d="m8 12 3 3 5-5" fill="none" stroke="#fff" /></svg>;
-}
 function IconArrowRight(p: React.SVGProps<SVGSVGElement>) {
   return <svg {...S(p)}><path d="M5 12h14M13 6l6 6-6 6" /></svg>;
 }
@@ -659,15 +667,9 @@ function IconHeart(p: React.SVGProps<SVGSVGElement>) {
 function IconMore(p: React.SVGProps<SVGSVGElement>) {
   return <svg {...S(p)}><circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none" /><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" /><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none" /></svg>;
 }
+function IconInstagram(p: React.SVGProps<SVGSVGElement>) {
+  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...p}><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>;
+}
 function IconFacebook(p: React.SVGProps<SVGSVGElement>) {
   return <svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z" /></svg>;
-}
-function IconX(p: React.SVGProps<SVGSVGElement>) {
-  return <svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M3 3h4.5l4 5.7L16.5 3H21l-6.6 8.4L21 21h-4.5l-4.3-6.1L7.4 21H3l7-8.9L3 3Z" /></svg>;
-}
-function IconLinkedIn(p: React.SVGProps<SVGSVGElement>) {
-  return <svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M6.5 8H4v11h2.5V8ZM5.2 3.5A1.5 1.5 0 1 0 5.2 6.5 1.5 1.5 0 0 0 5.2 3.5ZM20 19h-2.5v-5.5c0-1.4-.9-2-1.7-2s-1.8.6-1.8 2V19H11.5V8H14v1.3c.4-.7 1.5-1.5 2.9-1.5 2 0 3.1 1.4 3.1 4V19Z" /></svg>;
-}
-function IconYouTube(p: React.SVGProps<SVGSVGElement>) {
-  return <svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.5 12 5.5 12 5.5s-6 0-7.9.6A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.6 7.9.6 7.9.6s6 0 7.9-.6a3 3 0 0 0 2.1-2.1c.3-1.3.4-3.8.4-3.8s0-2.5-.4-3.8ZM10 15V9l5 3-5 3Z" /></svg>;
 }
