@@ -359,7 +359,7 @@ export default function HomePage() {
             title="Company"
             links={[
               { label: "About GeoATM", href: "#about" },
-              { label: "GeoEV: EV charging", href: "https://evhome.geoatm.app" },
+              { label: "GeoEV: EV charging", href: "https://home.geoev.app" },
               { label: "Geo API for developers", href: "https://geoatm.app/developers" },
               { label: "Careers", href: `mailto:${CONTACT_EMAIL}` },
               { label: "Tumblehill Holdings", href: "https://www.tumblehillholdings.com" },
