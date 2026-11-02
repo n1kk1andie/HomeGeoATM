@@ -35,7 +35,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: "How do institutions participate?",
-    a: "Banks, ATM operators, processors and central banks can join the GeoATM network to publish live availability and gain visibility. Register your institution online: we verify your organisation, then your 90-day pilot starts. Central banks and associations can write to us.",
+    a: "Banks, ATM operators, processors and central banks can join the GeoATM network to publish live availability and gain visibility. Register your institution online: we verify your organisation, then your 30-day free trial of Monitor starts. Central banks and associations can write to us.",
   },
   {
     q: "Which countries are covered?",
