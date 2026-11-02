@@ -229,6 +229,9 @@ img { max-width: 100%; display: block; }
 .inst-eyebrow { font-size: 12px; font-weight: 600; color: var(--dim); text-transform: none; margin-bottom: 6px; position: relative; }
 .inst-title { font-size: 22px; font-weight: 800; margin-bottom: 12px; position: relative; }
 .inst-body { color: var(--dim); font-size: 14.5px; margin-bottom: 18px; position: relative; }
+.inst-alt { color: var(--dim); font-size: 13px; margin-top: 12px; position: relative; }
+.inst-alt a { color: inherit; text-decoration: underline; }
+.panel-inst .btn { position: relative; z-index: 1; }
 .panel-inst .ticks { margin-bottom: 20px; position: relative; }
 
 /* About strip */
