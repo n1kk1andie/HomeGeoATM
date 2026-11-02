@@ -6,6 +6,8 @@ import Subscribe from "@/components/Subscribe";
 const APP_URL = "https://geoatm.app";
 const CONTACT_EMAIL = "info@geoatm.app";
 const PARTICIPATE_MAILTO = `mailto:${CONTACT_EMAIL}?subject=GeoATM%20Participation%20Enquiry`;
+/** Self-service registration for banks and ATM operators (the operator portal's application page). */
+const REGISTER_URL = "https://admin.geoatm.app/apply";
 
 const NAV = [
   { label: "Home", href: "#top" },
@@ -33,7 +35,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: "How do institutions participate?",
-    a: "Banks, ATM operators, processors and central banks can join the GeoATM network to publish live availability and gain visibility. Request participation and our team will be in touch.",
+    a: "Banks, ATM operators, processors and central banks can join the GeoATM network to publish live availability and gain visibility. Register your institution online: we verify your organisation, then your 90-day pilot starts. Central banks and associations can write to us.",
   },
   {
     q: "Which countries are covered?",
@@ -269,9 +271,13 @@ export default function HomePage() {
               <li><IconCheck /> Secure integration</li>
               <li><IconCheck /> Live ATM availability</li>
             </ul>
-            <a className="btn btn-red" href={PARTICIPATE_MAILTO}>
-              <IconBank /> Request Participation
+            <a className="btn btn-red" href={REGISTER_URL}>
+              <IconBank /> Register your institution
             </a>
+            <p className="inst-alt">
+              Already registered? <a href="https://admin.geoatm.app/">Sign in</a> · Central banks and associations:{" "}
+              <a href={PARTICIPATE_MAILTO}>{CONTACT_EMAIL}</a>
+            </p>
           </div>
         </div>
       </section>
