@@ -60,18 +60,16 @@ const PLANS = [
   },
   {
     name: "Enterprise",
-    price: "Custom pricing",
-    unit: "Tailored to your network and integrations",
+    price: "$35",
+    unit: "per ATM / month · minimum $1,000",
     for: "Larger and multinational networks",
     items: [
       "Everything in Intelligence",
       "Compare up to ten networks and twenty sites, across borders",
       "Regional benchmarking",
       "Integration with your ATM monitoring systems, scoped with you",
-      "Customised reporting, dedicated onboarding, a named contact and agreed service levels",
     ],
-    note: "Contact sales",
-    contact: true,
+    note: "Chosen in the portal like any other plan",
   },
 ];
 
@@ -225,11 +223,7 @@ export default function ProductPage() {
                     <li key={i}><IconCheck /> {i}</li>
                   ))}
                 </ul>
-                {"contact" in p && p.contact ? (
-                  <a className="btn btn-outline-red pp-plan-cta" href={`mailto:${CONTACT_EMAIL}?subject=GeoATM%20Enterprise`}>Contact sales</a>
-                ) : (
-                  p.note && <div className="pp-plan-note">{p.note}</div>
-                )}
+                {p.note && <div className="pp-plan-note">{p.note}</div>}
               </div>
             ))}
           </div>
