@@ -57,7 +57,6 @@ const PLANS = [
       "Search counts for each candidate site",
       "Download comparisons and demand figures to Excel",
     ],
-    note: "Paid from activation; demonstration on request",
   },
   {
     name: "Enterprise",
@@ -71,7 +70,6 @@ const PLANS = [
       "Regional benchmarking",
       "Integration with your ATM monitoring systems, scoped with you",
     ],
-    note: "Chosen in the portal like any other plan",
   },
 ];
 
