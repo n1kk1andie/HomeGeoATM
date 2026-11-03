@@ -113,7 +113,7 @@ export default function ProductPage() {
             </div>
             <p className="pp-small">Listing is free. Monitor starts with a 30-day free trial.</p>
           </div>
-          <FindingsMock />
+          <NetworkPreview />
         </div>
       </section>
 
@@ -141,7 +141,7 @@ export default function ProductPage() {
             <h2>Intelligence: where to invest next</h2>
             <p className="aud-body">
               Monitor tells you what the world sees. Intelligence shows what the evidence suggests you change: where customers looked for an
-              ATM and found none within 5 km, and the coverage gaps around your network. Counts are suppressed below three, and supply is
+              ATM and found none within a distance you choose (5, 10, 15, 20 km or your own), and the coverage gaps around your network. Counts are suppressed below three, and supply is
               shown as public locations only.
             </p>
             <ul className="ticks">
@@ -253,27 +253,74 @@ export default function ProductPage() {
   );
 }
 
-/** An illustration of the portal's findings panel, with made-up example data. */
-function FindingsMock() {
+/** Network Intelligence preview: a simplified map with illustrative markers. Not real data.
+ *  Drawn the way the admin app's map draws them (apps/admin/components/MapView.tsx in GEOATM):
+ *  your pins ringed in the status colours, other institutions as navy dots, network gaps as
+ *  dashed pins and rings, coverage gaps as dashed circles. */
+const PIN = "M0,-24 C-9.4,-24 -15,-17 -15,-9.5 C-15,1 0,13 0,13 C0,13 15,1 15,-9.5 C15,-17 9.4,-24 0,-24 Z";
+// The app's status colours (STATUS_COLOR in apps/admin/lib/types.ts).
+const STATUS = { available: "#0E8A4D", caution: "#A07208", empty: "#C7561A", offline: "#8A7E7A" } as const;
+const YOURS: [number, number, keyof typeof STATUS][] = [[118, 126, "available"], [212, 116, "available"], [160, 226, "caution"], [252, 162, "available"], [92, 190, "empty"], [306, 108, "offline"]];
+const OTHERS: [number, number][] = [[136, 144], [232, 130], [272, 180], [180, 248], [66, 160], [322, 128]];
+const LEGEND: [keyof typeof STATUS, string][] = [["available", "Available"], ["caution", "Limited service"], ["empty", "Out of cash"], ["offline", "Out of service"]];
+
+function NetworkPreview() {
   return (
-    <div className="pp-mock" role="img" aria-label="Example of the Network findings panel in the GeoATM operator portal">
-      <div className="pp-mock-tag">Example</div>
-      <div className="pp-mock-card pp-mock-trial">
-        <b>Your free trial so far</b>
-        <span>14 findings about your network, 9 fixed · 6 of your ATMs have another institution&apos;s within 500 m</span>
+    <figure className="np" aria-label="Illustration of GeoATM network intelligence on a map: your ATMs, other institutions nearby, a listing missing from the public map and a coverage gap. Illustrative, not real data.">
+      <figcaption className="np-head">
+        <span className="np-title">GeoATM Network Intelligence</span>
+        <span className="np-tag">Illustrative</span>
+      </figcaption>
+      <div className="np-map">
+        <svg viewBox="0 0 460 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="460" height="340" className="np-land" />
+          <path className="np-water" d="M332,0 L460,0 L460,340 L428,340 C410,300 402,262 392,232 C376,186 356,150 346,112 C338,78 326,36 332,0 Z" />
+          <rect className="np-park" x="36" y="232" width="74" height="46" rx="8" />
+          <rect className="np-park" x="250" y="250" width="58" height="40" rx="8" />
+          <g className="np-road">
+            <path d="M0,60 L320,40" /><path d="M0,128 L340,112" /><path d="M0,196 L370,190" /><path d="M0,268 L460,286" />
+            <path d="M60,0 L48,340" /><path d="M118,0 L112,340" /><path d="M232,0 L246,340" /><path d="M290,120 L300,340" />
+          </g>
+          <path className="np-main" d="M172,0 L176,340" />
+          {/* Coverage gap: where people looked and found nothing */}
+          <circle className="np-gap" cx="196" cy="300" r="34" />
+          {/* Other institutions' ATMs: locations only */}
+          {OTHERS.map(([x, y]) => (
+            <circle key={`o${x}`} className="np-other" cx={x} cy={y} r="6.5" />
+          ))}
+          {/* A listing the public map puts in the wrong place: dashed line from your position to the map's */}
+          <path className="np-moved" d="M252,162 L286,232" />
+          <circle className="np-moved-at" cx="286" cy="232" r="4" />
+          {/* One of yours that the public map doesn't show: a dashed ring at its point */}
+          <circle className="np-missing-ring" cx="160" cy="226" r="17" />
+          {/* Your ATMs, ringed by status */}
+          {YOURS.map(([x, y, st]) => (
+            <g key={`y${x}`} transform={`translate(${x} ${y})`}>
+              <path className="np-pin" d={PIN} style={{ stroke: STATUS[st] }} />
+              <circle cx="0" cy="-9.5" r="5" fill="#fff" />
+            </g>
+          ))}
+          {/* Where the public map puts it */}
+          <g transform="translate(286 232)">
+            <path className="np-pin-missing" d={PIN} />
+            <circle cx="0" cy="-9.5" r="4" className="np-pin-missing-dot" />
+          </g>
+        </svg>
+
+        <div className="np-chips">
+          <span className="np-chip"><svg viewBox="0 0 20 20"><path className="np-pin-missing" d="M10,2 C6,2 4,5 4,8 C4,12.5 10,18 10,18 C10,18 16,12.5 16,8 C16,5 14,2 10,2 Z" /></svg>Gaps<i>2</i></span>
+          <span className="np-chip"><svg viewBox="0 0 20 20"><circle className="np-other" cx="10" cy="10" r="5" /></svg>Nearby<i>6</i></span>
+          <span className="np-chip"><svg viewBox="0 0 20 20"><circle className="np-gap" cx="10" cy="10" r="6.5" /></svg>Coverage<i>1</i></span>
+        </div>
       </div>
-      <div className="pp-mock-card">
-        <b>Your listings against the public record <i>3</i></b>
-        <span>ATM 214 Harbour Street isn&apos;t on the public map</span>
-        <span>ATM 118 Main Road: the public map places it 150 m from your position</span>
-        <span>ATM 305 and ATM 306 are 8 m apart</span>
+      <div className="np-legend" aria-hidden="true">
+        {LEGEND.map(([k, label]) => (
+          <span key={k}><i className="np-l-status" style={{ borderColor: STATUS[k] }} /> {label}</span>
+        ))}
+        <span><i className="np-l-other" /> Other institutions</span>
+        <span><i className="np-l-netgap" /> Network gap</span>
+        <span><i className="np-l-gap" /> Coverage gap</span>
       </div>
-      <div className="pp-mock-card">
-        <b>Other institutions near your ATMs</b>
-        <div className="pp-mock-row"><span>Bank A</span><span>4 within 500 m</span></div>
-        <div className="pp-mock-row"><span>Bank B</span><span>2 within 500 m</span></div>
-        <div className="pp-mock-row"><span>Credit union C</span><span>1 within 500 m</span></div>
-      </div>
-    </div>
+    </figure>
   );
 }
