@@ -141,7 +141,7 @@ export default function ProductPage() {
             <h2>Intelligence: where to invest next</h2>
             <p className="aud-body">
               Monitor tells you what the world sees. Intelligence shows what the evidence suggests you change: where customers looked for an
-              ATM and found none within 5 km, and the coverage gaps around your network. Counts are suppressed below three, and supply is
+              ATM and found none within a distance you choose (5, 10, 15, 20 km or your own), and the coverage gaps around your network. Counts are suppressed below three, and supply is
               shown as public locations only.
             </p>
             <ul className="ticks">
