@@ -89,8 +89,8 @@ export default function HomePage() {
               GeoATM helps people find nearby ATMs, check cash availability, and choose where to withdraw with confidence.
             </p>
             <p className="hero-sub-ops">
-              ATM operators can also list their networks for free, monitor performance, and access powerful geographic
-              intelligence to improve coverage, analyse competitive positioning, and make informed expansion decisions.
+              ATM operators can list their networks for free, monitor performance, generate regulatory reports, and access
+              powerful geographic intelligence to analyse competitive positioning, improve coverage, and inform expansion decisions.
             </p>
             <div className="hero-btns">
               <a className="btn btn-red" href={APP_URL} target="_blank" rel="noopener noreferrer">
