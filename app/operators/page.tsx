@@ -253,10 +253,16 @@ export default function ProductPage() {
   );
 }
 
-/** Network Intelligence preview: a simplified map with illustrative markers. Not real data. */
+/** Network Intelligence preview: a simplified map with illustrative markers. Not real data.
+ *  Drawn the way the admin app's map draws them (apps/admin/components/MapView.tsx in GEOATM):
+ *  your pins ringed in the status colours, other institutions as navy dots, network gaps as
+ *  dashed pins and rings, coverage gaps as dashed circles. */
 const PIN = "M0,-24 C-9.4,-24 -15,-17 -15,-9.5 C-15,1 0,13 0,13 C0,13 15,1 15,-9.5 C15,-17 9.4,-24 0,-24 Z";
-const YOURS: [number, number][] = [[118, 104], [212, 78], [160, 214], [252, 150], [96, 176]];
-const OTHERS: [number, number][] = [[134, 122], [228, 96], [270, 168], [178, 236], [70, 150], [306, 92]];
+// The app's status colours (STATUS_COLOR in apps/admin/lib/types.ts).
+const STATUS = { available: "#0E8A4D", caution: "#A07208", empty: "#C7561A", offline: "#8A7E7A" } as const;
+const YOURS: [number, number, keyof typeof STATUS][] = [[118, 126, "available"], [212, 116, "available"], [160, 226, "caution"], [252, 162, "available"], [92, 190, "empty"], [306, 108, "offline"]];
+const OTHERS: [number, number][] = [[136, 144], [232, 130], [272, 180], [180, 248], [66, 160], [322, 128]];
+const LEGEND: [keyof typeof STATUS, string][] = [["available", "Available"], ["caution", "Limited service"], ["empty", "Out of cash"], ["offline", "Out of service"]];
 
 function NetworkPreview() {
   return (
@@ -277,41 +283,51 @@ function NetworkPreview() {
           </g>
           <path className="np-main" d="M172,0 L176,340" />
           {/* Coverage gap: where people looked and found nothing */}
-          <circle className="np-gap" cx="312" cy="228" r="40" />
+          <circle className="np-gap" cx="196" cy="300" r="34" />
           {/* Other institutions' ATMs: locations only */}
           {OTHERS.map(([x, y]) => (
             <circle key={`o${x}`} className="np-other" cx={x} cy={y} r="6.5" />
           ))}
-          {/* Your ATMs */}
-          {YOURS.map(([x, y]) => (
+          {/* A listing the public map puts in the wrong place: dashed line from your position to the map's */}
+          <path className="np-moved" d="M252,162 L286,232" />
+          <circle className="np-moved-at" cx="286" cy="232" r="4" />
+          {/* One of yours that the public map doesn't show: a dashed ring at its point */}
+          <circle className="np-missing-ring" cx="160" cy="226" r="17" />
+          {/* Your ATMs, ringed by status */}
+          {YOURS.map(([x, y, st]) => (
             <g key={`y${x}`} transform={`translate(${x} ${y})`}>
-              <path className="np-pin" d={PIN} />
+              <path className="np-pin" d={PIN} style={{ stroke: STATUS[st] }} />
               <circle cx="0" cy="-9.5" r="5" fill="#fff" />
             </g>
           ))}
-          {/* One of yours that the public map doesn't show */}
-          <g transform="translate(70 252)">
+          {/* Where the public map puts it */}
+          <g transform="translate(286 232)">
             <path className="np-pin-missing" d={PIN} />
             <circle cx="0" cy="-9.5" r="4" className="np-pin-missing-dot" />
           </g>
         </svg>
 
-        <div className="np-card np-card-gaps">
-          <span className="np-ic"><svg viewBox="0 0 20 20"><path className="np-pin-missing" d="M10,2 C6,2 4,5 4,8 C4,12.5 10,18 10,18 C10,18 16,12.5 16,8 C16,5 14,2 10,2 Z" /></svg></span>
-          <span><b>Network gaps</b><small>Missing or misplaced listings</small></span>
-        </div>
-        <div className="np-card np-card-near">
-          <span className="np-ic"><svg viewBox="0 0 20 20"><circle className="np-other" cx="10" cy="10" r="5.5" /></svg></span>
-          <span><b>Nearby institutions</b><small>Other ATMs around yours</small></span>
-        </div>
-        <div className="np-card np-card-cover">
-          <span className="np-ic"><svg viewBox="0 0 20 20"><circle className="np-gap" cx="10" cy="10" r="7" /></svg></span>
-          <span><b>Coverage</b><small>Where demand isn&apos;t met</small></span>
+        <div className="np-cards">
+          <div className="np-card">
+            <span className="np-ic"><svg viewBox="0 0 20 20"><path className="np-pin-missing" d="M10,2 C6,2 4,5 4,8 C4,12.5 10,18 10,18 C10,18 16,12.5 16,8 C16,5 14,2 10,2 Z" /></svg></span>
+            <span><b>Network gaps</b><small>2 to fix</small></span>
+          </div>
+          <div className="np-card">
+            <span className="np-ic"><svg viewBox="0 0 20 20"><circle className="np-other" cx="10" cy="10" r="5.5" /></svg></span>
+            <span><b>Nearby institutions</b><small>6 within 1 km</small></span>
+          </div>
+          <div className="np-card">
+            <span className="np-ic"><svg viewBox="0 0 20 20"><circle className="np-gap" cx="10" cy="10" r="7" /></svg></span>
+            <span><b>Coverage</b><small>1 area unmet</small></span>
+          </div>
         </div>
       </div>
       <div className="np-legend" aria-hidden="true">
-        <span><i className="np-l-yours" /> Your ATMs</span>
+        {LEGEND.map(([k, label]) => (
+          <span key={k}><i className="np-l-status" style={{ borderColor: STATUS[k] }} /> {label}</span>
+        ))}
         <span><i className="np-l-other" /> Other institutions</span>
+        <span><i className="np-l-netgap" /> Network gap</span>
         <span><i className="np-l-gap" /> Coverage gap</span>
       </div>
     </figure>
