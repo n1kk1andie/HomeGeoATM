@@ -71,6 +71,8 @@ export default function SiteFooter() {
             <br />
             <br />
             © 2026 Tumblehill Holdings LLC. All rights reserved.
+            <br />
+            Maps © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors. App pictures use illustrative data.
           </div>
         </div>
       </footer>

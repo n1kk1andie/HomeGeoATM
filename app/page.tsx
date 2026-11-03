@@ -1,6 +1,8 @@
 /* GeoATM marketing site — home.geoatm.app
  * A static informational landing page. No data, cash or admin code here. */
 
+import Image from "next/image";
+import NavActions from "@/components/NavActions";
 import SiteFooter from "@/components/SiteFooter";
 import { IconGlobe, IconPin, IconBank, IconBankBig, IconNetwork, IconScales, IconShield, IconUser, IconBulb, IconPhone, IconCheck, IconArrowRight, IconExternal, IconChevron, IconMap, IconList, IconHeart, IconMore } from "@/components/icons";
 
@@ -70,9 +72,7 @@ export default function HomePage() {
               </a>
             ))}
           </nav>
-          <a className="btn btn-red nav-cta" href={APP_URL} target="_blank" rel="noopener noreferrer">
-            Open GeoATM <IconExternal />
-          </a>
+          <NavActions />
         </div>
       </header>
 
@@ -99,9 +99,17 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-visual" aria-hidden>
-            {/* The city map, pins and links from the design mock, aligned to the phone */}
+            {/* A real map of central London, with GeoATM pins at real places */}
             <div className="hero-scene" />
-            <Phone />
+            <Image
+              src="/home/geoatm-finder-phone.png"
+              alt=""
+              width={560}
+              height={1069}
+              priority
+              sizes="(max-width: 900px) 70vw, 300px"
+              className="hero-phone"
+            />
           </div>
         </div>
       </section>
@@ -383,35 +391,6 @@ function Faq({ q, children }: { q: string; children: React.ReactNode }) {
 }
 
 /* ---------- Phone mockup (neutral — no bank branding) ---------- */
-function Phone() {
-  return (
-    <div className="phone">
-      <div className="phone-notch" />
-      <div className="phone-screen">
-        <div className="pscreen-top">
-          <img src="/geoatm-lockup.png" alt="GeoATM" />
-        </div>
-        <div className="pmap" />
-        <div className="pcard">
-          <div className="pcard-row">
-            <div>
-              <div className="pcard-name">City Centre</div>
-              <div className="pcard-dist"><span className="pdot" /> 0.3 km away</div>
-            </div>
-            <span className="pbadge">Cash Available</span>
-          </div>
-          <div className="pcard-btn">View Details</div>
-        </div>
-        <div className="ptabs">
-          <span className="ptab on"><IconMap /> Map</span>
-          <span className="ptab"><IconList /> List</span>
-          <span className="ptab"><IconHeart /> Favorites</span>
-          <span className="ptab"><IconMore /> More</span>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 // Illustrative product UI — shows the shape of each view, not real metrics.
 // No figures are shown (nothing here should read as live data).

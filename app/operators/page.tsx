@@ -4,6 +4,7 @@
  * the operator portal (admin.geoatm.app); nothing here takes data or payment.
  * Describe only what the portal does today. */
 import type { Metadata } from "next";
+import Image from "next/image";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { IconArrowRight, IconBank, IconCheck, IconMap, IconNetwork, IconShield } from "@/components/icons";
@@ -15,7 +16,7 @@ const CONTACT_EMAIL = "info@geoatm.app";
 export const metadata: Metadata = {
   title: "For banks and ATM operators",
   description:
-    "Decisions about your ATM network, not just a map: how your network is covered, where you stand against other institutions, and how candidate sites compare. Free listing; Monitor with a 30-day free trial.",
+    "Decisions about your ATM network, not just a map: how your network is covered, where you stand against other institutions, and how candidate sites compare. Free listing; Monitor with a 30-day free trial; consent-based sharing with associations and regulators on Enterprise.",
   alternates: { canonical: "/operators" },
 };
 
@@ -62,9 +63,10 @@ const PLANS = [
     name: "Enterprise",
     price: "$35",
     unit: "per ATM / month · minimum $1,000",
-    for: "Larger and multinational networks",
+    for: "Larger networks, and sharing with associations and regulators",
     items: [
       "Everything in Intelligence",
+      "Consent-based sharing with associations, regulators and other institutions",
       "Compare up to ten networks and twenty sites, across borders",
       "Regional benchmarking",
       "Integration with your ATM monitoring systems, scoped with you",
@@ -108,6 +110,14 @@ const INTELLIGENCE = [
   { title: "Excel downloads", body: "Every comparison (networks, sites and, on Enterprise, the regional benchmark) and the demand figures, downloadable to Excel for your board and planning teams." },
 ];
 
+/** Enterprise: consent-based sharing. Only what the portal enforces today. */
+const SHARING = [
+  { title: "You set the terms", body: "Choose the recipient, which datasets, the purpose, the period, and whether they may view only or also download." },
+  { title: "Onward sharing only as you allow", body: "An association can pass data to a regulator only if you named that regulator, only what you shared, and never further." },
+  { title: "Revoke at any time", body: "Change or revoke in a click. Every request is checked against your consent at that moment, so access stops at once." },
+  { title: "A history that can't be rewritten", body: "Every grant, change, revocation, pass-on and download is recorded in a chained audit history that shows any tampering." },
+];
+
 const STEPS = [
   { title: "Register", body: "Choose your institution from the register and tell us who you are." },
   { title: "Verification", body: "Prove your email domain; someone at your organisation, found independently, confirms you." },
@@ -119,7 +129,9 @@ const STEPS = [
 const FAQ = [
   { q: "Do we need to connect GeoATM to our ATMs?", a: "No. Monitor works from your ATM inventory and the daily status report you already produce, set against the public record of ATMs. Connecting your own monitoring system directly is something we scope with you on Enterprise." },
   { q: "What does verification establish?", a: "That your organisation controls its email domain, and that someone there, whom we found independently, confirmed you may act for it. It is not a banking licence; where a regulator publishes a list, the register shows that separately." },
-  { q: "Can other banks see our data?", a: "No. Your status reports, uploads and findings are yours. Other institutions see your ATMs only as locations on the public map, as you see theirs, and that is all a network comparison uses." },
+  { q: "Can other banks see our data?", a: "Not unless you share it. Your status reports, uploads and findings are yours. Other institutions see your ATMs only as locations on the public map, as you see theirs, and that is all a network comparison uses. On Enterprise you can choose to share chosen datasets with a named organisation, on terms you set and can revoke." },
+  { q: "Does an association or regulator pay to receive data we share?", a: "No. Receiving shared data is free; the recipient registers its own organisation account. Analysing it (comparisons, benchmarking, dashboards) needs the recipient's own plan: your Enterprise features are not passed on with the data." },
+  { q: "Does sharing replace our regulatory reporting?", a: "No. Your own regulator reports and exports are on every plan, Free included, and disclosures the law requires don't depend on a subscription. Consent-based sharing is for anything you choose to share beyond them." },
   { q: "Does GeoATM alert us when an ATM goes down?", a: "Not by itself: GeoATM isn't connected to your machines. It works from the status reports you upload, flags exceptions in them, and emails your administrators about new findings. Connecting your own monitoring system is something we scope with you on Enterprise." },
   { q: "How is the bill worked out?", a: "Per ATM listed on the 1st of the month, with a monthly minimum, billed by invoice. Annual terms get two months free. Upgrades start straight away; downgrades from the next period; nothing is prorated." },
 ];
@@ -139,8 +151,8 @@ export default function ProductPage() {
               <span className="red">not just a map.</span>
             </h1>
             <p className="hero-sub">
-              See how your network is covered, where you stand against other institutions, and how candidate sites compare. Built from
-              your own inventory and reports, the public record of ATMs and searches in the GeoATM app.
+              See how your network is covered, where you stand against other institutions, and where your next ATM could make the
+              greatest difference. Built from your own inventory and reports, the public record of ATMs and searches in the GeoATM app.
             </p>
             <div className="hero-btns">
               <a className="btn btn-red" href={REGISTER_URL} target="_blank" rel="noopener noreferrer">
@@ -150,9 +162,22 @@ export default function ProductPage() {
                 Sign in
               </a>
             </div>
-            <p className="pp-small">Listing is free. Monitor starts with a 30-day free trial.</p>
+            <p className="pp-small">
+              Listing is free. Monitor starts with a 30-day free trial. Enterprise adds{" "}
+              <a href="#sharing">consent-based sharing with associations and regulators</a>.
+            </p>
           </div>
-          <NetworkPreview />
+          <figure className="pp-devices">
+            <Image
+              src="/operators/geoatm-tablet-and-phone.png"
+              alt="The GeoATM operator portal on a tablet, showing a bank's ATM network across London with other institutions, network gaps and coverage gaps, and on a phone, showing availability with exceptions, competitor locations and customer issues."
+              width={1400}
+              height={930}
+              priority
+              sizes="(max-width: 900px) 94vw, 640px"
+            />
+            <figcaption>The operator portal. Illustrative data.</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -207,7 +232,46 @@ export default function ProductPage() {
         </div>
       </section>
 
-      <section className="section pp-band" id="plans">
+      <section className="section pp-band" id="sharing">
+        <div className="wrap">
+          <div className="pp-eyebrow center">Enterprise</div>
+          <h2 className="center">Share with associations and regulators, on your terms</h2>
+          <p className="pp-plans-lead pp-sharing-lead">
+            Give a banking association, a regulator or another institution access to the data you choose, for a stated purpose
+            and period. Your data stays yours, and recipients see only what your consent allows, for as long as it allows it.
+          </p>
+          <div className="pp-shots">
+            <figure>
+              <Image src="/operators/consent-grant.png" alt="The consent form in the GeoATM operator portal: recipient, datasets, purpose, access, period and onward sharing" width={736} height={1630} sizes="(max-width: 720px) 90vw, 340px" />
+              <figcaption>Granting consent: recipient, datasets, purpose, access, period and who it may be passed to</figcaption>
+            </figure>
+            <div className="pp-shots-col">
+              <figure>
+                <Image src="/operators/consent-received.png" alt="What a banking association sees under Shared with me: the bank's consent and the datasets it may open" width={736} height={588} sizes="(max-width: 720px) 90vw, 340px" />
+                <figcaption>What the association sees under Shared with me</figcaption>
+              </figure>
+              <figure>
+                <Image src="/operators/consent-history.png" alt="The sharing history: each grant, download and pass-on, with who did it and when" width={736} height={930} sizes="(max-width: 720px) 90vw, 340px" />
+                <figcaption>The audit history the bank sees</figcaption>
+              </figure>
+            </div>
+            <div className="pp-sharing-points">
+              {SHARING.map((m) => (
+                <div key={m.title}>
+                  <h3>{m.title}</h3>
+                  <p>{m.body}</p>
+                </div>
+              ))}
+              <p className="pp-small">
+                Recipients register their own organisation account at no cost. Receiving data doesn&apos;t give them your plan&apos;s
+                features. Exporting your own data and your regulator reports stay on every plan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="plans">
         <div className="wrap">
           <h2 className="center">Plans</h2>
           <p className="pp-plans-lead">Per ATM per month, in US dollars, billed by invoice. Two months free on annual terms.</p>
@@ -230,7 +294,7 @@ export default function ProductPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section pp-band">
         <div className="wrap">
           <h2 className="center">How self-service works</h2>
           <ol className="pp-steps">
@@ -249,7 +313,7 @@ export default function ProductPage() {
         </div>
       </section>
 
-      <section className="section pp-band">
+      <section className="section">
         <div className="wrap pp-trust">
           <div className="pp-trust-ic"><IconShield /></div>
           <div>
@@ -266,13 +330,14 @@ export default function ProductPage() {
             <h3>Your data stays yours</h3>
             <p>
               Status reports, uploads and findings are seen only by your organisation and the GeoATM team. Other institutions see your
-              ATMs only as locations on the public map. Your own uptime, history and regulator reports are on every plan.
+              ATMs only as locations on the public map, unless you choose to share more on Enterprise, with your consent. Your own
+              uptime, history and regulator reports are on every plan.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="section" id="faq">
+      <section className="section pp-band" id="faq">
         <div className="wrap faq-wrap">
           <h2 className="center">Questions institutions ask</h2>
           <div className="faq">
@@ -296,77 +361,5 @@ export default function ProductPage() {
 
       <SiteFooter />
     </>
-  );
-}
-
-/** Network Intelligence preview: a simplified map with illustrative markers. Not real data.
- *  Drawn the way the admin app's map draws them (apps/admin/components/MapView.tsx in GEOATM):
- *  your pins ringed in the status colours, other institutions as navy dots, network gaps as
- *  dashed pins and rings, coverage gaps as dashed circles. */
-const PIN = "M0,-24 C-9.4,-24 -15,-17 -15,-9.5 C-15,1 0,13 0,13 C0,13 15,1 15,-9.5 C15,-17 9.4,-24 0,-24 Z";
-// The app's status colours (STATUS_COLOR in apps/admin/lib/types.ts).
-const STATUS = { available: "#0E8A4D", caution: "#A07208", empty: "#C7561A", offline: "#8A7E7A" } as const;
-const YOURS: [number, number, keyof typeof STATUS][] = [[118, 126, "available"], [212, 116, "available"], [160, 226, "caution"], [252, 162, "available"], [92, 190, "empty"], [306, 108, "offline"]];
-const OTHERS: [number, number][] = [[136, 144], [232, 130], [272, 180], [180, 248], [66, 160], [322, 128]];
-const LEGEND: [keyof typeof STATUS, string][] = [["available", "Available"], ["caution", "Limited service"], ["empty", "Out of cash"], ["offline", "Out of service"]];
-
-function NetworkPreview() {
-  return (
-    <figure className="np" aria-label="Illustration of GeoATM network intelligence on a map: your ATMs, other institutions nearby, a listing missing from the public map and a coverage gap. Illustrative, not real data.">
-      <figcaption className="np-head">
-        <span className="np-title">GeoATM Network Intelligence</span>
-        <span className="np-tag">Illustrative</span>
-      </figcaption>
-      <div className="np-map">
-        <svg viewBox="0 0 460 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <rect width="460" height="340" className="np-land" />
-          <path className="np-water" d="M332,0 L460,0 L460,340 L428,340 C410,300 402,262 392,232 C376,186 356,150 346,112 C338,78 326,36 332,0 Z" />
-          <rect className="np-park" x="36" y="232" width="74" height="46" rx="8" />
-          <rect className="np-park" x="250" y="250" width="58" height="40" rx="8" />
-          <g className="np-road">
-            <path d="M0,60 L320,40" /><path d="M0,128 L340,112" /><path d="M0,196 L370,190" /><path d="M0,268 L460,286" />
-            <path d="M60,0 L48,340" /><path d="M118,0 L112,340" /><path d="M232,0 L246,340" /><path d="M290,120 L300,340" />
-          </g>
-          <path className="np-main" d="M172,0 L176,340" />
-          {/* Coverage gap: where people looked and found nothing */}
-          <circle className="np-gap" cx="196" cy="300" r="34" />
-          {/* Other institutions' ATMs: locations only */}
-          {OTHERS.map(([x, y]) => (
-            <circle key={`o${x}`} className="np-other" cx={x} cy={y} r="6.5" />
-          ))}
-          {/* A listing the public map puts in the wrong place: dashed line from your position to the map's */}
-          <path className="np-moved" d="M252,162 L286,232" />
-          <circle className="np-moved-at" cx="286" cy="232" r="4" />
-          {/* One of yours that the public map doesn't show: a dashed ring at its point */}
-          <circle className="np-missing-ring" cx="160" cy="226" r="17" />
-          {/* Your ATMs, ringed by status */}
-          {YOURS.map(([x, y, st]) => (
-            <g key={`y${x}`} transform={`translate(${x} ${y})`}>
-              <path className="np-pin" d={PIN} style={{ stroke: STATUS[st] }} />
-              <circle cx="0" cy="-9.5" r="5" fill="#fff" />
-            </g>
-          ))}
-          {/* Where the public map puts it */}
-          <g transform="translate(286 232)">
-            <path className="np-pin-missing" d={PIN} />
-            <circle cx="0" cy="-9.5" r="4" className="np-pin-missing-dot" />
-          </g>
-        </svg>
-
-        <div className="np-chips">
-          <span className="np-chip"><svg viewBox="0 0 20 20"><path className="np-pin-missing" d="M10,2 C6,2 4,5 4,8 C4,12.5 10,18 10,18 C10,18 16,12.5 16,8 C16,5 14,2 10,2 Z" /></svg>Gaps<i>2</i></span>
-          <span className="np-chip"><svg viewBox="0 0 20 20"><circle className="np-other" cx="10" cy="10" r="5" /></svg>Nearby<i>6</i></span>
-          <span className="np-chip"><svg viewBox="0 0 20 20"><circle className="np-gap" cx="10" cy="10" r="6.5" /></svg>Coverage<i>1</i></span>
-        </div>
-      </div>
-      <div className="np-legend" aria-hidden="true">
-        {LEGEND.map(([k, label]) => (
-          <span key={k}><i className="np-l-status" style={{ borderColor: STATUS[k] }} /> {label}</span>
-        ))}
-        <span><i className="np-l-other" /> Other institutions</span>
-        <span><i className="np-l-netgap" /> Network gap</span>
-        <span><i className="np-l-gap" /> Coverage gap</span>
-      </div>
-    </figure>
   );
 }
