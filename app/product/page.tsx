@@ -31,7 +31,7 @@ const PLANS = [
     name: "Monitor",
     price: "$12",
     unit: "per ATM / month · minimum $150",
-    for: "What your network looks like to the world",
+    for: "See how your ATM network appears to the public",
     items: [
       "Your listings against the public map",
       "Other institutions' ATMs near yours",
@@ -47,17 +47,18 @@ const PLANS = [
     name: "Intelligence",
     price: "$25",
     unit: "per ATM / month · minimum $400",
-    for: "Where to invest next",
+    for: "Network expansion intelligence",
     items: ["Everything in Monitor", "Where customers looked and found no ATM", "Coverage gaps near your network", "Exports"],
     note: "Paid from activation; demonstration on request",
   },
   {
     name: "Enterprise",
-    price: "from $20",
-    unit: "per ATM / month · annual",
-    for: "100 or more ATMs",
-    items: ["Everything in Intelligence", "Automated feed from your monitoring system", "Named contact and agreed service levels"],
-    note: "Agreed with us",
+    price: "Custom pricing",
+    unit: "Tailored to your network and integrations",
+    for: "Larger networks",
+    items: ["Everything in Intelligence", "Automated feeds from your ATM monitoring systems", "Customised reporting and dedicated onboarding", "Named account contact and agreed service levels"],
+    note: "Contact sales",
+    contact: true,
   },
 ];
 
@@ -172,7 +173,11 @@ export default function ProductPage() {
                     <li key={i}><IconCheck /> {i}</li>
                   ))}
                 </ul>
-                {p.note && <div className="pp-plan-note">{p.note}</div>}
+                {"contact" in p && p.contact ? (
+                  <a className="btn btn-outline-red pp-plan-cta" href={`mailto:${CONTACT_EMAIL}?subject=GeoATM%20Enterprise`}>Contact sales</a>
+                ) : (
+                  p.note && <div className="pp-plan-note">{p.note}</div>
+                )}
               </div>
             ))}
           </div>
