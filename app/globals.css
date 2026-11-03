@@ -232,6 +232,7 @@ img { max-width: 100%; display: block; }
 .inst-alt { color: var(--dim); font-size: 13px; margin-top: 12px; position: relative; }
 .inst-alt a { color: inherit; text-decoration: underline; }
 .panel-inst .btn { position: relative; z-index: 1; }
+.inst-btns { display: flex; gap: 12px; flex-wrap: wrap; position: relative; z-index: 1; }
 .panel-inst .ticks { margin-bottom: 20px; position: relative; }
 
 /* About strip */

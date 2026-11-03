@@ -1,4 +1,4 @@
-/* GeoATM for institutions — home.geoatm.app/product
+/* GeoATM for operators — home.geoatm.app/operators
  * The commercial page: what banks and ATM operators get, how self-service
  * works, and what it costs. Registration and everything after it happen in
  * the operator portal (admin.geoatm.app); nothing here takes data or payment.
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "For banks and ATM operators",
   description:
     "Know what your ATM network looks like to the world. GeoATM checks your ATMs against the public record, shows other institutions near yours and flags what your own data may be missing. Free listing; Monitor with a 30-day free trial.",
-  alternates: { canonical: "/product" },
+  alternates: { canonical: "/operators" },
 };
 
 const PLANS = [
@@ -88,7 +88,7 @@ const FAQ = [
 export default function ProductPage() {
   return (
     <>
-      <SiteHeader current="Product" />
+      <SiteHeader current="For Operators" />
 
       <section className="pp-hero">
         <div className="wrap pp-hero-grid">

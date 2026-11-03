@@ -4,8 +4,7 @@ import { IconExternal } from "@/components/icons";
 const NAV = [
   { label: "Home", href: "/" },
   { label: "How It Works", href: "/#how" },
-  { label: "For Institutions", href: "/#institutions" },
-  { label: "Product", href: "/product" },
+  { label: "For Operators", href: "/operators" },
   { label: "FAQ", href: "/#faq" },
 ];
 

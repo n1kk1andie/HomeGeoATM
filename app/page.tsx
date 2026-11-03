@@ -14,8 +14,7 @@ const NAV = [
   { label: "Home", href: "#top" },
   { label: "About", href: "#about" },
   { label: "How It Works", href: "#how" },
-  { label: "For Institutions", href: "#institutions" },
-  { label: "Product", href: "/product" },
+  { label: "For Operators", href: "/operators" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
@@ -94,8 +93,8 @@ export default function HomePage() {
               <a className="btn btn-red" href={APP_URL} target="_blank" rel="noopener noreferrer">
                 <IconPhone /> Open GeoATM
               </a>
-              <a className="btn btn-outline" href="#institutions">
-                <IconBank /> Become a Participant
+              <a className="btn btn-outline" href="/operators">
+                <IconBank /> For banks and operators
               </a>
             </div>
           </div>
@@ -153,8 +152,8 @@ export default function HomePage() {
                 across 238,000+ mapped ATM locations in 219 countries and territories.
               </p>
               <DashboardMock />
-              <a className="link-red" href="#institutions">
-                Become a Participant <IconArrowRight />
+              <a className="link-red" href="/operators">
+                See what operators get <IconArrowRight />
               </a>
             </div>
             {/* Industry Associations */}
@@ -263,19 +262,17 @@ export default function HomePage() {
             <div className="inst-eyebrow">For Financial Institutions</div>
             <h3 className="inst-title red">Become a GeoATM Participant</h3>
             <p className="inst-body">
-              GeoATM partners with banks, ATM operators, processors, central banks and financial
-              institutions to deliver trusted live ATM information.
+              Banks and ATM operators list their ATMs free, and Monitor shows how their network looks to the
+              world: listing gaps, nearby institutions and exceptions in their own reports.
             </p>
-            <ul className="ticks two-col">
-              <li><IconCheck /> Operator-reported status</li>
-              <li><IconCheck /> Global visibility</li>
-              <li><IconCheck /> Better customer experience</li>
-              <li><IconCheck /> Secure integration</li>
-              <li><IconCheck /> Live ATM availability</li>
-            </ul>
-            <a className="btn btn-red" href={REGISTER_URL}>
-              <IconBank /> Register your institution
-            </a>
+            <div className="inst-btns">
+              <a className="btn btn-red" href="/operators">
+                <IconBank /> See what operators get
+              </a>
+              <a className="btn btn-outline" href={REGISTER_URL}>
+                Register your institution
+              </a>
+            </div>
             <p className="inst-alt">
               Already registered? <a href="https://admin.geoatm.app/">Sign in</a> · Central banks and associations:{" "}
               <a href={PARTICIPATE_MAILTO}>{CONTACT_EMAIL}</a>

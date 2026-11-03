@@ -37,10 +37,10 @@ export default function SiteFooter() {
           <FooterCol
             title="For Institutions"
             links={[
-              { label: "Product and pricing", href: "/product" },
+              { label: "For operators: plans and pricing", href: "/operators" },
               { label: "Register your institution", href: REGISTER_URL },
               { label: "Operator-reported status", href: "/#about" },
-              { label: "Partner Benefits", href: "/#institutions" },
+              { label: "Partner Benefits", href: "/operators" },
               { label: "Contact Partnerships", href: PARTICIPATE_MAILTO },
             ]}
           />
