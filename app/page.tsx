@@ -86,8 +86,11 @@ export default function HomePage() {
               <span className="red">Before you go.</span>
             </h1>
             <p className="hero-sub">
-              GeoATM helps people find nearby ATMs, see where cash is available, and choose the best
-              place to withdraw cash with confidence.
+              GeoATM helps people find nearby ATMs, check cash availability, and choose where to withdraw with confidence.
+            </p>
+            <p className="hero-sub-ops">
+              ATM operators can also list their networks for free, monitor performance, and access powerful geographic
+              intelligence to improve coverage, analyse competitive positioning, and make informed expansion decisions.
             </p>
             <div className="hero-btns">
               <a className="btn btn-red" href={APP_URL} target="_blank" rel="noopener noreferrer">

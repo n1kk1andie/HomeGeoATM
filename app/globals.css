@@ -85,6 +85,7 @@ img { max-width: 100%; display: block; }
 .hero-grid { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 36px; align-items: center; }
 .hero-copy h1 { font-size: clamp(44px, 6.2vw, 78px); font-weight: 800; letter-spacing: -2.6px; line-height: .98; }
 .hero-sub { margin: 24px 0 32px; font-size: 20px; color: var(--dim); max-width: 520px; }
+.hero-sub-ops { margin: -18px 0 30px; font-size: 16px; line-height: 1.55; color: var(--dim); max-width: 520px; }
 .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
 
 .hero-copy { position: relative; z-index: 2; }
