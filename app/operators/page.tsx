@@ -15,7 +15,7 @@ const CONTACT_EMAIL = "info@geoatm.app";
 export const metadata: Metadata = {
   title: "For banks and ATM operators",
   description:
-    "Know what your ATM network looks like to the world. GeoATM checks your ATMs against the public record, shows other institutions near yours and flags what your own data may be missing. Free listing; Monitor with a 30-day free trial.",
+    "Decisions about your ATM network, not just a map: how your network is covered, where you stand against other institutions, and how candidate sites compare. Free listing; Monitor with a 30-day free trial.",
   alternates: { canonical: "/operators" },
 };
 
@@ -31,13 +31,13 @@ const PLANS = [
     name: "Monitor",
     price: "$12",
     unit: "per ATM / month · minimum $150",
-    for: "See how your ATM network appears to the public",
+    for: "Your network, day to day",
     items: [
-      "Your listings against the public map",
-      "Other institutions' ATMs near yours",
       "Exceptions in your own status reports",
-      "Changes to the public record near you",
+      "Your listings against the public record",
+      "Other institutions' ATMs near yours",
       "What customers report at your ATMs",
+      "Compare two networks, or two sites, in your country",
       "Send corrections to OpenStreetMap",
     ],
     note: "30-day free trial, from the day you're verified",
@@ -47,27 +47,66 @@ const PLANS = [
     name: "Intelligence",
     price: "$25",
     unit: "per ATM / month · minimum $400",
-    for: "Network expansion intelligence",
-    items: ["Everything in Monitor", "Where customers looked and found no ATM", "Coverage gaps near your network", "Exports"],
+    for: "Planning and expansion",
+    items: [
+      "Everything in Monitor",
+      "Searches that found no ATM, at a distance you choose",
+      "Coverage gaps near your network",
+      "Compare up to five networks or sites, in any one country",
+      "Search counts for each candidate site",
+      "Demand export (CSV)",
+    ],
     note: "Paid from activation; demonstration on request",
   },
   {
     name: "Enterprise",
     price: "Custom pricing",
     unit: "Tailored to your network and integrations",
-    for: "Larger networks",
-    items: ["Everything in Intelligence", "Automated feeds from your ATM monitoring systems", "Customised reporting and dedicated onboarding", "Named account contact and agreed service levels"],
+    for: "Larger and multinational networks",
+    items: [
+      "Everything in Intelligence",
+      "Compare up to ten networks and twenty sites, across borders",
+      "Regional benchmarking",
+      "Integration with your ATM monitoring systems, scoped with you",
+      "Customised reporting, dedicated onboarding, a named contact and agreed service levels",
+    ],
     note: "Contact sales",
     contact: true,
   },
 ];
 
+/** The three decisions GeoATM supports, and the plan each starts on. */
+const DECISIONS = [
+  {
+    title: "Network coverage",
+    body: "Where your ATMs are, how each appears on the public record, and where people searching in the GeoATM app found no ATM within the distance you choose.",
+    plan: "Listings on Monitor · search gaps on Intelligence",
+  },
+  {
+    title: "Competitive position",
+    body: "Your network beside any other institution's in a country: how many ATMs each has, how much of the country each covers, how often they sit within 1 km of each other, and where each is alone.",
+    plan: "Two networks on Monitor · up to five on Intelligence",
+  },
+  {
+    title: "Expansion opportunities",
+    body: "Candidate sites side by side: your nearest ATM, other institutions within 1 km, the nearest ATM of any institution and, on Intelligence, the searches around each.",
+    plan: "Two sites on Monitor · up to five on Intelligence",
+  },
+];
+
 const MONITOR = [
-  { title: "Your listings against the public record", body: "ATMs missing from the public map, placed in the wrong spot or listed twice, listings under your name that aren't in your inventory, and opening hours that differ." },
-  { title: "Other institutions near your ATMs", body: "How many of another institution's machines sit within 500 m and 1 km of yours, and which of your sites are most contested. Locations only: never another bank's status or data." },
-  { title: "Exceptions in your own reports", body: "Machines offline in several reports running, statuses that keep flipping, machines missing from your latest report, and reports that have stopped." },
-  { title: "Changes near you", body: "Listings that appear, move or disappear around your ATMs, noticed each time we look. Your administrators get an email when something new turns up, at most once a day." },
-  { title: "What customers report", body: "When customers say an ATM had no cash or was out of service, you see it against the status you reported. This grows as more people use GeoATM." },
+  { title: "Availability", body: "Uptime and history for every ATM, from the daily status report you already produce. On every plan, Free included." },
+  { title: "Exceptions", body: "Machines offline in several reports running, statuses that keep flipping, machines missing from your latest report, and reports that have stopped." },
+  { title: "Competitor locations", body: "Other institutions' ATMs within 500 m and 1 km of yours, your most contested sites, and two networks compared side by side. Locations only: never another bank's status or data." },
+  { title: "Customer issues", body: "When customers say an ATM had no cash or was out of service, you see it against the status you reported. This grows as more people use GeoATM." },
+  { title: "Your listings against the public record", body: "ATMs missing from the public map, placed in the wrong spot or listed twice, listings under your name that aren't in your inventory, and hours that differ. Your administrators hear of new findings by email, at most once a day." },
+];
+
+const INTELLIGENCE = [
+  { title: "Coverage analysis", body: "Areas where people searched and found no ATM within the distance you choose (5, 10, 15, 20 km or your own), against the ATMs mapped today, with the gaps near your network on your own map." },
+  { title: "Expansion comparisons", body: "Up to five candidate sites in one country, side by side: the searches around each, your nearest ATM and the institutions already there." },
+  { title: "Network comparisons", body: "Up to five institutions in any country: footprint, overlap and the areas where rivals are and you aren't." },
+  { title: "Demand indicators", body: "Searches counted by area of about 2 km, month by month, and exported for your planning team. Areas with fewer than three searches in a month are never shown." },
 ];
 
 const STEPS = [
@@ -79,9 +118,10 @@ const STEPS = [
 ];
 
 const FAQ = [
-  { q: "Do we need to connect GeoATM to our ATMs?", a: "No. Monitor works from your ATM inventory and the daily status report you already produce, set against the public record of ATMs. An automated feed from your monitoring system is available on Enterprise." },
+  { q: "Do we need to connect GeoATM to our ATMs?", a: "No. Monitor works from your ATM inventory and the daily status report you already produce, set against the public record of ATMs. Connecting your own monitoring system directly is something we scope with you on Enterprise." },
   { q: "What does verification establish?", a: "That your organisation controls its email domain, and that someone there, whom we found independently, confirmed you may act for it. It is not a banking licence; where a regulator publishes a list, the register shows that separately." },
-  { q: "Can other banks see our data?", a: "No. Your status reports, uploads and findings are yours. Other institutions see your ATMs only as locations on the public map, as you see theirs." },
+  { q: "Can other banks see our data?", a: "No. Your status reports, uploads and findings are yours. Other institutions see your ATMs only as locations on the public map, as you see theirs, and that is all a network comparison uses." },
+  { q: "Does GeoATM alert us when an ATM goes down?", a: "Not by itself: GeoATM isn't connected to your machines. It works from the status reports you upload, flags exceptions in them, and emails your administrators about new findings. Connecting your own monitoring system is something we scope with you on Enterprise." },
   { q: "How is the bill worked out?", a: "Per ATM listed on the 1st of the month, with a monthly minimum, billed by invoice. Annual terms get two months free. Upgrades start straight away; downgrades from the next period; nothing is prorated." },
 ];
 
@@ -95,13 +135,13 @@ export default function ProductPage() {
           <div>
             <div className="pp-eyebrow">For banks and ATM operators</div>
             <h1>
-              Know what your ATM network
+              Decisions about your ATM network,
               <br />
-              <span className="red">looks like to the world.</span>
+              <span className="red">not just a map.</span>
             </h1>
             <p className="hero-sub">
-              GeoATM checks your ATMs against the public record of ATMs, shows where other institutions are, and tells you what your own
-              data may be missing. From day one, before a single customer report.
+              See how your network is covered, where you stand against other institutions, and how candidate sites compare. Built from
+              your own inventory and reports, the public record of ATMs and searches in the GeoATM app.
             </p>
             <div className="hero-btns">
               <a className="btn btn-red" href={REGISTER_URL} target="_blank" rel="noopener noreferrer">
@@ -117,9 +157,24 @@ export default function ProductPage() {
         </div>
       </section>
 
+      <section className="section">
+        <div className="wrap">
+          <h2 className="center">Three decisions, one network</h2>
+          <div className="pp-grid">
+            {DECISIONS.map((d) => (
+              <div key={d.title} className="pp-feature">
+                <h3>{d.title}</h3>
+                <p>{d.body}</p>
+                <p className="pp-feature-plan">{d.plan}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section pp-band">
         <div className="wrap">
-          <h2 className="center">What Monitor shows you</h2>
+          <h2 className="center">Monitor: your network, day to day</h2>
           <div className="pp-grid">
             {MONITOR.map((m) => (
               <div key={m.title} className="pp-feature">
@@ -136,24 +191,20 @@ export default function ProductPage() {
       </section>
 
       <section className="section">
-        <div className="wrap pp-intel">
-          <div>
-            <h2>Intelligence: where to invest next</h2>
-            <p className="aud-body">
-              Monitor tells you what the world sees. Intelligence shows what the evidence suggests you change: where customers looked for an
-              ATM and found none within a distance you choose (5, 10, 15, 20 km or your own), and the coverage gaps around your network. Counts are suppressed below three, and supply is
-              shown as public locations only.
-            </p>
-            <ul className="ticks">
-              <li><IconCheck /> Where customers looked and found no ATM</li>
-              <li><IconCheck /> Coverage gaps near your network</li>
-              <li><IconCheck /> Exports for your board and planning teams</li>
-            </ul>
-            <p className="pp-small">Paid from activation. We&apos;re happy to give you a demonstration first: {CONTACT_EMAIL}</p>
+        <div className="wrap">
+          <h2 className="center">Intelligence: planning where to go next</h2>
+          <div className="pp-grid pp-grid-4">
+            {INTELLIGENCE.map((m) => (
+              <div key={m.title} className="pp-feature">
+                <h3>{m.title}</h3>
+                <p>{m.body}</p>
+              </div>
+            ))}
           </div>
-          <div className="pp-intel-art" aria-hidden>
-            <IconMap />
-          </div>
+          <p className="pp-plans-lead" style={{ marginTop: 22 }}>
+            Search counts come from people using GeoATM and grow with use; we hold no footfall or transaction data. Paid from
+            activation, and we&apos;re happy to give you a demonstration first: {CONTACT_EMAIL}
+          </p>
         </div>
       </section>
 
