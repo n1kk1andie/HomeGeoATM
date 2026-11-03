@@ -5,7 +5,6 @@ import { IconInstagram, IconLinkedIn, IconFacebook } from "@/components/icons";
 const APP_URL = "https://geoatm.app";
 const CONTACT_EMAIL = "info@geoatm.app";
 const PARTICIPATE_MAILTO = `mailto:${CONTACT_EMAIL}?subject=GeoATM%20Participation%20Enquiry`;
-const REGISTER_URL = "https://admin.geoatm.app/apply";
 
 export default function SiteFooter() {
   return (
@@ -38,7 +37,6 @@ export default function SiteFooter() {
             title="For Institutions"
             links={[
               { label: "For operators: plans and pricing", href: "/operators" },
-              { label: "Register your institution", href: REGISTER_URL },
               { label: "Operator-reported status", href: "/#about" },
               { label: "Partner Benefits", href: "/operators" },
               { label: "Contact Partnerships", href: PARTICIPATE_MAILTO },
