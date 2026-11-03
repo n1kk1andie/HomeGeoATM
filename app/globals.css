@@ -348,6 +348,8 @@ img { max-width: 100%; display: block; }
 .pp-feature { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
 .pp-feature h3 { font-size: 17px; font-weight: 800; margin-bottom: 8px; }
 .pp-feature p { color: var(--dim); font-size: 15px; }
+.pp-feature p.pp-feature-plan { margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--ink); }
+.pp-grid-4 { grid-template-columns: repeat(2, 1fr); }
 .pp-feature-osm { border-color: var(--red); }
 .pp-intel { display: grid; grid-template-columns: 1.3fr .7fr; gap: 40px; align-items: center; }
 .pp-intel h2 { margin-bottom: 18px !important; }
