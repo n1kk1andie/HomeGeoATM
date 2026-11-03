@@ -99,6 +99,8 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-visual" aria-hidden>
+            {/* A real map of central London, with GeoATM pins at real places */}
+            <div className="hero-scene" />
             <Image
               src="/home/geoatm-finder-phone.png"
               alt=""

@@ -93,9 +93,9 @@ img { max-width: 100%; display: block; }
    centre is at (350.5, 267.7) of the 711 x 535 picture. */
 .hero-scene {
   position: absolute; z-index: 0; left: calc(50% - 350.5px); top: calc(50% - 267.7px); width: 711px; height: 535px;
-  background: url(/hero-scene.webp) 0 0 / 100% 100% no-repeat; pointer-events: none;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 90%, transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 90%, transparent 100%);
+  background: url(/home/london-map.jpg) center / cover no-repeat; pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 70%, transparent 100%);
+  mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 70%, transparent 100%);
 }
 
 .phone {
@@ -404,4 +404,4 @@ img { max-width: 100%; display: block; }
 .pp-devices figcaption { margin-top: 6px; font-size: 12px; color: var(--dim); }
 
 /* Homepage hero: the real finder on a phone */
-.hero-phone { width: 300px; max-width: 70vw; height: auto; display: block; margin: 0 auto; }
+.hero-phone { position: relative; z-index: 2; width: 270px; max-width: 64vw; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0 30px 40px rgba(18,32,54,.28)); }
