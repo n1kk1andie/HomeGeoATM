@@ -120,7 +120,15 @@ const SHARING = [
 
 const STEPS = [
   { title: "Register", body: "Choose your institution from the register and tell us who you are." },
-  { title: "Verification", body: "Through GeoVerify: prove your email domain; someone at your organisation, found independently, confirms you." },
+  {
+    title: "Verification",
+    body: (
+      <>
+        Through Geo<span className="gname">Verify</span>: prove your email domain; someone at your organisation, found
+        independently, confirms you.
+      </>
+    ),
+  },
   { title: "Operator portal", body: "Add your ATMs. Each is checked against the public record and other institutions' listings." },
   { title: "30-day free trial", body: "Monitor, from the day you're verified. The portal keeps a running tally of what it found and what you fixed." },
   { title: "Subscription", body: "Continue on Monitor, move to Intelligence, or stay on Free. Nothing renews by itself." },
@@ -234,16 +242,16 @@ export default function ProductPage() {
 
       <section className="section pp-band" id="sharing">
         <div className="wrap">
-          <div className="pp-eyebrow center">Enterprise · Powered by GeoTrust</div>
+          <div className="pp-eyebrow center">Enterprise · Powered by Geo<span className="gname">Trust</span></div>
           <h2 className="center">Share with associations and regulators, on your terms</h2>
           <p className="pp-plans-lead pp-sharing-lead">
-            Powered by GeoTrust, GeoATM enables secure, consent-based data sharing with banking associations, regulators and other
+            Powered by Geo<span className="gname">Trust</span>, GeoATM enables secure, consent-based data sharing with banking associations, regulators and other
             authorised organisations. You control what information is shared, with whom, for what purpose and for how long.
             Permissions can be revoked, and every sharing action is recorded.
           </p>
           <div className="pp-sharing">
             <figure className="pp-sharing-art">
-              <span className="geo-badge"><IconShield /> GeoTrust · consent, permissions and audit</span>
+              <span className="geo-badge"><IconShield /><span>Geo<span className="gname">Trust</span> · consent, permissions and audit</span></span>
               <Image
                 src="/operators/consent-phones.png"
                 alt="Two phones showing the GeoATM operator portal: a bank granting a payments forum consent to see its status and history, and a banking association's Shared with me screen with the bank's consent and what it passed on to the regulator."
@@ -315,12 +323,12 @@ export default function ProductPage() {
         <div className="wrap pp-trust">
           <div className="pp-trust-ic"><IconShield /></div>
           <div>
-            <span className="geo-badge"><IconShield /> Verified by GeoVerify</span>
+            <span className="geo-badge"><IconShield /><span>Verified by Geo<span className="gname">Verify</span></span></span>
             <h3>Verified institutions, checked claims</h3>
             <p>
               Before a bank can publish, it proves control of its email domain and someone at the bank, found independently of the
               applicant, confirms them. Every ATM it adds is checked against the public map and other institutions&apos; listings; a
-              disputed ATM stays off the map until it is resolved. Each decision is recorded in <b>GeoVerify</b>, the GEO network&apos;s
+              disputed ATM stays off the map until it is resolved. Each decision is recorded in <b>Geo<span className="gname">Verify</span></b>, the GEO network&apos;s
               verification service. It is not a banking licence. Verified once, an institution is recognised across GEO products.
             </p>
           </div>
