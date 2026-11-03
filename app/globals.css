@@ -408,20 +408,14 @@ img { max-width: 100%; display: block; }
 
 /* Operators: Enterprise consent-based sharing */
 .pp-sharing-lead { margin: -8px auto 32px; max-width: 760px; }
-.pp-shots { display: grid; grid-template-columns: 300px 300px 1fr; gap: 26px; align-items: start; }
-.pp-shots-col { display: grid; gap: 22px; }
-.pp-shots figure { margin: 0; }
-.pp-shots img { width: 100%; height: auto; display: block; border-radius: 16px; border: 1px solid var(--line); box-shadow: var(--shadow-sm); background: #fff; }
-.pp-shots figcaption { margin-top: 8px; font-size: 12.5px; color: var(--dim); }
+.pp-sharing { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; }
+.pp-sharing-art { margin: 0; text-align: center; }
+.pp-sharing-art img { width: 100%; height: auto; max-width: 540px; display: block; margin: 0 auto; }
+.pp-sharing-art figcaption { margin-top: 8px; font-size: 12.5px; color: var(--dim); }
 .pp-sharing-points { display: grid; gap: 18px; }
 .pp-sharing-points h3 { font-size: 17px; font-weight: 800; margin-bottom: 4px; }
 .pp-sharing-points p { color: var(--dim); font-size: 15px; }
-@media (max-width: 1000px) {
-  .pp-shots { grid-template-columns: 1fr 1fr; }
-  .pp-sharing-points { grid-column: 1 / -1; grid-template-columns: 1fr 1fr; }
-  .pp-sharing-points .pp-small { grid-column: 1 / -1; }
-}
-@media (max-width: 640px) {
-  .pp-shots { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
-  .pp-sharing-points { grid-template-columns: 1fr; }
+@media (max-width: 900px) {
+  .pp-sharing { grid-template-columns: 1fr; gap: 28px; }
+  .pp-sharing-art img { max-width: 440px; }
 }
