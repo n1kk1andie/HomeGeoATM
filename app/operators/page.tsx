@@ -54,7 +54,7 @@ const PLANS = [
       "Coverage gaps near your network",
       "Compare up to five networks or sites, in any one country",
       "Search counts for each candidate site",
-      "Demand export (CSV)",
+      "Download comparisons and demand figures to Excel",
     ],
     note: "Paid from activation; demonstration on request",
   },
@@ -106,7 +106,8 @@ const INTELLIGENCE = [
   { title: "Coverage analysis", body: "Areas where people searched and found no ATM within the distance you choose (5, 10, 15, 20 km or your own), against the ATMs mapped today, with the gaps near your network on your own map." },
   { title: "Expansion comparisons", body: "Up to five candidate sites in one country, side by side: the searches around each, your nearest ATM and the institutions already there." },
   { title: "Network comparisons", body: "Up to five institutions in any country: footprint, overlap and the areas where rivals are and you aren't." },
-  { title: "Demand indicators", body: "Searches counted by area of about 2 km, month by month, and exported for your planning team. Areas with fewer than three searches in a month are never shown." },
+  { title: "Demand indicators", body: "Searches counted by area of about 2 km, month by month. Areas with fewer than three searches in a month are never shown." },
+  { title: "Excel downloads", body: "Every comparison (networks, sites and, on Enterprise, the regional benchmark) and the demand figures, downloadable to Excel for your board and planning teams." },
 ];
 
 const STEPS = [
