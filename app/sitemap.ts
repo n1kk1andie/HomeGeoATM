@@ -7,5 +7,6 @@ const BASE = "https://home.geoatm.app";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${BASE}/`, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
+    { url: `${BASE}/operators`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
   ];
 }
