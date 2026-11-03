@@ -395,7 +395,7 @@ function Phone() {
         <div className="pcard">
           <div className="pcard-row">
             <div>
-              <div className="pcard-name">New Kingston</div>
+              <div className="pcard-name">City Centre</div>
               <div className="pcard-dist"><span className="pdot" /> 0.3 km away</div>
             </div>
             <span className="pbadge">Cash Available</span>
@@ -423,7 +423,7 @@ function ConsumerMock() {
       <div className="dash-head"><IconPin /> Best places for cash nearby</div>
       <div className="cm-row best">
         <span className="cm-rank">1</span>
-        <span className="cm-txt"><b>New Kingston</b><small>0.3 km · 3 ATMs · 24-hour</small></span>
+        <span className="cm-txt"><b>City Centre</b><small>0.3 km · 3 ATMs · 24-hour</small></span>
         <span className="cm-badge ok">Cash available</span>
       </div>
       <div className="cm-row">
