@@ -240,21 +240,17 @@ export default function ProductPage() {
             Give a banking association, a regulator or another institution access to the data you choose, for a stated purpose
             and period. Your data stays yours, and recipients see only what your consent allows, for as long as it allows it.
           </p>
-          <div className="pp-shots">
-            <figure>
-              <Image src="/operators/consent-grant.png" alt="The consent form in the GeoATM operator portal: recipient, datasets, purpose, access, period and onward sharing" width={736} height={1630} sizes="(max-width: 720px) 90vw, 340px" />
-              <figcaption>Granting consent: recipient, datasets, purpose, access, period and who it may be passed to</figcaption>
+          <div className="pp-sharing">
+            <figure className="pp-sharing-art">
+              <Image
+                src="/operators/consent-phones.png"
+                alt="Two phones showing the GeoATM operator portal: a bank granting a payments forum consent to see its status and history, and a banking association's Shared with me screen with the bank's consent and what it passed on to the regulator."
+                width={1813}
+                height={1785}
+                sizes="(max-width: 900px) 86vw, 520px"
+              />
+              <figcaption>A bank granting consent, and what the association sees under Shared with me. Illustrative data.</figcaption>
             </figure>
-            <div className="pp-shots-col">
-              <figure>
-                <Image src="/operators/consent-received.png" alt="What a banking association sees under Shared with me: the bank's consent and the datasets it may open" width={736} height={588} sizes="(max-width: 720px) 90vw, 340px" />
-                <figcaption>What the association sees under Shared with me</figcaption>
-              </figure>
-              <figure>
-                <Image src="/operators/consent-history.png" alt="The sharing history: each grant, download and pass-on, with who did it and when" width={736} height={930} sizes="(max-width: 720px) 90vw, 340px" />
-                <figcaption>The audit history the bank sees</figcaption>
-              </figure>
-            </div>
             <div className="pp-sharing-points">
               {SHARING.map((m) => (
                 <div key={m.title}>
