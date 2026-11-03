@@ -140,8 +140,8 @@ export default function ProductPage() {
               <span className="red">not just a map.</span>
             </h1>
             <p className="hero-sub">
-              See how your network is covered, where you stand against other institutions, and how candidate sites compare. Built from
-              your own inventory and reports, the public record of ATMs and searches in the GeoATM app.
+              See how your network is covered, where you stand against other institutions, and where your next ATM could make the
+              greatest difference. Built from your own inventory and reports, the public record of ATMs and searches in the GeoATM app.
             </p>
             <div className="hero-btns">
               <a className="btn btn-red" href={REGISTER_URL} target="_blank" rel="noopener noreferrer">
@@ -156,11 +156,11 @@ export default function ProductPage() {
           <figure className="pp-devices">
             <Image
               src="/operators/geoatm-tablet-and-phone.png"
-              alt="The GeoATM operator portal on a tablet, comparing two banks' ATM networks on a map and in a table, and on a phone, showing fleet availability with exceptions, competitor locations and customer issues."
-              width={1327}
-              height={1340}
+              alt="The GeoATM operator portal on a tablet, showing a bank's ATM network across London with other institutions, network gaps and coverage gaps, and on a phone, showing availability with exceptions, competitor locations and customer issues."
+              width={1400}
+              height={930}
               priority
-              sizes="(max-width: 900px) 92vw, 560px"
+              sizes="(max-width: 900px) 94vw, 640px"
             />
             <figcaption>The operator portal. Illustrative data.</figcaption>
           </figure>

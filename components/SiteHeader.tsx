@@ -1,4 +1,4 @@
-import { IconExternal } from "@/components/icons";
+import NavActions from "@/components/NavActions";
 
 // The GeoATM site header for pages other than the homepage: links back to the homepage's sections.
 const NAV = [
@@ -22,9 +22,7 @@ export default function SiteHeader({ current }: { current: string }) {
             </a>
           ))}
         </nav>
-        <a className="btn btn-red nav-cta" href="https://admin.geoatm.app/operators" target="_blank" rel="noopener noreferrer">
-          Sign in <IconExternal />
-        </a>
+        <NavActions />
       </div>
     </header>
   );
