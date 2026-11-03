@@ -16,7 +16,7 @@ const CONTACT_EMAIL = "info@geoatm.app";
 export const metadata: Metadata = {
   title: "For banks and ATM operators",
   description:
-    "Decisions about your ATM network, not just a map: how your network is covered, where you stand against other institutions, and how candidate sites compare. Free listing; Monitor with a 30-day free trial.",
+    "Decisions about your ATM network, not just a map: how your network is covered, where you stand against other institutions, and how candidate sites compare. Free listing; Monitor with a 30-day free trial; consent-based sharing with associations and regulators on Enterprise.",
   alternates: { canonical: "/operators" },
 };
 
@@ -63,9 +63,10 @@ const PLANS = [
     name: "Enterprise",
     price: "$35",
     unit: "per ATM / month · minimum $1,000",
-    for: "Larger and multinational networks",
+    for: "Larger networks, and sharing with associations and regulators",
     items: [
       "Everything in Intelligence",
+      "Consent-based sharing with associations, regulators and other institutions",
       "Compare up to ten networks and twenty sites, across borders",
       "Regional benchmarking",
       "Integration with your ATM monitoring systems, scoped with you",
@@ -109,6 +110,14 @@ const INTELLIGENCE = [
   { title: "Excel downloads", body: "Every comparison (networks, sites and, on Enterprise, the regional benchmark) and the demand figures, downloadable to Excel for your board and planning teams." },
 ];
 
+/** Enterprise: consent-based sharing. Only what the portal enforces today. */
+const SHARING = [
+  { title: "You set the terms", body: "Choose the recipient, which datasets, the purpose, the period, and whether they may view only or also download." },
+  { title: "Onward sharing only as you allow", body: "An association can pass data to a regulator only if you named that regulator, only what you shared, and never further." },
+  { title: "Revoke at any time", body: "Change or revoke in a click. Every request is checked against your consent at that moment, so access stops at once." },
+  { title: "A history that can't be rewritten", body: "Every grant, change, revocation, pass-on and download is recorded in a chained audit history that shows any tampering." },
+];
+
 const STEPS = [
   { title: "Register", body: "Choose your institution from the register and tell us who you are." },
   { title: "Verification", body: "Prove your email domain; someone at your organisation, found independently, confirms you." },
@@ -120,7 +129,9 @@ const STEPS = [
 const FAQ = [
   { q: "Do we need to connect GeoATM to our ATMs?", a: "No. Monitor works from your ATM inventory and the daily status report you already produce, set against the public record of ATMs. Connecting your own monitoring system directly is something we scope with you on Enterprise." },
   { q: "What does verification establish?", a: "That your organisation controls its email domain, and that someone there, whom we found independently, confirmed you may act for it. It is not a banking licence; where a regulator publishes a list, the register shows that separately." },
-  { q: "Can other banks see our data?", a: "No. Your status reports, uploads and findings are yours. Other institutions see your ATMs only as locations on the public map, as you see theirs, and that is all a network comparison uses." },
+  { q: "Can other banks see our data?", a: "Not unless you share it. Your status reports, uploads and findings are yours. Other institutions see your ATMs only as locations on the public map, as you see theirs, and that is all a network comparison uses. On Enterprise you can choose to share chosen datasets with a named organisation, on terms you set and can revoke." },
+  { q: "Does an association or regulator pay to receive data we share?", a: "No. Receiving shared data is free; the recipient registers its own organisation account. Analysing it (comparisons, benchmarking, dashboards) needs the recipient's own plan: your Enterprise features are not passed on with the data." },
+  { q: "Does sharing replace our regulatory reporting?", a: "No. Your own regulator reports and exports are on every plan, Free included, and disclosures the law requires don't depend on a subscription. Consent-based sharing is for anything you choose to share beyond them." },
   { q: "Does GeoATM alert us when an ATM goes down?", a: "Not by itself: GeoATM isn't connected to your machines. It works from the status reports you upload, flags exceptions in them, and emails your administrators about new findings. Connecting your own monitoring system is something we scope with you on Enterprise." },
   { q: "How is the bill worked out?", a: "Per ATM listed on the 1st of the month, with a monthly minimum, billed by invoice. Annual terms get two months free. Upgrades start straight away; downgrades from the next period; nothing is prorated." },
 ];
@@ -151,7 +162,10 @@ export default function ProductPage() {
                 Sign in
               </a>
             </div>
-            <p className="pp-small">Listing is free. Monitor starts with a 30-day free trial.</p>
+            <p className="pp-small">
+              Listing is free. Monitor starts with a 30-day free trial. Enterprise adds{" "}
+              <a href="#sharing">consent-based sharing with associations and regulators</a>.
+            </p>
           </div>
           <figure className="pp-devices">
             <Image
@@ -218,7 +232,46 @@ export default function ProductPage() {
         </div>
       </section>
 
-      <section className="section pp-band" id="plans">
+      <section className="section pp-band" id="sharing">
+        <div className="wrap">
+          <div className="pp-eyebrow center">Enterprise</div>
+          <h2 className="center">Share with associations and regulators, on your terms</h2>
+          <p className="pp-plans-lead pp-sharing-lead">
+            Give a banking association, a regulator or another institution access to the data you choose, for a stated purpose
+            and period. Your data stays yours, and recipients see only what your consent allows, for as long as it allows it.
+          </p>
+          <div className="pp-shots">
+            <figure>
+              <Image src="/operators/consent-grant.png" alt="The consent form in the GeoATM operator portal: recipient, datasets, purpose, access, period and onward sharing" width={736} height={1630} sizes="(max-width: 720px) 90vw, 340px" />
+              <figcaption>Granting consent: recipient, datasets, purpose, access, period and who it may be passed to</figcaption>
+            </figure>
+            <div className="pp-shots-col">
+              <figure>
+                <Image src="/operators/consent-received.png" alt="What a banking association sees under Shared with me: the bank's consent and the datasets it may open" width={736} height={588} sizes="(max-width: 720px) 90vw, 340px" />
+                <figcaption>What the association sees under Shared with me</figcaption>
+              </figure>
+              <figure>
+                <Image src="/operators/consent-history.png" alt="The sharing history: each grant, download and pass-on, with who did it and when" width={736} height={930} sizes="(max-width: 720px) 90vw, 340px" />
+                <figcaption>The audit history the bank sees</figcaption>
+              </figure>
+            </div>
+            <div className="pp-sharing-points">
+              {SHARING.map((m) => (
+                <div key={m.title}>
+                  <h3>{m.title}</h3>
+                  <p>{m.body}</p>
+                </div>
+              ))}
+              <p className="pp-small">
+                Recipients register their own organisation account at no cost. Receiving data doesn&apos;t give them your plan&apos;s
+                features. Exporting your own data and your regulator reports stay on every plan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="plans">
         <div className="wrap">
           <h2 className="center">Plans</h2>
           <p className="pp-plans-lead">Per ATM per month, in US dollars, billed by invoice. Two months free on annual terms.</p>
@@ -241,7 +294,7 @@ export default function ProductPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section pp-band">
         <div className="wrap">
           <h2 className="center">How self-service works</h2>
           <ol className="pp-steps">
@@ -260,7 +313,7 @@ export default function ProductPage() {
         </div>
       </section>
 
-      <section className="section pp-band">
+      <section className="section">
         <div className="wrap pp-trust">
           <div className="pp-trust-ic"><IconShield /></div>
           <div>
@@ -277,13 +330,14 @@ export default function ProductPage() {
             <h3>Your data stays yours</h3>
             <p>
               Status reports, uploads and findings are seen only by your organisation and the GeoATM team. Other institutions see your
-              ATMs only as locations on the public map. Your own uptime, history and regulator reports are on every plan.
+              ATMs only as locations on the public map, unless you choose to share more on Enterprise, with your consent. Your own
+              uptime, history and regulator reports are on every plan.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="section" id="faq">
+      <section className="section pp-band" id="faq">
         <div className="wrap faq-wrap">
           <h2 className="center">Questions institutions ask</h2>
           <div className="faq">
