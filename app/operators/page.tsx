@@ -307,19 +307,10 @@ function NetworkPreview() {
           </g>
         </svg>
 
-        <div className="np-cards">
-          <div className="np-card">
-            <span className="np-ic"><svg viewBox="0 0 20 20"><path className="np-pin-missing" d="M10,2 C6,2 4,5 4,8 C4,12.5 10,18 10,18 C10,18 16,12.5 16,8 C16,5 14,2 10,2 Z" /></svg></span>
-            <span><b>Network gaps</b><small>2 to fix</small></span>
-          </div>
-          <div className="np-card">
-            <span className="np-ic"><svg viewBox="0 0 20 20"><circle className="np-other" cx="10" cy="10" r="5.5" /></svg></span>
-            <span><b>Nearby institutions</b><small>6 within 1 km</small></span>
-          </div>
-          <div className="np-card">
-            <span className="np-ic"><svg viewBox="0 0 20 20"><circle className="np-gap" cx="10" cy="10" r="7" /></svg></span>
-            <span><b>Coverage</b><small>1 area unmet</small></span>
-          </div>
+        <div className="np-chips">
+          <span className="np-chip"><svg viewBox="0 0 20 20"><path className="np-pin-missing" d="M10,2 C6,2 4,5 4,8 C4,12.5 10,18 10,18 C10,18 16,12.5 16,8 C16,5 14,2 10,2 Z" /></svg>Gaps<i>2</i></span>
+          <span className="np-chip"><svg viewBox="0 0 20 20"><circle className="np-other" cx="10" cy="10" r="5" /></svg>Nearby<i>6</i></span>
+          <span className="np-chip"><svg viewBox="0 0 20 20"><circle className="np-gap" cx="10" cy="10" r="6.5" /></svg>Coverage<i>1</i></span>
         </div>
       </div>
       <div className="np-legend" aria-hidden="true">
