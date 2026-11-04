@@ -382,7 +382,7 @@ async function ConsumerMock() {
       </div>
       <div className="cm-row">
         <span className="cm-rank">2</span>
-        <span className="cm-txt"><b>Half Way Tree</b><small>{t("metaSecond", { km: "1.1", atms: 2 })}</small></span>
+        <span className="cm-txt"><b>{t("secondPlace")}</b><small>{t("metaSecond", { km: "1.1", atms: 2 })}</small></span>
         <span className="cm-badge">{t("locationOnly")}</span>
       </div>
       <div className="dash-foot"><IconBulb /> {t("recommended")}</div>

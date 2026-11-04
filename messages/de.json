@@ -147,7 +147,8 @@
       "lower": "Geringere Abdeckung",
       "higher": "höher",
       "demand": "Nachfrage konzentriert sich auf städtische Verkehrsachsen",
-      "cityCentre": "Stadtzentrum"
+      "cityCentre": "Stadtzentrum",
+      "secondPlace": "Hauptbahnhof"
     }
   },
   "footer": {

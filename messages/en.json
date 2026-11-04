@@ -147,7 +147,8 @@
       "lower": "Lower coverage",
       "higher": "higher",
       "demand": "Demand concentrated in urban corridors",
-      "cityCentre": "City Centre"
+      "cityCentre": "City Centre",
+      "secondPlace": "Central Station"
     }
   },
   "footer": {
