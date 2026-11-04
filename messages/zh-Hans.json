@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": "家",
+    "home": "首页",
     "about": "关于",
     "how": "工作原理",
     "operators": "对于运营商",
@@ -19,7 +19,7 @@
       "q1": "什么是GeoATM ？",
       "a1": "GeoATM是一个智能取款平台。它整合了超过{atms} ATM机的位置目录以及参与机构提供的实时可用性信息，因此您可以找到最佳取款地点，而不仅仅是最近的取款机。",
       "q2": "GeoATM如何知道是否有现金可用？",
-      "a2": "参与机构会将机器的实时状态直接发布到GeoATM ， GeoATM会显示运营商报告的状态。如果某台机器尚未接入实时数据流，则会根据公开地图数据显示，并明确标记为预估状态GeoATM绝不会声称其无法确认的机器处于实时现金状态。",
+      "a2": "参与机构会将机器的实时状态直接发布到GeoATM， GeoATM会显示运营商报告的状态。如果某台机器尚未接入实时数据流，则会根据公开地图数据显示，并明确标记为预估状态GeoATM绝不会声称其无法确认的机器处于实时现金状态。",
       "q3": "GeoATM可以免费使用吗？",
       "a3": "是的。在GeoATM运营的所有地区，通过消费者应用程序查找ATM和查询ATM可用性都是免费的。",
       "q4": "机构如何参与？",
@@ -43,7 +43,7 @@
       "growing": "生长",
       "networkMid": "网络",
       "networkSub": "参与机构",
-      "live": "居住",
+      "live": "实时",
       "liveMid": "操作员报告的状态",
       "liveSub": "全球扩张"
     },
@@ -109,7 +109,7 @@
       "body": "银行和 ATM 运营商免费列出他们的 ATM，Monitor 向世界展示他们的网络状况：在自己的报告中列出空白、附近的机构和例外情况。",
       "operators": "看看运营商能获得什么",
       "register": "注册您的机构",
-      "alt": "已注册？<signin>登录</signin> · 中央银行和协会：<mail> {email} </mail>"
+      "alt": "已注册？ <signin>登录</signin> · 中央银行和协会： <mail>{email}</mail>"
     },
     "about": {
       "title": "关于GeoATM",
@@ -119,7 +119,7 @@
     "contact": {
       "title": "接触",
       "body": "我们期待您的来信。如有任何疑问或合作意向，欢迎随时联系我们。",
-      "email": "电子邮件：<mail> {email} </mail>",
+      "email": "电子邮件： <mail>{email}</mail>",
       "button": "联系我们"
     },
     "mock": {
@@ -131,7 +131,7 @@
       "recommended": "推荐用于现金交易，而不仅仅是距离。",
       "operatorReported": "操作员报告",
       "liveStatus": "实时ATM状态",
-      "liveFromBank": "银行现场报道",
+      "liveFromBank": "银行实时数据",
       "reach": "客户覆盖范围",
       "sector": "扇区网络视图",
       "memberStatus": "成员报告状态",
@@ -168,15 +168,15 @@
     "partnerships": "联系合作伙伴关系",
     "company": "公司",
     "aboutGeo": "关于GeoATM",
-    "geoev": "GeoEV ：电动汽车充电",
+    "geoev": "GeoEV：电动汽车充电",
     "api": "面向开发者的地理 API",
     "careers": "职业生涯",
     "holdings": "Tumblehill Holdings",
-    "by": "GeoATM ™ 由Tumblehill Labs提供。",
+    "by": "GeoATM ™ 由<a>Tumblehill Labs</a>",
     "partOf": "隶属于<a>GEO情报网络</a>",
-    "studio": "<a> Tumblehill Holdings LLC</a>旗下产品工作室",
+    "studio": "<a>Tumblehill Holdings</a>的产品工作室",
     "rights": "© 2026 Tumblehill Holdings LLC。保留所有权利。",
-    "maps": "地图 © OpenStreetMap贡献者。应用图片使用示例数据。"
+    "maps": "地图版权归OpenStreetMap</a> <a>。应用图片仅供参考。"
   },
   "subscribe": {
     "title": "获取GeoATM更新",
@@ -270,7 +270,7 @@
     "sharingEyebrow": "企业版 · 由 <gt></gt> 提供支持",
     "sharingTitle": "按您自己的方式与协会和监管机构分享信息",
     "sharingLead": "GeoATM由 <gt></gt> 提供技术支持，可实现与银行协会、监管机构和其他授权机构之间基于用户许可的安全数据共享。您可以控制共享哪些信息、与谁共享、用于什么目的以及共享多长时间。权限可以随时撤销，并且每次共享操作都会被记录。",
-    "sharingBadge": "· 同意、权限和审计",
+    "sharingBadge": "<gt></gt>、权限和审计",
     "sharingAlt": "两部手机显示了GeoATM运营商门户：一家银行授予支付论坛查看其状态和历史记录的许可，以及一家银行协会的“与我共享”屏幕，其中包含银行的同意以及它传递给监管机构的信息。",
     "sharingCaption": "银行授予许可，以及协会在“与我共享”下看到的内容。示例数据。",
     "sharing": {
