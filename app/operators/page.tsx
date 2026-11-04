@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import { getTranslations } from "next-intl/server";
 import { IconArrowRight, IconBank, IconCheck, IconMap, IconNetwork, IconShield } from "@/components/icons";
 
 const REGISTER_URL = "https://admin.geoatm.app/apply";
@@ -20,182 +21,83 @@ export const metadata: Metadata = {
   alternates: { canonical: "/operators" },
 };
 
+/** Plans: names and prices stay in code; what each includes comes from the messages. */
 const PLANS = [
-  {
-    name: "Free",
-    price: "$0",
-    unit: "",
-    for: "Every bank and ATM operator",
-    items: ["List and correct your ATMs", "Their status shown in GeoATM", "Your own uptime, history and regulator reports"],
-  },
-  {
-    name: "Monitor",
-    price: "$12",
-    unit: "per ATM / month · minimum $150",
-    for: "Your network, day to day",
-    items: [
-      "Exceptions in your own status reports",
-      "Your listings against the public record",
-      "Other institutions' ATMs near yours",
-      "What customers report at your ATMs",
-      "Compare two networks, or two sites, in your country",
-      "Send corrections to OpenStreetMap",
-    ],
-    note: "30-day free trial, from the day you're verified",
-    lead: true,
-  },
-  {
-    name: "Intelligence",
-    price: "$25",
-    unit: "per ATM / month · minimum $400",
-    for: "Planning and expansion",
-    items: [
-      "Everything in Monitor",
-      "Searches that found no ATM, at a distance you choose",
-      "Coverage gaps near your network",
-      "Compare up to five networks or sites, in any one country",
-      "Search counts for each candidate site",
-      "Download comparisons and demand figures to Excel",
-    ],
-  },
-  {
-    name: "Enterprise",
-    price: "$35",
-    unit: "per ATM / month · minimum $1,000",
-    for: "Larger networks, and sharing with associations and regulators",
-    items: [
-      "Everything in Intelligence",
-      "Consent-based sharing with associations, regulators and other institutions",
-      "Compare up to ten networks and twenty sites, across borders",
-      "Regional benchmarking",
-      "Integration with your ATM monitoring systems, scoped with you",
-    ],
-  },
-];
+  { id: "free", name: "Free", price: "$0", min: "", items: 3 },
+  { id: "monitor", name: "Monitor", price: "$12", min: "$150", items: 6, note: true, lead: true },
+  { id: "intelligence", name: "Intelligence", price: "$25", min: "$400", items: 6 },
+  { id: "enterprise", name: "Enterprise", price: "$35", min: "$1,000", items: 5 },
+] as const;
 
 /** The three decisions GeoATM supports, and the plan each starts on. */
-const DECISIONS = [
-  {
-    title: "Network coverage",
-    body: "Where your ATMs are, how each appears on the public record, and where people searching in the GeoATM app found no ATM within the distance you choose.",
-    plan: "Listings on Monitor · search gaps on Intelligence",
-  },
-  {
-    title: "Competitive position",
-    body: "Your network beside any other institution's in a country: how many ATMs each has, how much of the country each covers, how often they sit within 1 km of each other, and where each is alone.",
-    plan: "Two networks on Monitor · up to five on Intelligence",
-  },
-  {
-    title: "Expansion opportunities",
-    body: "Candidate sites side by side: your nearest ATM, other institutions within 1 km, the nearest ATM of any institution and, on Intelligence, the searches around each.",
-    plan: "Two sites on Monitor · up to five on Intelligence",
-  },
-];
-
-const MONITOR = [
-  { title: "Availability", body: "Uptime and history for every ATM, from the daily status report you already produce. On every plan, Free included." },
-  { title: "Exceptions", body: "Machines offline in several reports running, statuses that keep flipping, machines missing from your latest report, and reports that have stopped." },
-  { title: "Competitor locations", body: "Other institutions' ATMs within 500 m and 1 km of yours, your most contested sites, and two networks compared side by side. Locations only: never another bank's status or data." },
-  { title: "Customer issues", body: "When customers say an ATM had no cash or was out of service, you see it against the status you reported. This grows as more people use GeoATM." },
-  { title: "Your listings against the public record", body: "ATMs missing from the public map, placed in the wrong spot or listed twice, listings under your name that aren't in your inventory, and hours that differ. Your administrators hear of new findings by email, at most once a day." },
-];
-
-const INTELLIGENCE = [
-  { title: "Coverage analysis", body: "Areas where people searched and found no ATM within the distance you choose (5, 10, 15, 20 km or your own), against the ATMs mapped today, with the gaps near your network on your own map." },
-  { title: "Expansion comparisons", body: "Up to five candidate sites in one country, side by side: the searches around each, your nearest ATM and the institutions already there." },
-  { title: "Network comparisons", body: "Up to five institutions in any country: footprint, overlap and the areas where rivals are and you aren't." },
-  { title: "Demand indicators", body: "Searches counted by area of about 2 km, month by month. Areas with fewer than three searches in a month are never shown." },
-  { title: "Excel downloads", body: "Every comparison (networks, sites and, on Enterprise, the regional benchmark) and the demand figures, downloadable to Excel for your board and planning teams." },
-];
-
+const DECISIONS = ["coverage", "competitive", "expansion"] as const;
+const MONITOR = ["availability", "exceptions", "competitors", "customers", "listings"] as const;
+const INTELLIGENCE = ["coverage", "expansion", "network", "demand", "excel"] as const;
 /** Enterprise: consent-based sharing. Only what the portal enforces today. */
-const SHARING = [
-  { title: "You set the terms", body: "Choose the recipient, which datasets, the purpose, the period, and whether they may view only or also download." },
-  { title: "Onward sharing only as you allow", body: "An association can pass data to a regulator only if you named that regulator, only what you shared, and never further." },
-  { title: "Revoke at any time", body: "Change or revoke in a click. Every request is checked against your consent at that moment, so access stops at once." },
-  { title: "A history that can't be rewritten", body: "Every grant, change, revocation, pass-on and download is recorded in a chained audit history that shows any tampering." },
-];
+const SHARING = ["terms", "onward", "revoke", "history"] as const;
+const STEPS = ["register", "verification", "portal", "trial", "subscription"] as const;
+const FAQ = [1, 2, 3, 4, 5, 6, 7] as const;
 
-const STEPS = [
-  { title: "Register", body: "Choose your institution from the register and tell us who you are." },
-  {
-    title: "Verification",
-    body: (
-      <>
-        Through Geo<span className="gname">Verify</span>: prove your email domain; someone at your organisation, found
-        independently, confirms you.
-      </>
-    ),
-  },
-  { title: "Operator portal", body: "Add your ATMs. Each is checked against the public record and other institutions' listings." },
-  { title: "30-day free trial", body: "Monitor, from the day you're verified. The portal keeps a running tally of what it found and what you fixed." },
-  { title: "Subscription", body: "Continue on Monitor, move to Intelligence, or stay on Free. Nothing renews by itself." },
-];
+/** "Geo" + the coloured product name, as the brand is always written. */
+const geo = (name: string) => () => (
+  <>
+    Geo<span className="gname">{name}</span>
+  </>
+);
 
-const FAQ = [
-  { q: "Do we need to connect GeoATM to our ATMs?", a: "No. Monitor works from your ATM inventory and the daily status report you already produce, set against the public record of ATMs. Connecting your own monitoring system directly is something we scope with you on Enterprise." },
-  { q: "What does verification establish?", a: "That your organisation controls its email domain, and that someone there, whom we found independently, confirmed you may act for it. It is not a banking licence; where a regulator publishes a list, the register shows that separately." },
-  { q: "Can other banks see our data?", a: "Not unless you share it. Your status reports, uploads and findings are yours. Other institutions see your ATMs only as locations on the public map, as you see theirs, and that is all a network comparison uses. On Enterprise you can choose to share chosen datasets with a named organisation, on terms you set and can revoke." },
-  { q: "Does an association or regulator pay to receive data we share?", a: "No. Receiving shared data is free; the recipient registers its own organisation account. Analysing it (comparisons, benchmarking, dashboards) needs the recipient's own plan: your Enterprise features are not passed on with the data." },
-  { q: "Does sharing replace our regulatory reporting?", a: "No. Your own regulator reports and exports are on every plan, Free included, and disclosures the law requires don't depend on a subscription. Consent-based sharing is for anything you choose to share beyond them." },
-  { q: "Does GeoATM alert us when an ATM goes down?", a: "Not by itself: GeoATM isn't connected to your machines. It works from the status reports you upload, flags exceptions in them, and emails your administrators about new findings. Connecting your own monitoring system is something we scope with you on Enterprise." },
-  { q: "How is the bill worked out?", a: "Per ATM listed on the 1st of the month, with a monthly minimum, billed by invoice. Annual terms get two months free. Upgrades start straight away; downgrades from the next period; nothing is prorated." },
-];
-
-export default function ProductPage() {
+export default async function ProductPage() {
+  const t = await getTranslations("operators");
   return (
     <>
-      <SiteHeader current="For Operators" />
+      <SiteHeader current="operators" />
 
       <section className="pp-hero">
         <div className="wrap pp-hero-grid">
           <div>
-            <div className="pp-eyebrow">For banks and ATM operators</div>
+            <div className="pp-eyebrow">{t("eyebrow")}</div>
             <h1>
-              Decisions about your ATM network,
+              {t("title1")}
               <br />
-              <span className="red">not just a map.</span>
+              <span className="red">{t("title2")}</span>
             </h1>
             <p className="hero-sub">
-              See how your network is covered, where you stand against other institutions, and where your next ATM could make the
-              greatest difference. Built from your own inventory and reports, the public record of ATMs and searches in the GeoATM app.
+              {t("sub")}
             </p>
             <div className="hero-btns">
               <a className="btn btn-red" href={REGISTER_URL} target="_blank" rel="noopener noreferrer">
-                <IconBank /> Register your institution
+                <IconBank /> {t("register")}
               </a>
               <a className="btn btn-outline" href={SIGN_IN_URL} target="_blank" rel="noopener noreferrer">
-                Sign in
+                {t("signIn")}
               </a>
             </div>
             <p className="pp-small">
-              Listing is free. Monitor starts with a 30-day free trial. Enterprise adds{" "}
-              <a href="#sharing">consent-based sharing with associations and regulators</a>.
+              {t.rich("small", { a: (c) => <a href="#sharing">{c}</a> })}
             </p>
           </div>
           <figure className="pp-devices">
             <Image
               src="/operators/geoatm-tablet-and-phone.png"
-              alt="The GeoATM operator portal on a tablet, showing a bank's ATM network across London with other institutions, network gaps and coverage gaps, and on a phone, showing availability with exceptions, competitor locations and customer issues."
+              alt={t("devicesAlt")}
               width={1400}
               height={930}
               priority
               sizes="(max-width: 900px) 94vw, 640px"
             />
-            <figcaption>The operator portal. Illustrative data.</figcaption>
+            <figcaption>{t("devicesCaption")}</figcaption>
           </figure>
         </div>
       </section>
 
       <section className="section">
         <div className="wrap">
-          <h2 className="center">Three decisions, one network</h2>
+          <h2 className="center">{t("decisionsTitle")}</h2>
           <div className="pp-grid">
             {DECISIONS.map((d) => (
-              <div key={d.title} className="pp-feature">
-                <h3>{d.title}</h3>
-                <p>{d.body}</p>
-                <p className="pp-feature-plan">{d.plan}</p>
+              <div key={d} className="pp-feature">
+                <h3>{t(`decisions.${d}.title`)}</h3>
+                <p>{t(`decisions.${d}.body`)}</p>
+                <p className="pp-feature-plan">{t(`decisions.${d}.plan`)}</p>
               </div>
             ))}
           </div>
@@ -204,17 +106,17 @@ export default function ProductPage() {
 
       <section className="section pp-band">
         <div className="wrap">
-          <h2 className="center">Monitor: your network, day to day</h2>
+          <h2 className="center">{t("monitorTitle")}</h2>
           <div className="pp-grid">
             {MONITOR.map((m) => (
-              <div key={m.title} className="pp-feature">
-                <h3>{m.title}</h3>
-                <p>{m.body}</p>
+              <div key={m} className="pp-feature">
+                <h3>{t(`monitor.${m}.title`)}</h3>
+                <p>{t(`monitor.${m}.body`)}</p>
               </div>
             ))}
             <div className="pp-feature pp-feature-osm">
-              <h3>Fix the public map, not just your records</h3>
-              <p>Send a finding about your own ATM to OpenStreetMap as a note for local mappers to check, after seeing exactly what it will say.</p>
+              <h3>{t("monitor.osm.title")}</h3>
+              <p>{t("monitor.osm.body")}</p>
             </div>
           </div>
         </div>
@@ -222,53 +124,49 @@ export default function ProductPage() {
 
       <section className="section">
         <div className="wrap">
-          <h2 className="center">Intelligence: planning where to go next</h2>
+          <h2 className="center">{t("intelligenceTitle")}</h2>
           <div className="pp-grid pp-grid-4">
             {INTELLIGENCE.map((m) => (
-              <div key={m.title} className="pp-feature">
-                <h3>{m.title}</h3>
-                <p>{m.body}</p>
+              <div key={m} className="pp-feature">
+                <h3>{t(`intelligence.${m}.title`)}</h3>
+                <p>{t(`intelligence.${m}.body`)}</p>
               </div>
             ))}
           </div>
           <p className="pp-plans-lead" style={{ marginTop: 22 }}>
-            Search counts come from people using GeoATM and grow with use; we hold no footfall or transaction data. Paid from
-            activation, and we&apos;re happy to give you a demonstration first: {CONTACT_EMAIL}
+            {t("intelligenceNote", { email: CONTACT_EMAIL })}
           </p>
         </div>
       </section>
 
       <section className="section pp-band" id="sharing">
         <div className="wrap">
-          <div className="pp-eyebrow center">Enterprise · Powered by Geo<span className="gname">Trust</span></div>
-          <h2 className="center">Share with associations and regulators, on your terms</h2>
+          <div className="pp-eyebrow center">{t.rich("sharingEyebrow", { gt: geo("Trust") })}</div>
+          <h2 className="center">{t("sharingTitle")}</h2>
           <p className="pp-plans-lead pp-sharing-lead">
-            Powered by Geo<span className="gname">Trust</span>, GeoATM enables secure, consent-based data sharing with banking associations, regulators and other
-            authorised organisations. You control what information is shared, with whom, for what purpose and for how long.
-            Permissions can be revoked, and every sharing action is recorded.
+            {t.rich("sharingLead", { gt: geo("Trust") })}
           </p>
           <div className="pp-sharing">
             <figure className="pp-sharing-art">
-              <span className="geo-badge"><IconShield /><span>Geo<span className="gname">Trust</span> · consent, permissions and audit</span></span>
+              <span className="geo-badge"><IconShield /><span>{t.rich("sharingBadge", { gt: geo("Trust") })}</span></span>
               <Image
                 src="/operators/consent-phones.png"
-                alt="Two phones showing the GeoATM operator portal: a bank granting a payments forum consent to see its status and history, and a banking association's Shared with me screen with the bank's consent and what it passed on to the regulator."
+                alt={t("sharingAlt")}
                 width={1813}
                 height={1785}
                 sizes="(max-width: 900px) 86vw, 520px"
               />
-              <figcaption>A bank granting consent, and what the association sees under Shared with me. Illustrative data.</figcaption>
+              <figcaption>{t("sharingCaption")}</figcaption>
             </figure>
             <div className="pp-sharing-points">
               {SHARING.map((m) => (
-                <div key={m.title}>
-                  <h3>{m.title}</h3>
-                  <p>{m.body}</p>
+                <div key={m}>
+                  <h3>{t(`sharing.${m}.title`)}</h3>
+                  <p>{t(`sharing.${m}.body`)}</p>
                 </div>
               ))}
               <p className="pp-small">
-                Recipients register their own organisation account at no cost. Receiving data doesn&apos;t give them your plan&apos;s
-                features. Exporting your own data and your regulator reports stay on every plan.
+                {t("sharingSmall")}
               </p>
             </div>
           </div>
@@ -277,21 +175,21 @@ export default function ProductPage() {
 
       <section className="section" id="plans">
         <div className="wrap">
-          <h2 className="center">Plans</h2>
-          <p className="pp-plans-lead">Per ATM per month, in US dollars, billed by invoice. Two months free on annual terms.</p>
+          <h2 className="center">{t("plansTitle")}</h2>
+          <p className="pp-plans-lead">{t("plansLead")}</p>
           <div className="pp-plans">
             {PLANS.map((p) => (
-              <div key={p.name} className={`pp-plan${p.lead ? " pp-plan-lead" : ""}`}>
+              <div key={p.id} className={`pp-plan${"lead" in p && p.lead ? " pp-plan-lead" : ""}`}>
                 <div className="pp-plan-name">{p.name}</div>
                 <div className="pp-plan-price">{p.price}</div>
-                <div className="pp-plan-unit">{p.unit || " "}</div>
-                <div className="pp-plan-for">{p.for}</div>
+                <div className="pp-plan-unit">{p.min ? t("unit", { min: p.min }) : " "}</div>
+                <div className="pp-plan-for">{t(`plans.${p.id}.for`)}</div>
                 <ul>
-                  {p.items.map((i) => (
-                    <li key={i}><IconCheck /> {i}</li>
+                  {Array.from({ length: p.items }, (_, i) => (
+                    <li key={i}><IconCheck /> {t(`plans.${p.id}.items.${i + 1}`)}</li>
                   ))}
                 </ul>
-                {p.note && <div className="pp-plan-note">{p.note}</div>}
+                {"note" in p && p.note && <div className="pp-plan-note">{t(`plans.${p.id}.note`)}</div>}
               </div>
             ))}
           </div>
@@ -300,18 +198,18 @@ export default function ProductPage() {
 
       <section className="section pp-band">
         <div className="wrap">
-          <h2 className="center">How self-service works</h2>
+          <h2 className="center">{t("stepsTitle")}</h2>
           <ol className="pp-steps">
             {STEPS.map((s) => (
-              <li key={s.title}>
-                <div className="pp-step-title">{s.title}</div>
-                <div className="pp-step-body">{s.body}</div>
+              <li key={s}>
+                <div className="pp-step-title">{t(`steps.${s}.title`)}</div>
+                <div className="pp-step-body">{t.rich(`steps.${s}.body`, { gv: geo("Verify") })}</div>
               </li>
             ))}
           </ol>
           <div className="center" style={{ marginTop: 32 }}>
             <a className="btn btn-red" href={REGISTER_URL} target="_blank" rel="noopener noreferrer">
-              Register your institution <IconArrowRight />
+              {t("register")} <IconArrowRight />
             </a>
           </div>
         </div>
@@ -321,22 +219,17 @@ export default function ProductPage() {
         <div className="wrap pp-trust">
           <div className="pp-trust-ic"><IconShield /></div>
           <div>
-            <span className="geo-badge"><IconShield /><span>Verified by Geo<span className="gname">Verify</span></span></span>
-            <h3>Verified institutions, checked claims</h3>
+            <span className="geo-badge"><IconShield /><span>{t.rich("trust.badge", { gv: geo("Verify") })}</span></span>
+            <h3>{t("trust.title")}</h3>
             <p>
-              Before a bank can publish, it proves control of its email domain and someone at the bank, found independently of the
-              applicant, confirms them. Every ATM it adds is checked against the public map and other institutions&apos; listings; a
-              disputed ATM stays off the map until it is resolved. Each decision is recorded in <b>Geo<span className="gname">Verify</span></b>, the GEO network&apos;s
-              verification service. It is not a banking licence. Verified once, an institution is recognised across GEO products.
+              {t.rich("trust.body", { gv: geo("Verify"), b: (c) => <b>{c}</b> })}
             </p>
           </div>
           <div className="pp-trust-ic"><IconNetwork /></div>
           <div>
-            <h3>Your data stays yours</h3>
+            <h3>{t("trust.dataTitle")}</h3>
             <p>
-              Status reports, uploads and findings are seen only by your organisation and the GeoATM team. Other institutions see your
-              ATMs only as locations on the public map, unless you choose to share more on Enterprise, with your consent. Your own
-              uptime, history and regulator reports are on every plan.
+              {t("trust.dataBody")}
             </p>
           </div>
         </div>
@@ -344,22 +237,22 @@ export default function ProductPage() {
 
       <section className="section pp-band" id="faq">
         <div className="wrap faq-wrap">
-          <h2 className="center">Questions institutions ask</h2>
+          <h2 className="center">{t("faqTitle")}</h2>
           <div className="faq">
-            {FAQ.map((f) => (
-              <details key={f.q} className="faq-item">
+            {FAQ.map((n) => (
+              <details key={n} className="faq-item">
                 <summary>
-                  <span>{f.q}</span>
+                  <span>{t(`faq.q${n}`)}</span>
                 </summary>
-                <div className="faq-a">{f.a}</div>
+                <div className="faq-a">{t(`faq.a${n}`)}</div>
               </details>
             ))}
           </div>
           <div className="center" style={{ marginTop: 32 }}>
             <a className="btn btn-red" href={REGISTER_URL} target="_blank" rel="noopener noreferrer">
-              Register your institution <IconArrowRight />
+              {t("register")} <IconArrowRight />
             </a>
-            <p className="pp-small" style={{ marginTop: 12 }}>Already registered? <a href={SIGN_IN_URL} target="_blank" rel="noopener noreferrer">Sign in</a></p>
+            <p className="pp-small" style={{ marginTop: 12 }}>{t.rich("alreadyRegistered", { a: (c) => <a href={SIGN_IN_URL} target="_blank" rel="noopener noreferrer">{c}</a> })}</p>
           </div>
         </div>
       </section>
