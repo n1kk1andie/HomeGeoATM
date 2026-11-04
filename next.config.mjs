@@ -1,3 +1,4 @@
+import createNextIntlPlugin from "next-intl/plugin";
 /** @type {import('next').NextConfig} */
 // GeoATM marketing site (home.geoatm.app) — static informational landing page.
 
@@ -37,4 +38,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default createNextIntlPlugin("./i18n/request.ts")(nextConfig);
