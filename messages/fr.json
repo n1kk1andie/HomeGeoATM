@@ -1,0 +1,389 @@
+{
+  "nav": {
+    "home": "Maison",
+    "about": "À propos",
+    "how": "Comment ça marche",
+    "operators": "Pour les opérateurs",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "homeLabel": "Accueil GeoATM",
+    "logoAlt": "GeoATM — En direct, local partout",
+    "primary": "Primaire",
+    "open": "Open GeoATM",
+    "signIn": "Se connecter",
+    "language": "Langue"
+  },
+  "home": {
+    "faq": {
+      "title": "Foire aux questions",
+      "q1": "Qu'est-ce que GeoATM ?",
+      "a1": "GeoATM est une plateforme intelligente d'accès aux espèces. Elle combine un répertoire de plus de {atms} distributeurs automatiques de billets avec leur disponibilité en temps réel, signalée par les établissements participants. Vous pouvez ainsi trouver le meilleur endroit pour retirer de l'argent, et pas seulement le distributeur le plus proche.",
+      "q2": "Comment GeoATM sait-il si de l'argent liquide est disponible ?",
+      "a2": "Les établissements participants communiquent en temps réel l'état de leurs distributeurs automatiques à GeoATM , GeoATM l'affiche tel que déclaré par l'opérateur. Lorsqu'un distributeur n'est pas encore intégré au flux de données en temps réel, son état est indiqué à partir de données cartographiques publiques et clairement précisé comme étant estimé ; GeoATM ne prétend jamais afficher un état de disponibilité en temps réel qu'il ne peut confirmer.",
+      "q3": "GeoATM est-il gratuit à utiliser ?",
+      "a3": "Oui. La recherche de distributeurs automatiques et la vérification de leur disponibilité dans l'application grand public sont gratuites, partout où GeoATM est présent.",
+      "q4": "Comment les institutions participent-elles ?",
+      "a4": "Les banques, les opérateurs de distributeurs automatiques de billets, les sociétés de traitement et les banques centrales peuvent rejoindre le réseau GeoATM pour publier la disponibilité en temps réel et gagner en visibilité. Inscrivez votre établissement en ligne : nous vérifions votre organisation, puis vous bénéficiez d’un essai gratuit de 30 jours de Monitor. Les banques centrales et les associations peuvent nous contacter.",
+      "q5": "Quels pays sont concernés ?",
+      "a5": "Le répertoire de GeoATM recense plus de {atms} emplacements de distributeurs automatiques de billets dans {countries} pays et territoires. La disponibilité en temps réel, telle que signalée par les opérateurs, s'étend à mesure que de nouveaux établissements rejoignent le réseau."
+    },
+    "hero": {
+      "title1": "Sachez où se trouve l'argent liquide.",
+      "title2": "Avant de partir.",
+      "sub": "GeoATM aide les utilisateurs à trouver les distributeurs automatiques de billets à proximité, à vérifier la disponibilité des espèces et à choisir où retirer de l'argent en toute confiance.",
+      "subOps": "Les opérateurs de guichets automatiques peuvent référencer gratuitement leurs réseaux, surveiller leurs performances, générer des rapports réglementaires et accéder à des informations géographiques précises pour analyser leur positionnement concurrentiel, améliorer leur couverture et éclairer leurs décisions d'expansion.",
+      "open": "Open GeoATM",
+      "operators": "Pour les banques et les opérateurs"
+    },
+    "stats": {
+      "countriesMid": "Pays et territoires",
+      "countriesSub": "Avec les emplacements des distributeurs automatiques cartographiés",
+      "atmsMid": "emplacements des guichets automatiques",
+      "atmsSub": "Cartographie mondiale, mise à jour hebdomadaire",
+      "growing": "Croissance",
+      "networkMid": "Réseau",
+      "networkSub": "des institutions participantes",
+      "live": "En direct",
+      "liveMid": "État signalé par l'opérateur",
+      "liveSub": "Expansion mondiale"
+    },
+    "aud": {
+      "title": "Conçu pour l'ensemble de l'écosystème monétaire",
+      "consumers": "Pour les consommateurs",
+      "consumersLead": "Trouvez le meilleur distributeur automatique de billets à proximité, et pas seulement le plus proche.",
+      "c1": "Trouvez les distributeurs automatiques de billets à proximité",
+      "c2": "État en direct des banques participantes",
+      "c3": "Comparez les accès aux espèces à proximité",
+      "c4": "Recommandations intelligentes",
+      "c5": "Disponible dans {countries} pays et territoires",
+      "launch": "Lancer l'application",
+      "fi": "Pour les institutions financières",
+      "fiLead": "Rejoignez le réseau GeoATM .",
+      "fiBody": "Publier la disponibilité en direct des guichets automatiques, améliorer l'expérience client et atteindre les clients sur {atms} emplacements de guichets automatiques cartographiés dans {countries} pays et territoires.",
+      "fiLink": "Découvrez ce que les opérateurs obtiennent",
+      "assoc": "Associations professionnelles",
+      "assocLead": "Coordonner l'accès aux espèces pour l'ensemble de vos membres.",
+      "assocBody": "Offrir aux membres et au public une vision partagée et actualisée du réseau de guichets automatiques du secteur, tout en réduisant la collecte et la publication de données en double.",
+      "a1": "Maintenir une vue consolidée des réseaux de guichets automatiques membres",
+      "a2": "Réduire la collecte et le rapprochement en double des informations des guichets automatiques",
+      "a3": "Publier des informations cohérentes sur les guichets automatiques et l'accès aux espèces pour le secteur",
+      "a4": "Découvrez quelles institutions et régions offrent une couverture, et où persistent des lacunes.",
+      "a5": "Suivre l'évolution de la disponibilité du réseau et de la portée géographique",
+      "a6": "Fournir aux membres des informations partagées sur la demande de liquidités des consommateurs et leurs habitudes d'accès à celles-ci.",
+      "assocLink": "Explorer l'accès à l'industrie",
+      "auth": "Banques centrales et autorités publiques",
+      "authLead": "Gérer la situation nationale en matière d'accès aux liquidités.",
+      "authBody": "Pour les autorités qui collectent, tiennent à jour, surveillent ou publient déjà des informations sur les guichets automatiques, GeoATM peut devenir une couche d'infrastructure commune permettant de maintenir ces informations à jour, de déterminer si l'infrastructure est réellement disponible et de communiquer l'accès aux espèces au public.",
+      "p1": "Maintenir une vue nationale consolidée de l'infrastructure des guichets automatiques.",
+      "p2": "Réduire la collecte, le rapprochement et la publication manuels des informations des guichets automatiques.",
+      "p3": "Distinguer les emplacements des guichets automatiques des machines réellement accessibles aux consommateurs",
+      "p4": "Surveiller la couverture géographique et les lacunes émergentes en matière d'accès aux liquidités",
+      "p5": "Comprendre la résilience du réseau lorsque des institutions ou des zones subissent des perturbations",
+      "p6": "Diffuser des informations fiables et actualisées sur l'accès aux liquidités via un réseau destiné aux consommateurs",
+      "p7": "Utilisez les données agrégées sur la demande et les déplacements des utilisateurs pour identifier les lieux où les gens recherchent des espèces.",
+      "authLink": "Demander une présentation institutionnelle"
+    },
+    "why": {
+      "title": "Pourquoi GeoATM ?",
+      "dirTitle": "Annuaire mondial",
+      "dirBody": "{atms} emplacements de guichets automatiques cartographiés dans {countries} pays et territoires, mis à jour chaque semaine.",
+      "opTitle": "État signalé par l'opérateur",
+      "opBody": "Les établissements participants publient en temps réel la disponibilité des guichets automatiques directement à leurs clients.",
+      "recTitle": "Recommandations intelligentes",
+      "recBody": "GeoATM ne se contente pas d'afficher le distributeur automatique le plus proche. Il recommande le meilleur endroit pour retirer de l'argent en toute confiance."
+    },
+    "how": {
+      "title": "Comment ça marche",
+      "s1": "Open GeoATM",
+      "s1sub": "Lancez l'application ou le site web",
+      "s2": "GeoATM trouve les distributeurs automatiques de billets à proximité",
+      "s2sub": "Recherche par lieu ou autorisation GPS",
+      "s3": "Les institutions participantes publient un état en direct",
+      "s3sub": "Disponibilité en direct auprès des partenaires participants",
+      "s4": "Choisissez le meilleur endroit pour retirer de l'argent.",
+      "s4sub": "Allez-y en toute confiance"
+    },
+    "inst": {
+      "eyebrow": "Pour les institutions financières",
+      "title": "Devenez participant GeoATM",
+      "body": "Les banques et les opérateurs de distributeurs automatiques de billets répertorient gratuitement leurs points de vente, et Monitor montre à quoi ressemble leur réseau aux yeux du monde : en recensant les lacunes, les établissements voisins et les exceptions dans leurs propres rapports.",
+      "operators": "Découvrez ce que les opérateurs obtiennent",
+      "register": "Inscrivez votre établissement",
+      "alt": "Déjà inscrit ? <signin>Se connecter</signin> · Banques centrales et associations : <mail> {email} </mail>"
+    },
+    "about": {
+      "title": "À propos de GeoATM",
+      "body": "GeoATM construit le réseau mondial d'accès aux espèces le plus fiable. En combinant un répertoire mondial de distributeurs automatiques de billets avec les données de disponibilité en temps réel fournies par les établissements participants, GeoATM aide les consommateurs à prendre de meilleures décisions et permet aux institutions financières de mieux servir leurs clients.",
+      "logoAlt": "GeoATM"
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "Nous serions ravis d'avoir de vos nouvelles. Pour toute question ou demande de partenariat, n'hésitez pas à nous contacter.",
+      "email": "Courriel : <mail> {email} </mail>",
+      "button": "Contactez-nous"
+    },
+    "mock": {
+      "bestPlaces": "Meilleurs endroits pour retirer de l'argent à proximité",
+      "metaBest": "{km} km · {atms, plural, one {# distributeur automatique de billets} other {# distributeurs automatiques de billets}} · 24 heures",
+      "metaSecond": "{km} km · {atms, plural, one {# distributeur automatique de billets} other {# distributeurs automatiques de billets}}",
+      "cashAvailable": "Espèces disponibles",
+      "locationOnly": "Localisation uniquement",
+      "recommended": "Recommandé pour le paiement en espèces, pas seulement pour la distance",
+      "operatorReported": "L'opérateur a signalé",
+      "liveStatus": "État des distributeurs automatiques en direct",
+      "liveFromBank": "En direct de la banque",
+      "reach": "Portée des clients",
+      "sector": "vue du réseau sectoriel",
+      "memberStatus": "Statut de déclaration des membres",
+      "reporting": "Signalement",
+      "late": "En retard",
+      "coverage": "Couverture du réseau",
+      "gaps": "Des lacunes d'accès émergentes ont été signalées.",
+      "national": "Accès national aux liquidités",
+      "liveReported": "Signalé par l'opérateur et en direct",
+      "located": "Localisé, aucun statut en direct",
+      "underserved": "zones mal desservies",
+      "resilience": "résilience du réseau",
+      "lower": "Couverture inférieure",
+      "higher": "plus haut",
+      "demand": "La demande se concentre dans les corridors urbains.",
+      "cityCentre": "Centre-ville"
+    }
+  },
+  "footer": {
+    "tagline": "Le réseau mondial intelligent d'accès aux espèces.",
+    "logoAlt": "GeoATM",
+    "social": "Liens sociaux",
+    "consumers": "Pour les consommateurs",
+    "open": "Open GeoATM",
+    "faq": "FAQ",
+    "support": "Soutien",
+    "privacy": "politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "institutions": "Pour les institutions",
+    "plans": "Pour les opérateurs : forfaits et tarifs",
+    "status": "État signalé par l'opérateur",
+    "benefits": "Avantages pour les partenaires",
+    "partnerships": "Contactez-nous pour les partenariats",
+    "company": "Entreprise",
+    "aboutGeo": "À propos de GeoATM",
+    "geoev": "GeoEV : Recharge de véhicules électriques",
+    "api": "API géographique pour les développeurs",
+    "careers": "Carrières",
+    "holdings": "Tumblehill Holdings",
+    "by": "GeoATM ™ par <a> Tumblehill Labs </a>",
+    "partOf": "Membre du <a>réseau de renseignement GEO</a>",
+    "studio": "Un studio de produits de <a> Tumblehill Holdings LLC</a>",
+    "rights": "© 2026 Tumblehill Holdings LLC. Tous droits réservés.",
+    "maps": "Cartes © Contributeurs d'<a> OpenStreetMap </a>. Les images de l'application utilisent des données illustratives."
+  },
+  "subscribe": {
+    "title": "Recevez les mises à jour GeoATM",
+    "body": "Changements d'état des distributeurs automatiques dans votre région, et actualités. Pas de spam ; désabonnement possible à tout moment.",
+    "done": "Merci — vous êtes abonné.",
+    "email": "Adresse email",
+    "area": "Votre région",
+    "areaOptional": "Votre région (facultatif)",
+    "button": "S'abonner",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "operators": {
+    "eyebrow": "Pour les banques et les opérateurs de guichets automatiques",
+    "title1": "Décisions concernant votre réseau de guichets automatiques,",
+    "title2": "Pas seulement une carte.",
+    "sub": "Découvrez la couverture de votre réseau, comparez-vous aux autres établissements et identifiez les emplacements où votre prochain distributeur automatique de billets pourrait avoir le plus d'impact. Cette analyse repose sur votre propre inventaire, vos rapports, le registre public des distributeurs automatiques et les recherches effectuées dans l'application GeoATM .",
+    "register": "Inscrivez votre établissement",
+    "signIn": "Se connecter",
+    "small": "L'inscription est gratuite. Monitor propose un essai gratuit de 30 jours. La version Enterprise ajoute le <a>partage avec consentement avec les associations et les organismes de réglementation</a>.",
+    "devicesAlt": "Le portail opérateur GeoATM sur tablette, affichant le réseau de guichets automatiques d'une banque à travers Londres avec d'autres institutions, les lacunes du réseau et les zones non couvertes, et sur téléphone, affichant la disponibilité avec exceptions, les emplacements des concurrents et les problèmes rencontrés par les clients.",
+    "devicesCaption": "Portail opérateur. Données illustratives.",
+    "decisionsTitle": "Trois décisions, un réseau",
+    "decisions": {
+      "coverage": {
+        "title": "Couverture du réseau",
+        "body": "Où se trouvent vos distributeurs automatiques de billets, comment chacun apparaît dans les registres publics et où les personnes effectuant une recherche dans l'application GeoATM n'ont trouvé aucun distributeur automatique de billets à proximité de la distance que vous choisissez.",
+        "plan": "Annonces sur Monitor · Lacunes de recherche sur Intelligence"
+      },
+      "competitive": {
+        "title": "Position concurrentielle",
+        "body": "Votre réseau comparé à celui de toute autre institution dans un pays : le nombre de distributeurs automatiques de billets que chacun possède, la superficie du pays couverte par chacun, la fréquence à laquelle ils se trouvent à moins d’un kilomètre les uns des autres et les endroits où chacun est isolé.",
+        "plan": "Deux chaînes sur Monitor · jusqu'à cinq sur Intelligence"
+      },
+      "expansion": {
+        "title": "opportunités d'expansion",
+        "body": "Sites candidats côte à côte : votre distributeur automatique le plus proche, les autres établissements situés à moins de 1 km, le distributeur automatique le plus proche de chaque établissement et, sur Intelligence, les recherches autour de chacun.",
+        "plan": "Deux sites sur Monitor · jusqu'à cinq sur Intelligence"
+      }
+    },
+    "monitorTitle": "Surveillez votre réseau au quotidien.",
+    "monitor": {
+      "availability": {
+        "title": "Disponibilité",
+        "body": "Disponibilité et historique de chaque distributeur automatique de billets, à partir du rapport d'état quotidien que vous générez déjà. Inclus dans tous les forfaits, version gratuite."
+      },
+      "exceptions": {
+        "title": "Exceptions",
+        "body": "Des machines sont hors ligne dans plusieurs rapports en cours d'exécution, des statuts qui changent constamment, des machines sont absentes de votre dernier rapport et des rapports se sont arrêtés."
+      },
+      "competitors": {
+        "title": "Emplacements des concurrents",
+        "body": "Les distributeurs automatiques d'autres établissements situés à moins de 500 m et à 1 km des vôtres, vos emplacements les plus contestés, et deux réseaux comparés côte à côte. Emplacements uniquement : aucune information sur le statut ou les données d'une autre banque."
+      },
+      "customers": {
+        "title": "Problèmes clients",
+        "body": "Lorsque des clients signalent qu'un distributeur automatique de billets est à court d'argent ou hors service, cette information est mise à jour en fonction du statut que vous avez indiqué. Ce nombre augmente avec le nombre d'utilisateurs GeoATM ."
+      },
+      "listings": {
+        "title": "Vos inscriptions contre les registres publics",
+        "body": "Des distributeurs automatiques de billets sont absents de la carte publique, mal placés ou répertoriés en double, des fiches à votre nom ne correspondent pas à votre inventaire, et les horaires d'ouverture sont incohérents. Vos administrateurs sont informés de ces nouveautés par courriel, au maximum une fois par jour."
+      },
+      "osm": {
+        "title": "Corrigez la carte publique, pas seulement vos archives.",
+        "body": "Envoyez une information concernant votre propre distributeur automatique de billets à OpenStreetMap sous forme de note à l'attention des cartographes locaux, après avoir pris connaissance du contenu exact de cette note."
+      }
+    },
+    "intelligenceTitle": "Renseignements : planifier les prochaines étapes",
+    "intelligence": {
+      "coverage": {
+        "title": "Analyse de la couverture",
+        "body": "Zones où les gens ont cherché et n'ont trouvé aucun distributeur automatique de billets dans la distance que vous choisissez (5, 10, 15, 20 km ou la vôtre), par rapport aux distributeurs automatiques de billets cartographiés aujourd'hui, avec les lacunes près de votre réseau sur votre propre carte."
+      },
+      "expansion": {
+        "title": "Comparaisons d'expansion",
+        "body": "Jusqu'à cinq sites candidats dans un même pays, côte à côte : les recherches autour de chacun, votre distributeur automatique de billets le plus proche et les institutions déjà présentes."
+      },
+      "network": {
+        "title": "Comparaisons de réseaux",
+        "body": "Jusqu'à cinq institutions dans chaque pays : présence, chevauchement et domaines où vos concurrents sont présents et où vous ne l'êtes pas."
+      },
+      "demand": {
+        "title": "Indicateurs de la demande",
+        "body": "Les recherches sont comptabilisées par zone d'environ 2 km, mois par mois. Les zones ayant enregistré moins de trois recherches par mois ne sont jamais affichées."
+      },
+      "excel": {
+        "title": "Téléchargements Excel",
+        "body": "Toutes les comparaisons (réseaux, sites et, pour les entreprises, la référence régionale) et les chiffres de la demande, téléchargeables au format Excel pour votre conseil d'administration et vos équipes de planification."
+      }
+    },
+    "intelligenceNote": "Le nombre de recherches provient des utilisateurs de GeoATM et augmente avec l'utilisation ; nous ne conservons aucune donnée de fréquentation ni de transaction. Le paiement s'effectue à l'activation, et nous serons ravis de vous en faire une démonstration : {email}",
+    "sharingEyebrow": "Entreprise · Propulsé par <gt></gt>",
+    "sharingTitle": "Partagez avec les associations et les organismes de réglementation, selon vos conditions",
+    "sharingLead": "Propulsé par <gt></gt>, GeoATM permet un partage de données sécurisé et basé sur le consentement avec les associations bancaires, les organismes de réglementation et autres organisations autorisées. Vous contrôlez quelles informations sont partagées, avec qui, dans quel but et pendant combien de temps. Les autorisations peuvent être révoquées et chaque action de partage est enregistrée.",
+    "sharingBadge": "<gt></gt> · consentement, autorisations et audit",
+    "sharingAlt": "Deux téléphones affichant le portail de l'opérateur GeoATM : une banque autorisant un forum de paiements à consulter son statut et son historique, et l'écran « Partagé avec moi » d'une association bancaire montrant le consentement de la banque et les informations transmises à l'autorité de régulation.",
+    "sharingCaption": "Une banque qui donne son consentement et ce que l'association voit sous « Partagé avec moi ». Données illustratives.",
+    "sharing": {
+      "terms": {
+        "title": "Vous fixez les conditions",
+        "body": "Choisissez le destinataire, les ensembles de données, l'objectif, la période et s'il peut uniquement les consulter ou également les télécharger."
+      },
+      "onward": {
+        "title": "Partage ultérieur uniquement avec votre autorisation",
+        "body": "Une association ne peut transmettre des données à un organisme de réglementation que si elle l'a désigné, uniquement les données qu'elle a partagées, et jamais davantage."
+      },
+      "revoke": {
+        "title": "Révoquer à tout moment",
+        "body": "Modifiez ou révoquez votre consentement en un clic. Chaque demande est vérifiée par rapport à votre consentement immédiat, l'accès est donc bloqué instantanément."
+      },
+      "history": {
+        "title": "Une histoire qu'on ne peut pas réécrire",
+        "body": "Chaque octroi, modification, révocation, transmission et téléchargement est enregistré dans un historique d'audit séquentiel qui révèle toute falsification."
+      }
+    },
+    "sharingSmall": "Les destinataires créent gratuitement leur compte d'organisation. La réception des données ne leur donne pas accès aux fonctionnalités de votre forfait. L'exportation de vos données et de vos rapports réglementaires reste incluse dans tous les forfaits.",
+    "plansTitle": "Plans",
+    "plansLead": "Par distributeur automatique et par mois, en dollars américains, facturé sur facture. Deux mois offerts pour un abonnement annuel.",
+    "unit": "par guichet automatique / mois · minimum {min}",
+    "plans": {
+      "free": {
+        "for": "Tous les opérateurs de banques et de guichets automatiques",
+        "items": {
+          "1": "Listez et corrigez vos distributeurs automatiques de billets",
+          "2": "Leur statut est affiché dans GeoATM",
+          "3": "Vos propres rapports de disponibilité, d'historique et de réglementation"
+        }
+      },
+      "monitor": {
+        "for": "Votre réseau, au quotidien",
+        "items": {
+          "1": "Exceptions dans vos propres rapports d'état",
+          "2": "Vos inscriptions contre les registres publics",
+          "3": "Distributeurs automatiques d'autres institutions près du vôtre",
+          "4": "Ce que les clients signalent à vos guichets automatiques",
+          "5": "Comparez deux réseaux, ou deux sites, dans votre pays",
+          "6": "Envoyer les corrections à OpenStreetMap"
+        },
+        "note": "Essai gratuit de 30 jours à compter de la date de vérification."
+      },
+      "intelligence": {
+        "for": "Planification et expansion",
+        "items": {
+          "1": "Tout dans l'écran",
+          "2": "Recherches n'ayant trouvé aucun distributeur automatique de billets, à la distance que vous choisissez",
+          "3": "Zones blanches de couverture près de votre réseau",
+          "4": "Comparez jusqu'à cinq réseaux ou sites, dans n'importe quel pays.",
+          "5": "Nombre de recherches pour chaque site candidat",
+          "6": "Téléchargez les données comparatives et les chiffres de la demande dans Excel"
+        }
+      },
+      "enterprise": {
+        "for": "Des réseaux plus étendus et le partage avec les associations et les organismes de réglementation",
+        "items": {
+          "1": "Tout sur l'intelligence",
+          "2": "Partage fondé sur le consentement avec les associations, les organismes de réglementation et d'autres institutions",
+          "3": "Comparez jusqu'à dix réseaux et vingt sites, par-delà les frontières.",
+          "4": "Analyse comparative régionale",
+          "5": "Intégration avec vos systèmes de surveillance de guichets automatiques, définie avec vous"
+        }
+      }
+    },
+    "stepsTitle": "Comment fonctionne le libre-service ?",
+    "steps": {
+      "register": {
+        "title": "Registre",
+        "body": "Choisissez votre établissement dans le registre et dites-nous qui vous êtes."
+      },
+      "verification": {
+        "title": "Vérification",
+        "body": "Via <gv></gv> : prouvez votre domaine de messagerie ; une personne de votre organisation, trouvée indépendamment, vous confirme."
+      },
+      "portal": {
+        "title": "Portail opérateur",
+        "body": "Ajoutez vos distributeurs automatiques de billets. Chacun est vérifié par rapport aux registres publics et aux listes d'autres institutions."
+      },
+      "trial": {
+        "title": "essai gratuit de 30 jours",
+        "body": "Surveillez votre compte dès sa vérification. Le portail conserve un historique des problèmes détectés et de ceux que vous avez corrigés."
+      },
+      "subscription": {
+        "title": "Abonnement",
+        "body": "Continuez sur Monitor, passez à Intelligence ou restez sur Free. Rien ne se renouvelle automatiquement."
+      }
+    },
+    "trust": {
+      "badge": "Vérifié par <gv></gv>",
+      "title": "Établissements vérifiés, affirmations vérifiées",
+      "body": "Avant qu'une banque puisse publier ses informations, elle doit prouver qu'elle contrôle son domaine de messagerie et une personne au sein de la banque, indépendante du demandeur, confirme ces informations. Chaque distributeur automatique de billets (DAB) ajouté est vérifié par rapport à la carte publique et aux listes d'autres institutions ; un DAB faisant l'objet d'un litige reste hors de la carte jusqu'à résolution du problème. Chaque décision est enregistrée dans <b><gv></gv></b>, le service de vérification du réseau GEO. Il ne s'agit pas d'une licence bancaire. Une fois vérifiée, une institution est reconnue par l'ensemble des produits GEO.",
+      "dataTitle": "Vos données restent les vôtres",
+      "dataBody": "Les rapports d'état, les chargements et les résultats ne sont visibles que par votre organisation et l'équipe GeoATM . Les autres institutions voient vos distributeurs automatiques uniquement comme leur emplacement sur la carte publique, sauf si vous choisissez de partager davantage d'informations sur le forfait Entreprise, avec votre consentement. Vos rapports de disponibilité, d'historique et de conformité réglementaire sont inclus dans chaque forfait."
+    },
+    "faqTitle": "Questions que se posent les institutions",
+    "faq": {
+      "q1": "Faut-il connecter GeoATM à nos distributeurs automatiques de billets ?",
+      "a1": "Non. Monitor utilise votre inventaire de distributeurs automatiques de billets (DAB) et le rapport d'état quotidien que vous générez déjà, en le comparant aux données publiques des DAB. La connexion directe de votre propre système de surveillance est une option que nous étudions avec vous pour les solutions Enterprise.",
+      "q2": "Qu’établit la vérification ?",
+      "a2": "Que votre organisation contrôle son propre domaine de messagerie et qu'une personne en son sein, que nous avons vérifiée indépendamment, a confirmé que vous êtes habilité à agir en son nom. Il ne s'agit pas d'une licence bancaire ; lorsqu'un organisme de réglementation publie une liste, celle-ci figure séparément dans le registre.",
+      "q3": "Nos données sont-elles accessibles aux autres banques ?",
+      "a3": "Sauf si vous les partagez. Vos rapports d'activité, vos chargements et vos résultats vous appartiennent. Les autres institutions voient vos distributeurs automatiques uniquement comme des emplacements sur la carte publique, comme vous voyez les leurs, et c'est tout ce que prend en compte une comparaison de réseau. Sur Enterprise, vous pouvez choisir de partager des ensembles de données spécifiques avec une organisation désignée, selon des conditions que vous définissez et que vous pouvez révoquer.",
+      "q4": "Une association ou un organisme de réglementation paie-t-il pour recevoir les données que nous partageons ?",
+      "a4": "Non. La réception des données partagées est gratuite ; le destinataire crée un compte au sein de son organisation. L’analyse de ces données (comparaisons, benchmarking, tableaux de bord) nécessite un abonnement spécifique du destinataire : vos fonctionnalités Entreprise ne sont pas incluses dans le transfert des données.",
+      "q5": "Le partage de ces informations remplace-t-il nos rapports réglementaires ?",
+      "a5": "Non. Vos rapports réglementaires et vos exportations sont inclus dans tous les forfaits, même le forfait gratuit, et les informations exigées par la loi ne dépendent pas d'un abonnement. Le partage basé sur le consentement concerne tout ce que vous choisissez de partager en dehors de ces forfaits.",
+      "q6": "GeoATM nous alerte-t-il lorsqu'un distributeur automatique de billets tombe en panne ?",
+      "a6": "GeoATM n'est pas autonome : il ne se connecte pas à vos machines. Il fonctionne à partir des rapports d'état que vous téléchargez, signale les anomalies et envoie un e-mail à vos administrateurs pour les informer des nouvelles découvertes. La connexion à votre propre système de surveillance est une option que nous évaluons avec vous pour les solutions Enterprise.",
+      "q7": "Comment le projet de loi est-il établi ?",
+      "a7": "Par distributeur automatique de billets (DAB) listé le 1er du mois, avec un minimum mensuel, facturé sur facture. Les abonnements annuels bénéficient de deux mois gratuits. Les mises à niveau sont effectives immédiatement ; les rétrogradations à partir de la période suivante ; aucun remboursement au prorata n'est effectué."
+    },
+    "alreadyRegistered": "Déjà inscrit(e) ? <a>Se connecter</a>"
+  }
+}

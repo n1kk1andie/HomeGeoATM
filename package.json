@@ -5,10 +5,9 @@
   "description": "GeoATM marketing site \u2014 home.geoatm.app. Static informational landing page; no data, cash or admin code.",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/sync-messages.mjs messages --soft && next build",
     "start": "next start",
-    "lint": "next lint",
-    "prebuild": "node scripts/sync-messages.mjs messages --soft"
+    "lint": "next lint"
   },
   "dependencies": {
     "@vercel/analytics": "^1.4.1",

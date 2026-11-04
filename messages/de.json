@@ -1,0 +1,389 @@
+{
+  "nav": {
+    "home": "Heim",
+    "about": "Um",
+    "how": "So funktioniert es",
+    "operators": "Für Betreiber",
+    "faq": "Häufig gestellte Fragen",
+    "contact": "Kontakt",
+    "homeLabel": "GeoATM Startseite",
+    "logoAlt": "GeoATM – Live, lokal überall",
+    "primary": "Primär",
+    "open": "Open GeoATM",
+    "signIn": "Anmelden",
+    "language": "Sprache"
+  },
+  "home": {
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": "Was ist GeoATM ?",
+      "a1": "GeoATM ist eine intelligente Plattform für den Bargeldzugriff. Sie kombiniert ein Verzeichnis von mehr als {atms} Geldautomatenstandorten mit der von teilnehmenden Instituten gemeldeten Live-Verfügbarkeit, sodass Sie den besten Ort zum Abheben von Bargeld finden können – nicht nur den nächstgelegenen PIN-Code.",
+      "q2": "Wie erkennt GeoATM , ob Bargeld verfügbar ist?",
+      "a2": "Teilnehmende Institute übermitteln den aktuellen Status ihrer Automaten direkt an GeoATM , und GeoATM zeigt ihn gemäß der Meldung des Betreibers an. Ist ein Automat noch nicht in einem Live-Feed erfasst, wird er anhand öffentlicher Kartendaten angezeigt und deutlich als geschätzt gekennzeichnet – GeoATM gibt niemals einen aktuellen Bargeldstatus an, den es nicht bestätigen kann.",
+      "q3": "Ist GeoATM kostenlos nutzbar?",
+      "a3": "Ja. Die Suche nach Geldautomaten und die Überprüfung der Verfügbarkeit in der Verbraucher-App ist überall dort kostenlos, wo GeoATM verfügbar ist.",
+      "q4": "Wie beteiligen sich Institutionen?",
+      "a4": "Banken, Geldautomatenbetreiber, Zahlungsdienstleister und Zentralbanken können dem GeoATM Netzwerk beitreten, um die Verfügbarkeit in Echtzeit zu veröffentlichen und mehr Transparenz zu schaffen. Registrieren Sie Ihr Institut online: Wir verifizieren Ihre Organisation, und anschließend beginnt Ihre 30-tägige kostenlose Testphase von Monitor. Zentralbanken und Verbände können uns kontaktieren.",
+      "q5": "Welche Länder sind abgedeckt?",
+      "a5": "Das Verzeichnis von GeoATM verzeichnet über {atms} Geldautomatenstandorte in {countries} Ländern und Gebieten. Die von den Betreibern gemeldete Verfügbarkeit in Echtzeit verbessert sich mit dem Beitritt weiterer Institute zum Netzwerk."
+    },
+    "hero": {
+      "title1": "Wissen, wo sich Bargeld befindet.",
+      "title2": "Bevor Sie gehen.",
+      "sub": "GeoATM hilft Nutzern, Geldautomaten in der Nähe zu finden, die Bargeldverfügbarkeit zu prüfen und vertrauensvoll den richtigen Abhebungsort zu wählen.",
+      "subOps": "Geldautomatenbetreiber können ihre Netzwerke kostenlos auflisten, die Leistung überwachen, Berichte für die Aufsichtsbehörden erstellen und auf leistungsstarke geografische Informationen zugreifen, um die Wettbewerbsposition zu analysieren, die Abdeckung zu verbessern und Expansionsentscheidungen zu treffen.",
+      "open": "Open GeoATM",
+      "operators": "Für Banken und Betreiber"
+    },
+    "stats": {
+      "countriesMid": "Länder und Gebiete",
+      "countriesSub": "Mit kartierten Geldautomatenstandorten",
+      "atmsMid": "Standorte von Geldautomaten",
+      "atmsSub": "Weltweit kartiert, wöchentlich aktualisiert",
+      "growing": "Anbau",
+      "networkMid": "Netzwerk",
+      "networkSub": "der teilnehmenden Institutionen",
+      "live": "Live",
+      "liveMid": "Vom Betreiber gemeldeter Status",
+      "liveSub": "Globale Expansion"
+    },
+    "aud": {
+      "title": "Entwickelt für das gesamte Bargeld-Ökosystem",
+      "consumers": "Für Verbraucher",
+      "consumersLead": "Finden Sie den besten Geldautomaten in der Nähe – nicht nur den nächstgelegenen.",
+      "c1": "Finden Sie Geldautomaten in Ihrer Nähe",
+      "c2": "Aktueller Status der teilnehmenden Banken",
+      "c3": "Vergleichen Sie die Bargeldabhebungsmöglichkeiten in Ihrer Nähe.",
+      "c4": "Intelligente Empfehlungen",
+      "c5": "Verfügbar in {countries} Ländern und Gebieten",
+      "launch": "App starten",
+      "fi": "Für Finanzinstitute",
+      "fiLead": "Treten Sie dem GeoATM Netzwerk bei.",
+      "fiBody": "Veröffentlichen Sie die Verfügbarkeit von Geldautomaten in Echtzeit, verbessern Sie das Kundenerlebnis und erreichen Sie Kunden an {atms} kartierten Geldautomatenstandorten in {countries} Ländern und Gebieten.",
+      "fiLink": "Sehen Sie, was die Betreiber erhalten",
+      "assoc": "Branchenverbände",
+      "assocLead": "Koordinieren Sie den Bargeldzugriff für alle Mitglieder.",
+      "assocBody": "Den Mitgliedern und der Öffentlichkeit einen gemeinsamen, aktuellen Überblick über das Geldautomatennetz des Sektors bieten und gleichzeitig die doppelte Datenerfassung und -veröffentlichung reduzieren.",
+      "a1": "Behalten Sie eine einheitliche Ansicht der Geldautomatennetzwerke Ihrer Mitglieder bei.",
+      "a2": "Reduzierung der doppelten Erfassung und des Abgleichs von Geldautomateninformationen",
+      "a3": "Veröffentlichen Sie einheitliche Informationen zu Geldautomaten und Bargeldzugang für den Sektor.",
+      "a4": "Sehen Sie, welche Institutionen und Regionen eine Abdeckung bieten – und wo noch Lücken bestehen.",
+      "a5": "Verfolgen Sie Änderungen der Netzwerkverfügbarkeit und der geografischen Reichweite",
+      "a6": "Geben Sie den Mitgliedern gemeinsame Informationen über die Bargeldnachfrage und das Zugriffsverhalten der Verbraucher.",
+      "assocLink": "Branchenzugang erkunden",
+      "auth": "Zentralbanken und öffentliche Behörden",
+      "authLead": "Verwalten Sie die nationale Situation des Bargeldzugangs.",
+      "authBody": "Für Behörden, die bereits Informationen über Geldautomaten sammeln, pflegen, überwachen oder veröffentlichen, kann GeoATM zu einer gemeinsamen Infrastrukturebene werden, um diese Informationen aktuell zu halten, festzustellen, ob die Infrastruktur tatsächlich verfügbar ist, und die Öffentlichkeit über den Bargeldzugang zu informieren.",
+      "p1": "Behalten Sie einen einheitlichen nationalen Überblick über die Geldautomateninfrastruktur bei.",
+      "p2": "Reduzierung der manuellen Erfassung, des Abgleichs und der Veröffentlichung von Geldautomateninformationen",
+      "p3": "Unterscheiden Sie zwischen Geldautomatenstandorten und tatsächlich für Verbraucher verfügbaren Automaten.",
+      "p4": "Überwachung der geografischen Abdeckung und neu entstehender Lücken beim Zugang zu Bargeld",
+      "p5": "Die Netzwerkresilienz verstehen, wenn Institutionen oder Bereiche Störungen erleiden.",
+      "p6": "Veröffentlichen Sie vertrauenswürdige, aktuelle Informationen zum Bargeldzugang über ein verbraucherorientiertes Netzwerk.",
+      "p7": "Nutzen Sie aggregierte Nachfrage- und Reiseinformationen, um zu sehen, wo Menschen nach Bargeld suchen.",
+      "authLink": "Institutionelle Informationen anfordern"
+    },
+    "why": {
+      "title": "Warum GeoATM ?",
+      "dirTitle": "Globales Verzeichnis",
+      "dirBody": "{atms} Geldautomatenstandorte in {countries} Ländern und Gebieten kartiert, wöchentlich aktualisiert.",
+      "opTitle": "Vom Betreiber gemeldeter Status",
+      "opBody": "Die teilnehmenden Institute veröffentlichen die aktuelle Verfügbarkeit der Geldautomaten direkt für ihre Kunden.",
+      "recTitle": "Intelligente Empfehlungen",
+      "recBody": "GeoATM zeigt nicht einfach nur den nächstgelegenen Geldautomaten an. Es empfiehlt den besten Ort, um sicher Bargeld abzuheben."
+    },
+    "how": {
+      "title": "So funktioniert es",
+      "s1": "Open GeoATM",
+      "s1sub": "Starten Sie die App oder Website",
+      "s2": "GeoATM findet Geldautomaten in der Nähe",
+      "s2sub": "Suche nach Standort oder GPS zulassen",
+      "s3": "Die teilnehmenden Institutionen veröffentlichen den Live-Status.",
+      "s3sub": "Live-Verfügbarkeit von teilnehmenden Partnern",
+      "s4": "Wählen Sie den besten Ort, um Bargeld abzuheben.",
+      "s4sub": "Gehen Sie mit Zuversicht"
+    },
+    "inst": {
+      "eyebrow": "Für Finanzinstitute",
+      "title": "Werden Sie GeoATM Teilnehmer",
+      "body": "Banken und Geldautomatenbetreiber listen ihre Geldautomaten kostenlos auf, und Monitor zeigt, wie ihr Netzwerk für die Welt aussieht: Lücken, nahegelegene Institutionen und Ausnahmen werden in eigenen Berichten aufgeführt.",
+      "operators": "Sehen Sie, was die Betreiber erhalten",
+      "register": "Registrieren Sie Ihre Institution",
+      "alt": "Bereits registriert? <signin>Anmelden</signin> · Zentralbanken und Verbände: <mail> {email} </mail>"
+    },
+    "about": {
+      "title": "Über GeoATM",
+      "body": "GeoATM baut das weltweit vertrauenswürdige Netzwerk für Bargeldzugang auf. Durch die Kombination eines globalen Geldautomatenverzeichnisses mit den von teilnehmenden Instituten gemeldeten Echtzeit-Verfügbarkeitsdaten unterstützt GeoATM Verbraucher bei besseren Entscheidungen und hilft Finanzinstituten, ihren Kunden einen besseren Service zu bieten.",
+      "logoAlt": "GeoATM"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "body": "Wir freuen uns, von Ihnen zu hören. Für allgemeine Anfragen und Partnerschaftsanfragen können Sie uns jederzeit kontaktieren.",
+      "email": "E-Mail: <mail> {email} </mail>",
+      "button": "Kontaktieren Sie uns"
+    },
+    "mock": {
+      "bestPlaces": "Die besten Orte für Bargeld in der Nähe",
+      "metaBest": "{km} km · {atms, plural, one {# Geldautomat} other {# Geldautomaten}} · 24 Stunden",
+      "metaSecond": "{km} km · {atms, plural, one {# Geldautomat} other {# Geldautomaten}}",
+      "cashAvailable": "Bargeld verfügbar",
+      "locationOnly": "Nur Standort",
+      "recommended": "Empfohlen für Barzahlung, nicht nur für Entfernungsmessung.",
+      "operatorReported": "Der Betreiber meldete",
+      "liveStatus": "Live-ATM-Status",
+      "liveFromBank": "Live von der Bank",
+      "reach": "Kundenreichweite",
+      "sector": "Sektornetzwerkansicht",
+      "memberStatus": "Meldestatus der Mitglieder",
+      "reporting": "Berichterstattung",
+      "late": "Spät",
+      "coverage": "Netzwerkabdeckung",
+      "gaps": "Aufkommende Zugangslücken hervorgehoben",
+      "national": "Nationaler Bargeldzugang",
+      "liveReported": "Vom Betreiber gemeldet & live",
+      "located": "Gefunden, aber kein Live-Status",
+      "underserved": "Unterversorgte Gebiete",
+      "resilience": "Netzwerkresilienz",
+      "lower": "Geringere Abdeckung",
+      "higher": "höher",
+      "demand": "Nachfrage konzentriert sich auf städtische Verkehrsachsen",
+      "cityCentre": "Stadtzentrum"
+    }
+  },
+  "footer": {
+    "tagline": "Das intelligente Bargeldzugangsnetzwerk der Welt.",
+    "logoAlt": "GeoATM",
+    "social": "Soziale Verbindungen",
+    "consumers": "Für Verbraucher",
+    "open": "Open GeoATM",
+    "faq": "Häufig gestellte Fragen",
+    "support": "Unterstützung",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "institutions": "Für Institutionen",
+    "plans": "Für Betreiber: Tarife und Preise",
+    "status": "Vom Betreiber gemeldeter Status",
+    "benefits": "Partnervorteile",
+    "partnerships": "Kontakt Partnerschaften",
+    "company": "Unternehmen",
+    "aboutGeo": "Über GeoATM",
+    "geoev": "GeoEV : Laden von Elektrofahrzeugen",
+    "api": "Geo-API für Entwickler",
+    "careers": "Karriere",
+    "holdings": "Tumblehill Holdings",
+    "by": "GeoATM ™ von <a> Tumblehill Labs </a>",
+    "partOf": "Teil des <a>GEO-Aufklärungsnetzwerks</a>",
+    "studio": "Ein Produktstudio von <a> Tumblehill Holdings LLC</a>",
+    "rights": "© 2026 Tumblehill Holdings LLC. Alle Rechte vorbehalten.",
+    "maps": "Karten © <a> OpenStreetMap </a>-Mitwirkende. Die App-Bilder dienen der Veranschaulichung."
+  },
+  "subscribe": {
+    "title": "GeoATM Updates abrufen",
+    "body": "Statusänderungen von Geldautomaten in Ihrer Nähe sowie Neuigkeiten. Kein Spam; Abmeldung jederzeit möglich.",
+    "done": "Danke – Sie sind Abonnent.",
+    "email": "E-Mail-Adresse",
+    "area": "Ihre Region",
+    "areaOptional": "Ihre Region (optional)",
+    "button": "Abonnieren",
+    "error": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "operators": {
+    "eyebrow": "Für Banken und Geldautomatenbetreiber",
+    "title1": "Entscheidungen bezüglich Ihres Geldautomatennetzes,",
+    "title2": "nicht nur eine Karte.",
+    "sub": "Sehen Sie, wie Ihr Netzwerk abgedeckt ist, wie Sie im Vergleich zu anderen Instituten dastehen und wo Ihr nächster Geldautomat den größten Unterschied machen könnte. Die Daten basieren auf Ihrem eigenen Bestand und Ihren Berichten sowie den öffentlichen Geldautomaten-Datenbanken und Suchanfragen der GeoATM App.",
+    "register": "Registrieren Sie Ihre Institution",
+    "signIn": "anmelden",
+    "small": "Der Eintrag ist kostenlos. Monitor bietet eine 30-tägige kostenlose Testphase. Enterprise beinhaltet zusätzlich die <a>einwilligungsbasierte Weitergabe an Verbände und Aufsichtsbehörden</a>.",
+    "devicesAlt": "Das GeoATM -Betreiberportal auf einem Tablet zeigt das Geldautomatennetz einer Bank in ganz London zusammen mit anderen Instituten, Netzwerklücken und Abdeckungslücken an, und auf einem Smartphone zeigt es die Verfügbarkeit mit Ausnahmen, Standorte von Wettbewerbern und Kundenprobleme an.",
+    "devicesCaption": "Das Betreiberportal. Beispieldaten.",
+    "decisionsTitle": "Drei Entscheidungen, ein Netzwerk",
+    "decisions": {
+      "coverage": {
+        "title": "Netzwerkabdeckung",
+        "body": "Wo sich Ihre Geldautomaten befinden, wie jeder einzelne in den öffentlichen Aufzeichnungen erscheint und wo Personen, die in der GeoATM App gesucht haben, innerhalb der von Ihnen gewählten Entfernung keinen Geldautomaten gefunden haben.",
+        "plan": "Einträge auf Monitor · Suchlücken in Intelligence"
+      },
+      "competitive": {
+        "title": "Wettbewerbsfähige Position",
+        "body": "Ihr Netzwerk im Vergleich zu allen anderen Institutionen in einem Land: Wie viele Geldautomaten hat jeder einzelne, wie viel vom Land deckt jeder einzelne ab, wie oft befinden sie sich in einem Umkreis von 1 km zueinander und wo befindet sich jeder einzelne allein?",
+        "plan": "Zwei Netzwerke auf Monitor · bis zu fünf auf Intelligence"
+      },
+      "expansion": {
+        "title": "Expansionsmöglichkeiten",
+        "body": "Kandidatenstandorte nebeneinander: Ihr nächstgelegener Geldautomat, andere Institutionen im Umkreis von 1 km, der nächstgelegene Geldautomat einer beliebigen Institution und, im Bereich Intelligence, die Suchvorgänge in der Umgebung jedes einzelnen.",
+        "plan": "Zwei Standorte auf Monitor · bis zu fünf auf Intelligence"
+      }
+    },
+    "monitorTitle": "Überwachen Sie: Ihr Netzwerk, Tag für Tag",
+    "monitor": {
+      "availability": {
+        "title": "Verfügbarkeit",
+        "body": "Verfügbarkeit und Historie aller Geldautomaten, basierend auf Ihrem täglichen Statusbericht. In jedem Tarif enthalten, auch kostenlos."
+      },
+      "exceptions": {
+        "title": "Ausnahmen",
+        "body": "In mehreren laufenden Berichten sind Maschinen offline, Statusmeldungen ändern sich ständig, Maschinen fehlen im letzten Bericht und Berichte wurden abgebrochen."
+      },
+      "competitors": {
+        "title": "Standorte der Wettbewerber",
+        "body": "Geldautomaten anderer Institute im Umkreis von 500 m bis 1 km um Ihren Geldautomaten, Ihre umkämpftesten Standorte und ein direkter Vergleich zweier Netzwerke. Nur Standorte: niemals Status oder Daten anderer Banken."
+      },
+      "customers": {
+        "title": "Kundenprobleme",
+        "body": "Wenn Kunden melden, dass ein Geldautomat kein Bargeld mehr hatte oder außer Betrieb war, wird dies in Ihrem Statusbericht angezeigt. Dies gilt umso mehr, je mehr Menschen GeoATM nutzen."
+      },
+      "listings": {
+        "title": "Ihre Einträge im Vergleich zu den öffentlichen Aufzeichnungen",
+        "body": "Geldautomaten, die auf der öffentlichen Karte fehlen, am falschen Ort stehen oder doppelt aufgeführt sind, Einträge unter Ihrem Namen, die nicht in Ihrem Bestand sind, und abweichende Öffnungszeiten. Ihre Administratoren werden maximal einmal täglich per E-Mail über neue Erkenntnisse informiert."
+      },
+      "osm": {
+        "title": "Korrigiere die öffentliche Karte, nicht nur deine Datensätze.",
+        "body": "Senden Sie einen Fund über Ihren eigenen Geldautomaten an OpenStreetMap als Hinweis für lokale Kartierer, damit diese ihn überprüfen können, nachdem Sie genau gesehen haben, was dort angezeigt wird."
+      }
+    },
+    "intelligenceTitle": "Intelligenz: Planung des nächsten Schrittes",
+    "intelligence": {
+      "coverage": {
+        "title": "Abdeckungsanalyse",
+        "body": "Gebiete, in denen Personen innerhalb der von Ihnen gewählten Entfernung (5, 10, 15, 20 km oder Ihrer eigenen) keinen Geldautomaten gefunden haben, im Vergleich zu den heute kartierten Geldautomaten, wobei die Lücken in der Nähe Ihres Netzwerks auf Ihrer eigenen Karte dargestellt werden."
+      },
+      "expansion": {
+        "title": "Vergleich der Expansion",
+        "body": "Bis zu fünf Kandidatenstandorte in einem Land, Seite an Seite: die Suchvorgänge in der Umgebung jedes Standorts, Ihr nächstgelegener Geldautomat und die bereits dort ansässigen Institutionen."
+      },
+      "network": {
+        "title": "Netzwerkvergleiche",
+        "body": "Bis zu fünf Institutionen in jedem Land: Präsenz, Überschneidungen und die Bereiche, in denen Konkurrenten präsent sind und Sie nicht."
+      },
+      "demand": {
+        "title": "Nachfrageindikatoren",
+        "body": "Die Suchanfragen werden monatsweise in einem Gebiet von ca. 2 km² erfasst. Gebiete mit weniger als drei Suchanfragen pro Monat werden nicht angezeigt."
+      },
+      "excel": {
+        "title": "Excel-Downloads",
+        "body": "Alle Vergleiche (Netzwerke, Standorte und, bei Enterprise, der regionale Benchmark) sowie die Nachfragezahlen können für Ihre Geschäftsleitung und Ihre Planungsteams als Excel-Datei heruntergeladen werden."
+      }
+    },
+    "intelligenceNote": "Die Suchstatistiken basieren auf den Nutzern von GeoATM und steigen mit der Nutzung; wir speichern keine Besucher- oder Transaktionsdaten. Die Zahlung erfolgt ab Aktivierung, und wir bieten Ihnen gerne vorab eine Demo an: {email}",
+    "sharingEyebrow": "Enterprise · Unterstützt von <gt></gt>",
+    "sharingTitle": "Teilen Sie die Informationen mit Verbänden und Aufsichtsbehörden – zu Ihren Bedingungen.",
+    "sharingLead": "GeoATM entwickelt von <gt></gt>, ermöglicht die sichere, einwilligungsbasierte Datenweitergabe an Bankenverbände, Aufsichtsbehörden und andere autorisierte Organisationen. Sie bestimmen, welche Informationen mit wem, zu welchem Zweck und wie lange geteilt werden. Berechtigungen können jederzeit widerrufen werden, und jede Weitergabe wird protokolliert.",
+    "sharingBadge": "<gt></gt> · Einwilligung, Berechtigungen und Audit",
+    "sharingAlt": "Zwei Telefone zeigen das Betreiberportal GeoATM : eine Bank, die einem Zahlungsforum die Zustimmung erteilt, ihren Status und ihre Historie einzusehen, und der Bildschirm „Mit mir geteilt“ eines Bankenverbandes mit der Zustimmung der Bank und den Informationen, die sie an die Aufsichtsbehörde weitergeleitet hat.",
+    "sharingCaption": "Eine Bank erteilt ihre Zustimmung, und was der Verband unter „Mit mir geteilt“ sieht. Beispielhafte Daten.",
+    "sharing": {
+      "terms": {
+        "title": "Sie legen die Bedingungen fest.",
+        "body": "Wählen Sie den Empfänger, die Datensätze, den Zweck, den Zeitraum und ob die Empfänger die Datensätze nur ansehen oder auch herunterladen dürfen."
+      },
+      "onward": {
+        "title": "Weitergabe nur mit Ihrer Zustimmung.",
+        "body": "Ein Verband darf Daten nur dann an eine Aufsichtsbehörde weitergeben, wenn er diese Aufsichtsbehörde benannt hat, nur die von ihm mitgeteilten Daten und niemals darüber hinaus."
+      },
+      "revoke": {
+        "title": "Jederzeit widerrufen",
+        "body": "Ändern oder widerrufen Sie Ihre Einwilligung mit einem Klick. Jede Anfrage wird in diesem Moment mit Ihrer Einwilligung abgeglichen, sodass der Zugriff sofort gesperrt wird."
+      },
+      "history": {
+        "title": "Eine Geschichte, die nicht umgeschrieben werden kann",
+        "body": "Jede Bewilligung, Änderung, jeder Widerruf, jede Weitergabe und jeder Download wird in einer verketteten Prüfhistorie protokolliert, die jegliche Manipulation aufzeigt."
+      }
+    },
+    "sharingSmall": "Empfänger können ihr eigenes Organisationskonto kostenlos registrieren. Der Datenempfang gewährt ihnen nicht die Funktionen Ihres Tarifs. Der Export Ihrer eigenen Daten und Ihrer Berichte an die Aufsichtsbehörde bleibt in jedem Tarif enthalten.",
+    "plansTitle": "Pläne",
+    "plansLead": "Pro Geldautomat und Monat, in US-Dollar, Abrechnung per Rechnung. Zwei Monate kostenlos bei jährlicher Zahlung.",
+    "unit": "pro Geldautomat / Monat · Mindestens {min}",
+    "plans": {
+      "free": {
+        "for": "Jeder Bank- und Geldautomatenbetreiber",
+        "items": {
+          "1": "Erstellen und korrigieren Sie Ihre Geldautomaten.",
+          "2": "Ihr Status wird in GeoATM angezeigt",
+          "3": "Ihre eigenen Betriebszeit-, Verlaufs- und Regulierungsberichte"
+        }
+      },
+      "monitor": {
+        "for": "Ihr Netzwerk, Tag für Tag",
+        "items": {
+          "1": "Ausnahmen in Ihren eigenen Statusberichten",
+          "2": "Ihre Einträge im Vergleich zu den öffentlichen Aufzeichnungen",
+          "3": "Geldautomaten anderer Institute in Ihrer Nähe",
+          "4": "Was Kunden an Ihren Geldautomaten melden",
+          "5": "Vergleichen Sie zwei Netzwerke oder zwei Standorte in Ihrem Land",
+          "6": "Senden Sie Korrekturen an OpenStreetMap"
+        },
+        "note": "30 Tage kostenlos testen, ab dem Tag Ihrer Verifizierung"
+      },
+      "intelligence": {
+        "for": "Planung und Erweiterung",
+        "items": {
+          "1": "Alles im Monitor",
+          "2": "Suchanfragen, die keinen Geldautomaten in einer von Ihnen gewählten Entfernung gefunden haben.",
+          "3": "Netzabdeckungslücken in der Nähe Ihres Netzwerks",
+          "4": "Vergleichen Sie bis zu fünf Netzwerke oder Websites in einem beliebigen Land.",
+          "5": "Suchzählungen für jede Kandidatenseite",
+          "6": "Vergleiche und Nachfragezahlen in Excel herunterladen"
+        }
+      },
+      "enterprise": {
+        "for": "Größere Netzwerke und Austausch mit Verbänden und Aufsichtsbehörden",
+        "items": {
+          "1": "Alles im Bereich Intelligenz",
+          "2": "Einwilligungsbasierte Weitergabe an Verbände, Aufsichtsbehörden und andere Institutionen",
+          "3": "Vergleichen Sie bis zu zehn Netzwerke und zwanzig Standorte, auch über Ländergrenzen hinweg.",
+          "4": "Regionale Vergleichsanalyse",
+          "5": "Integration in Ihre Geldautomaten-Überwachungssysteme, Umfang abgestimmt auf Ihre Bedürfnisse"
+        }
+      }
+    },
+    "stepsTitle": "So funktioniert Selbstbedienung",
+    "steps": {
+      "register": {
+        "title": "Registrieren",
+        "body": "Wählen Sie Ihre Institution aus dem Verzeichnis aus und teilen Sie uns mit, wer Sie sind."
+      },
+      "verification": {
+        "title": "Überprüfung",
+        "body": "Über <gv></gv>: Weisen Sie Ihre E-Mail-Domain nach; eine unabhängig gefundene Person in Ihrer Organisation bestätigt dies."
+      },
+      "portal": {
+        "title": "Betreiberportal",
+        "body": "Fügen Sie Ihre Geldautomaten hinzu. Jeder einzelne wird mit dem öffentlichen Register und den Verzeichnissen anderer Institutionen abgeglichen."
+      },
+      "trial": {
+        "title": "30 Tage kostenlos testen",
+        "body": "Überwachen Sie die Einstellungen ab dem Tag Ihrer Verifizierung. Das Portal führt eine fortlaufende Liste der gefundenen und von Ihnen behobenen Fehler."
+      },
+      "subscription": {
+        "title": "Abonnement",
+        "body": "Fahren Sie mit Monitor fort, wechseln Sie zu Intelligence oder bleiben Sie bei Free. Nichts erneuert sich automatisch."
+      }
+    },
+    "trust": {
+      "badge": "Verifiziert von <gv></gv>",
+      "title": "Verifizierte Institutionen, geprüfte Angaben",
+      "body": "Bevor eine Bank ihre Daten veröffentlichen kann, weist sie die Kontrolle über ihre E-Mail-Domain nach. Ein unabhängiger Mitarbeiter der Bank bestätigt diese Angaben. Jeder hinzugefügte Geldautomat wird mit der öffentlichen Karte und den Einträgen anderer Institute abgeglichen. Ein strittiger Geldautomat bleibt bis zur Klärung des Sachverhalts von der Karte entfernt. Jede Entscheidung wird im Verifizierungsdienst des GEO-Netzwerks (<b><gv></gv></b>) protokolliert. Es handelt sich dabei nicht um eine Banklizenz. Nach einmaliger Verifizierung wird ein Institut in allen GEO-Produkten anerkannt.",
+      "dataTitle": "Ihre Daten bleiben Ihre.",
+      "dataBody": "Statusberichte, Uploads und Ergebnisse sind nur für Ihre Organisation und das GeoATM Team einsehbar. Andere Institutionen sehen Ihre Geldautomaten lediglich als Standorte auf der öffentlichen Karte, es sei denn, Sie entscheiden sich mit Ihrer Zustimmung, weitere Informationen über Enterprise freizugeben. Ihre Verfügbarkeits-, Historien- und Aufsichtsberichte sind in jedem Tarif enthalten."
+    },
+    "faqTitle": "Fragen, die Institutionen stellen",
+    "faq": {
+      "q1": "Müssen wir GeoATM mit unseren Geldautomaten verbinden?",
+      "a1": "Nein. Die Überwachung greift auf Ihre Geldautomatenbestände und den von Ihnen bereits erstellten täglichen Statusbericht zurück, der mit den öffentlichen Geldautomatendaten abgeglichen wird. Die direkte Anbindung Ihres eigenen Überwachungssystems besprechen wir mit Ihnen im Rahmen der Enterprise-Version.",
+      "q2": "Was wird durch Verifizierung festgestellt?",
+      "a2": "Dass Ihre Organisation die Kontrolle über ihre E-Mail-Domain hat und dass eine dort ansässige Person, die wir unabhängig gefunden haben, bestätigt hat, dass Sie in ihrem Namen handeln dürfen. Es handelt sich nicht um eine Banklizenz; sofern eine Aufsichtsbehörde eine Liste veröffentlicht, wird diese im Register separat ausgewiesen.",
+      "q3": "Können andere Banken unsere Daten einsehen?",
+      "a3": "Nur wenn Sie die Daten freigeben. Ihre Statusberichte, Uploads und Ergebnisse gehören Ihnen. Andere Institutionen sehen Ihre Geldautomaten lediglich als Standorte auf der öffentlichen Karte, genau wie Sie deren Standorte sehen. Und genau diese Daten werden für einen Netzwerkvergleich verwendet. In der Enterprise-Version können Sie ausgewählte Datensätze mit einer bestimmten Organisation teilen – zu Bedingungen, die Sie festlegen und jederzeit widerrufen können.",
+      "q4": "Zahlt ein Verband oder eine Aufsichtsbehörde für den Erhalt der von uns geteilten Daten?",
+      "a4": "Nein. Der Empfang freigegebener Daten ist kostenlos; der Empfänger registriert ein eigenes Organisationskonto. Für die Analyse (Vergleiche, Benchmarking, Dashboards) benötigt der Empfänger einen eigenen Tarif: Ihre Enterprise-Funktionen werden nicht mit den Daten weitergegeben.",
+      "q5": "Ersetzt das Teilen von Informationen unsere Meldepflichten gegenüber den Aufsichtsbehörden?",
+      "a5": "Nein. Ihre eigenen Berichte an die Aufsichtsbehörden und Exporte sind in jedem Tarif enthalten, auch im kostenlosen, und die gesetzlich vorgeschriebenen Offenlegungen sind nicht von einem Abonnement abhängig. Die Weitergabe von Daten, die Sie darüber hinaus teilen möchten, erfolgt auf Grundlage Ihrer Einwilligung.",
+      "q6": "Benachrichtiget GeoATM uns, wenn ein Geldautomat ausfällt?",
+      "a6": "GeoATM ist nicht eigenständig: Es ist nicht mit Ihren Maschinen verbunden. GeoATM arbeitet mit den von Ihnen hochgeladenen Statusberichten, kennzeichnet darin Ausnahmen und benachrichtigt Ihre Administratoren per E-Mail über neue Erkenntnisse. Die Anbindung Ihres eigenen Überwachungssystems besprechen wir mit Ihnen im Rahmen der Enterprise-Lösung.",
+      "q7": "Wie setzt sich die Rechnung zusammen?",
+      "a7": "Pro Geldautomat, der am 1. des Monats gelistet ist, mit einem monatlichen Mindestbetrag, Abrechnung per Rechnung. Bei jährlicher Laufzeit erhalten Sie zwei Monate gratis. Upgrades beginnen sofort; Downgrades ab der nächsten Laufzeit; es erfolgt keine anteilige Berechnung."
+    },
+    "alreadyRegistered": "Bereits registriert? <a>Anmelden</a>"
+  }
+}

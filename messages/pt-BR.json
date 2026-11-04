@@ -1,0 +1,389 @@
+{
+  "nav": {
+    "home": "Lar",
+    "about": "Sobre",
+    "how": "Como funciona",
+    "operators": "Para operadores",
+    "faq": "Perguntas frequentes",
+    "contact": "Contato",
+    "homeLabel": "Página inicial GeoATM",
+    "logoAlt": "GeoATM — Ao vivo, local em todos os lugares",
+    "primary": "Primário",
+    "open": "Abra GeoATM",
+    "signIn": "Entrar",
+    "language": "Linguagem"
+  },
+  "home": {
+    "faq": {
+      "title": "Perguntas frequentes",
+      "q1": "O que é GeoATM ?",
+      "a1": "GeoATM é uma plataforma inteligente de acesso a dinheiro. Ele combina um diretório com mais de {atms} caixas eletrônicos com a disponibilidade em tempo real informada pelas instituições participantes, para que você possa encontrar o melhor lugar para sacar dinheiro — e não apenas o caixa eletrônico mais próximo.",
+      "q2": "Como GeoATM sabe se há dinheiro disponível?",
+      "a2": "As instituições participantes publicam o status em tempo real de seus caixas eletrônicos diretamente para a GeoATM , e GeoATM o exibe conforme relatado pela operadora. Quando um caixa eletrônico ainda não faz parte de um feed em tempo real, ele é exibido a partir de dados de mapas públicos e claramente marcado como estimado — GeoATM nunca divulga um status de caixa em tempo real que não possa confirmar.",
+      "q3": "GeoATM é gratuito?",
+      "a3": "Sim. Encontrar caixas eletrônicos e verificar a disponibilidade no aplicativo para o consumidor é gratuito em todos os locais onde GeoATM opera.",
+      "q4": "Como as instituições participam?",
+      "a4": "Bancos, operadores de caixas eletrônicos, processadores e bancos centrais podem se juntar à rede GeoATM para publicar a disponibilidade em tempo real e obter visibilidade. Cadastre sua instituição online: verificamos sua organização e, em seguida, seu período de teste gratuito de 30 dias do Monitor começa. Bancos centrais e associações podem entrar em contato conosco.",
+      "q5": "Quais países estão incluídos?",
+      "a5": "O diretório da GeoATM mapeia mais de {atms} locais de caixas eletrônicos em {countries} países e territórios. A disponibilidade em tempo real, relatada pelas operadoras, aumenta à medida que mais instituições aderem à rede."
+    },
+    "hero": {
+      "title1": "Saiba onde está o dinheiro.",
+      "title2": "Antes de ir.",
+      "sub": "GeoATM ajuda as pessoas a encontrar caixas eletrônicos próximos, verificar a disponibilidade de dinheiro e escolher onde sacar com segurança.",
+      "subOps": "Os operadores de caixas eletrônicos podem listar suas redes gratuitamente, monitorar o desempenho, gerar relatórios regulatórios e acessar informações geográficas valiosas para analisar o posicionamento da concorrência, melhorar a cobertura e embasar decisões de expansão.",
+      "open": "Abra GeoATM",
+      "operators": "Para bancos e operadores"
+    },
+    "stats": {
+      "countriesMid": "Países e territórios",
+      "countriesSub": "Com localização dos caixas eletrônicos mapeada",
+      "atmsMid": "localização de caixas eletrônicos",
+      "atmsSub": "Mapeado mundialmente, atualizado semanalmente",
+      "growing": "Crescente",
+      "networkMid": "Rede",
+      "networkSub": "das instituições participantes",
+      "live": "Ao vivo",
+      "liveMid": "Status relatado pelo operador",
+      "liveSub": "Expandindo globalmente"
+    },
+    "aud": {
+      "title": "Projetado para todo o ecossistema de dinheiro em espécie.",
+      "consumers": "Para consumidores",
+      "consumersLead": "Encontre o melhor caixa eletrônico por perto — não apenas o mais próximo.",
+      "c1": "Encontre caixas eletrônicos próximos",
+      "c2": "Status em tempo real dos bancos participantes",
+      "c3": "Compare as opções de acesso a dinheiro em espécie nas proximidades.",
+      "c4": "Recomendações inteligentes",
+      "c5": "Disponível em {countries} países e territórios",
+      "launch": "Iniciar aplicativo",
+      "fi": "Para instituições financeiras",
+      "fiLead": "Junte-se à rede GeoATM .",
+      "fiBody": "Publique a disponibilidade de caixas eletrônicos em tempo real, melhore a experiência do cliente e alcance clientes em {atms} locais de caixas eletrônicos mapeados em {countries} países e territórios.",
+      "fiLink": "Veja o que os operadores obtêm",
+      "assoc": "Associações industriais",
+      "assocLead": "Organize o acesso ao dinheiro em espécie entre seus membros.",
+      "assocBody": "Proporcionar aos membros e ao público uma visão compartilhada e atualizada da rede de caixas eletrônicos do setor, reduzindo, ao mesmo tempo, a coleta e publicação de dados duplicados.",
+      "a1": "Manter uma visão consolidada das redes de caixas eletrônicos membros.",
+      "a2": "Reduzir a coleta e conciliação duplicadas de informações de caixas eletrônicos.",
+      "a3": "Publicar informações consistentes sobre caixas eletrônicos e acesso a dinheiro em espécie para o setor.",
+      "a4": "Veja quais instituições e regiões oferecem cobertura — e onde ainda existem lacunas.",
+      "a5": "Acompanhe as mudanças na disponibilidade da rede e no alcance geográfico.",
+      "a6": "Fornecer aos membros informações compartilhadas sobre a demanda do consumidor por dinheiro em espécie e seus padrões de acesso.",
+      "assocLink": "Explore o acesso à indústria",
+      "auth": "Bancos Centrais e Autoridades Públicas",
+      "authLead": "Gerir o panorama nacional do acesso a dinheiro em espécie.",
+      "authBody": "Para as autoridades que já coletam, mantêm, monitoram ou publicam informações sobre caixas eletrônicos, GeoATM pode se tornar uma camada de infraestrutura comum para manter essas informações atualizadas, entender se a infraestrutura está realmente disponível e comunicar o acesso ao dinheiro em espécie ao público.",
+      "p1": "Manter uma visão nacional consolidada da infraestrutura de caixas eletrônicos.",
+      "p2": "Reduzir a coleta, conciliação e publicação manuais de informações de caixas eletrônicos.",
+      "p3": "Diferencie os locais dos caixas eletrônicos das máquinas efetivamente disponíveis para os consumidores.",
+      "p4": "Monitorar a cobertura geográfica e as lacunas emergentes no acesso a dinheiro em espécie.",
+      "p5": "Compreender a resiliência da rede quando instituições ou áreas sofrem interrupções.",
+      "p6": "Publicar informações confiáveis e atualizadas sobre acesso a dinheiro em espécie por meio de uma rede voltada para o consumidor.",
+      "p7": "Use informações agregadas sobre demanda e jornada do cliente para descobrir onde as pessoas buscam saques.",
+      "authLink": "Solicite uma apresentação institucional."
+    },
+    "why": {
+      "title": "Por que GeoATM ?",
+      "dirTitle": "Diretório Global",
+      "dirBody": "{atms} Localizações de caixas eletrônicos mapeadas em {countries} países e territórios, atualizadas semanalmente.",
+      "opTitle": "Status relatado pelo operador",
+      "opBody": "As instituições participantes divulgam a disponibilidade dos caixas eletrônicos em tempo real diretamente aos clientes.",
+      "recTitle": "Recomendações inteligentes",
+      "recBody": "GeoATM não se limita a mostrar o caixa eletrônico mais próximo. Ele recomenda o melhor lugar para sacar dinheiro com segurança."
+    },
+    "how": {
+      "title": "Como funciona",
+      "s1": "Abra GeoATM",
+      "s1sub": "Inicie o aplicativo ou o site.",
+      "s2": "GeoATM encontra caixas eletrônicos próximos.",
+      "s2sub": "Pesquise por localização ou ative o GPS.",
+      "s3": "As instituições participantes publicam o status em tempo real.",
+      "s3sub": "Disponibilidade ao vivo dos parceiros participantes",
+      "s4": "Escolha o melhor lugar para sacar dinheiro.",
+      "s4sub": "Vá com confiança."
+    },
+    "inst": {
+      "eyebrow": "Para instituições financeiras",
+      "title": "Torne-se um participante GeoATM",
+      "body": "Bancos e operadores de caixas eletrônicos listam seus caixas eletrônicos gratuitamente, e a Monitor mostra como sua rede se apresenta ao mundo: listando lacunas, instituições próximas e exceções em seus próprios relatórios.",
+      "operators": "Veja o que os operadores obtêm",
+      "register": "Registre sua instituição",
+      "alt": "Já está cadastrado? <signin>Entrar</signin> · Bancos centrais e associações: <mail> {email} </mail>"
+    },
+    "about": {
+      "title": "Sobre GeoATM",
+      "body": "GeoATM está construindo a rede mundial de acesso a dinheiro em espécie mais confiável. Ao combinar um diretório global de caixas eletrônicos com a disponibilidade em tempo real informada pelas instituições participantes, GeoATM ajuda os consumidores a tomarem decisões mais acertadas, ao mesmo tempo que auxilia as instituições financeiras a atenderem melhor seus clientes.",
+      "logoAlt": "GeoATM"
+    },
+    "contact": {
+      "title": "Contato",
+      "body": "Adoraríamos ouvir sua opinião. Para dúvidas gerais e propostas de parceria, entre em contato conosco a qualquer momento.",
+      "email": "E-mail: <mail> {email} </mail>",
+      "button": "Contate-nos"
+    },
+    "mock": {
+      "bestPlaces": "Melhores lugares para sacar dinheiro nas proximidades.",
+      "metaBest": "{km} km · {atms, plural, one {# ATM} other {# caixas eletrônicos}} · 24 horas",
+      "metaSecond": "{km} km · {atms, plural, one {# ATM} other {# caixas eletrônicos}}",
+      "cashAvailable": "Dinheiro disponível",
+      "locationOnly": "Localização apenas",
+      "recommended": "Recomendado para quem busca dinheiro, não apenas distância.",
+      "operatorReported": "O operador relatou",
+      "liveStatus": "Status do caixa eletrônico em tempo real",
+      "liveFromBank": "Diretamente do banco",
+      "reach": "Alcance do cliente",
+      "sector": "Visão da rede setorial",
+      "memberStatus": "Status de relatório do membro",
+      "reporting": "Relatórios",
+      "late": "Tarde",
+      "coverage": "Cobertura de rede",
+      "gaps": "Lacunas de acesso emergentes foram sinalizadas.",
+      "national": "Acesso nacional a dinheiro",
+      "liveReported": "Relatado pelo operador e ao vivo",
+      "located": "Localizado, sem status ao vivo",
+      "underserved": "Áreas carentes",
+      "resilience": "Resiliência da rede",
+      "lower": "Cobertura inferior",
+      "higher": "mais alto",
+      "demand": "A demanda está concentrada nos corredores urbanos.",
+      "cityCentre": "Centro da cidade"
+    }
+  },
+  "footer": {
+    "tagline": "A rede mundial inteligente de acesso a dinheiro em espécie.",
+    "logoAlt": "GeoATM",
+    "social": "Links para redes sociais",
+    "consumers": "Para consumidores",
+    "open": "Abra GeoATM",
+    "faq": "Perguntas frequentes",
+    "support": "Apoiar",
+    "privacy": "política de Privacidade",
+    "terms": "Termos de Uso",
+    "institutions": "Para instituições",
+    "plans": "Para operadores: planos e preços",
+    "status": "Status relatado pelo operador",
+    "benefits": "Benefícios para Parceiros",
+    "partnerships": "Contato para Parcerias",
+    "company": "Empresa",
+    "aboutGeo": "Sobre GeoATM",
+    "geoev": "GeoEV : Carregamento de veículos elétricos",
+    "api": "API de geolocalização para desenvolvedores",
+    "careers": "Carreiras",
+    "holdings": "Tumblehill Holdings",
+    "by": "GeoATM ™ da <a> Tumblehill Labs </a>",
+    "partOf": "Parte da <a>rede de inteligência GEO</a>",
+    "studio": "Um estúdio de produtos da <a> Tumblehill Holdings LLC</a>",
+    "rights": "© 2026 Tumblehill Holdings LLC. Todos os direitos reservados.",
+    "maps": "Mapas © Colaboradores do <a> OpenStreetMap </a>. As imagens do aplicativo usam dados ilustrativos."
+  },
+  "subscribe": {
+    "title": "Receba atualizações GeoATM",
+    "body": "Alterações no status dos caixas eletrônicos na sua região, além de notícias. Sem spam; cancele a inscrição quando quiser.",
+    "done": "Obrigado — você está inscrito.",
+    "email": "Endereço de email",
+    "area": "Sua área",
+    "areaOptional": "Sua região (opcional)",
+    "button": "Inscreva-se",
+    "error": "Algo deu errado. Por favor, tente novamente."
+  },
+  "operators": {
+    "eyebrow": "Para bancos e operadores de caixas eletrônicos",
+    "title1": "Decisões sobre sua rede de caixas eletrônicos,",
+    "title2": "Não é apenas um mapa.",
+    "sub": "Veja como sua rede está coberta, sua posição em relação a outras instituições e onde seu próximo caixa eletrônico poderia fazer a maior diferença. A partir do seu próprio inventário e relatórios, e do registro público de caixas eletrônicos e buscas no aplicativo GeoATM .",
+    "register": "Registre sua instituição",
+    "signIn": "Entrar",
+    "small": "O cadastro é gratuito. O Monitor oferece um período de teste gratuito de 30 dias. A versão Enterprise inclui o compartilhamento de dados com base no consentimento de associações e órgãos reguladores.",
+    "devicesAlt": "O portal do operador GeoATM em um tablet mostra a rede de caixas eletrônicos de um banco em Londres, juntamente com outras instituições, lacunas na rede e áreas sem cobertura. Em um celular, o portal exibe a disponibilidade com exceções, a localização de concorrentes e problemas relatados pelos clientes.",
+    "devicesCaption": "Portal do operador. Dados ilustrativos.",
+    "decisionsTitle": "Três decisões, uma rede",
+    "decisions": {
+      "coverage": {
+        "title": "Cobertura de rede",
+        "body": "A localização dos seus caixas eletrônicos, como cada um aparece nos registros públicos e onde as pessoas que pesquisaram no aplicativo GeoATM não encontraram nenhum caixa eletrônico dentro da distância que você escolher.",
+        "plan": "Listagens no Monitor · lacunas de pesquisa no Intelligence"
+      },
+      "competitive": {
+        "title": "Posição competitiva",
+        "body": "Sua rede em comparação com a de qualquer outra instituição no país: quantos caixas eletrônicos cada uma possui, qual a extensão territorial que cada uma cobre, com que frequência elas estão a menos de 1 km uma da outra e onde cada uma está isolada.",
+        "plan": "Duas redes no Monitor · até cinco no Intelligence"
+      },
+      "expansion": {
+        "title": "Oportunidades de expansão",
+        "body": "Locais candidatos lado a lado: o caixa eletrônico mais próximo, outras instituições num raio de 1 km, o caixa eletrônico mais próximo de qualquer instituição e, no recurso de Inteligência, as buscas em torno de cada um deles.",
+        "plan": "Dois locais no Monitor · até cinco no Intelligence"
+      }
+    },
+    "monitorTitle": "Monitore sua rede, dia após dia.",
+    "monitor": {
+      "availability": {
+        "title": "Disponibilidade",
+        "body": "Tempo de atividade e histórico de cada caixa eletrônico, a partir do relatório de status diário que você já gera. Em todos os planos, com acesso gratuito."
+      },
+      "exceptions": {
+        "title": "Exceções",
+        "body": "Máquinas offline em vários relatórios em execução, status que ficam mudando constantemente, máquinas ausentes do seu último relatório e relatórios que foram interrompidos."
+      },
+      "competitors": {
+        "title": "Locais dos concorrentes",
+        "body": "Caixas eletrônicos de outras instituições num raio de 500 m e 1 km do seu, seus locais mais disputados e duas redes comparadas lado a lado. Apenas localizações: nunca o status ou os dados de outro banco."
+      },
+      "customers": {
+        "title": "Problemas do cliente",
+        "body": "Quando os clientes informam que um caixa eletrônico não tinha dinheiro ou estava fora de serviço, você vê essa informação no status que você relatou. Isso aumenta à medida que mais pessoas usam GeoATM ."
+      },
+      "listings": {
+        "title": "Seus anúncios em relação aos registros públicos",
+        "body": "Caixas eletrônicos ausentes do mapa público, localizados no lugar errado ou listados duas vezes, anúncios em seu nome que não constam em seu inventário e horários de funcionamento diferentes. Seus administradores são informados sobre essas novas descobertas por e-mail, no máximo uma vez por dia."
+      },
+      "osm": {
+        "title": "Corrijam o mapa público, não apenas os seus registros.",
+        "body": "Envie uma descoberta sobre seu próprio caixa eletrônico para OpenStreetMap como uma nota para que os mapeadores locais verifiquem, depois de verem exatamente o que estará escrito."
+      }
+    },
+    "intelligenceTitle": "Inteligência: planejando para onde ir em seguida",
+    "intelligence": {
+      "coverage": {
+        "title": "Análise de cobertura",
+        "body": "Áreas onde as pessoas pesquisaram e não encontraram caixas eletrônicos dentro da distância que você escolher (5, 10, 15, 20 km ou a sua própria), em comparação com os caixas eletrônicos mapeados atualmente, com as lacunas próximas à sua rede no seu próprio mapa."
+      },
+      "expansion": {
+        "title": "Comparações de expansão",
+        "body": "Até cinco locais candidatos em um país, lado a lado: as buscas em torno de cada um, o caixa eletrônico mais próximo e as instituições já existentes no local."
+      },
+      "network": {
+        "title": "Comparações de redes",
+        "body": "Até cinco instituições em qualquer país: presença, sobreposição e áreas onde os concorrentes estão presentes e você não."
+      },
+      "demand": {
+        "title": "Indicadores de demanda",
+        "body": "As buscas são contabilizadas por área de aproximadamente 2 km, mês a mês. Áreas com menos de três buscas em um mês nunca são exibidas."
+      },
+      "excel": {
+        "title": "Downloads do Excel",
+        "body": "Todas as comparações (redes, sites e, na versão Enterprise, o benchmark regional) e os dados de demanda podem ser baixados em formato Excel para sua diretoria e equipes de planejamento."
+      }
+    },
+    "intelligenceNote": "Os dados de pesquisa são provenientes de pessoas que usam GeoATM e aumentam com o uso; não armazenamos dados de fluxo de clientes ou transações. O pagamento é feito a partir da ativação e teremos prazer em lhe oferecer uma demonstração primeiro: {email}",
+    "sharingEyebrow": "Empresarial · Desenvolvido por <gt></gt>",
+    "sharingTitle": "Compartilhe com associações e órgãos reguladores, nos seus termos.",
+    "sharingLead": "Com tecnologia da <gt></gt>, GeoATM permite o compartilhamento seguro de dados, baseado em consentimento, com associações bancárias, órgãos reguladores e outras organizações autorizadas. Você controla quais informações são compartilhadas, com quem, para qual finalidade e por quanto tempo. As permissões podem ser revogadas e todas as ações de compartilhamento são registradas.",
+    "sharingBadge": "<gt></gt> · consentimento, permissões e auditoria",
+    "sharingAlt": "Dois telefones mostrando o portal do operador GeoATM : um banco concedendo permissão a um fórum de pagamentos para visualizar seu status e histórico, e a tela \"Compartilhado comigo\" de uma associação bancária com a permissão do banco e o que ele repassou ao órgão regulador.",
+    "sharingCaption": "Um banco que concede o consentimento e o que a associação vê em \"Compartilhado comigo\". Dados ilustrativos.",
+    "sharing": {
+      "terms": {
+        "title": "Você define os termos.",
+        "body": "Selecione o destinatário, os conjuntos de dados, a finalidade, o período e se ele poderá apenas visualizar ou também fazer o download."
+      },
+      "onward": {
+        "title": "Compartilhamento posterior somente se você permitir",
+        "body": "Uma associação só pode transmitir dados a um órgão regulador se esse órgão tiver sido indicado, apenas os dados que foram compartilhados e nunca a terceiros."
+      },
+      "revoke": {
+        "title": "Revogar a qualquer momento",
+        "body": "Alterar ou revogar com um clique. Cada solicitação é verificada quanto ao seu consentimento naquele momento, portanto o acesso é imediatamente bloqueado."
+      },
+      "history": {
+        "title": "Uma história que não pode ser reescrita.",
+        "body": "Cada concessão, alteração, revogação, transferência e download é registrado em um histórico de auditoria encadeado que mostra qualquer adulteração."
+      }
+    },
+    "sharingSmall": "Os destinatários registram suas próprias contas organizacionais gratuitamente. O recebimento de dados não lhes dá acesso aos recursos do seu plano. A exportação de seus próprios dados e seus relatórios para os órgãos reguladores permanecem disponíveis em todos os planos.",
+    "plansTitle": "Planos",
+    "plansLead": "Por caixa eletrônico por mês, em dólares americanos, cobrado por fatura. Dois meses grátis em contratos anuais.",
+    "unit": "por caixa eletrônico / mês · mínimo {min}",
+    "plans": {
+      "free": {
+        "for": "Todos os bancos e operadores de caixas eletrônicos",
+        "items": {
+          "1": "Liste e corrija seus caixas eletrônicos.",
+          "2": "O status deles é mostrado no GeoATM",
+          "3": "Seu próprio tempo de atividade, histórico e relatórios para órgãos reguladores."
+        }
+      },
+      "monitor": {
+        "for": "Sua rede de contatos, dia após dia.",
+        "items": {
+          "1": "Exceções em seus próprios relatórios de status",
+          "2": "Seus anúncios em relação aos registros públicos",
+          "3": "Caixas eletrônicos de outras instituições perto de você",
+          "4": "O que os clientes relatam em seus caixas eletrônicos",
+          "5": "Compare duas redes, ou dois sites, em seu país.",
+          "6": "Enviar correções para OpenStreetMap"
+        },
+        "note": "Teste grátis por 30 dias, a partir da data de verificação da sua conta."
+      },
+      "intelligence": {
+        "for": "Planejamento e expansão",
+        "items": {
+          "1": "Tudo no Monitor",
+          "2": "Buscas que não encontraram caixas eletrônicos, a uma distância que você escolher.",
+          "3": "Falhas de cobertura perto da sua rede",
+          "4": "Compare até cinco redes ou sites em qualquer país.",
+          "5": "Contagem de buscas para cada site candidato",
+          "6": "Baixe as comparações e os dados de demanda para o Excel."
+        }
+      },
+      "enterprise": {
+        "for": "Redes maiores e compartilhamento com associações e órgãos reguladores.",
+        "items": {
+          "1": "Tudo em Inteligência",
+          "2": "Compartilhamento baseado em consentimento com associações, órgãos reguladores e outras instituições.",
+          "3": "Compare até dez redes e vinte locais, além-fronteiras.",
+          "4": "Comparação regional",
+          "5": "Integração com seus sistemas de monitoramento de caixas eletrônicos, definida em conjunto com você."
+        }
+      }
+    },
+    "stepsTitle": "Como funciona o autoatendimento",
+    "steps": {
+      "register": {
+        "title": "Cadastre-se",
+        "body": "Selecione sua instituição no cadastro e diga-nos quem você é."
+      },
+      "verification": {
+        "title": "Verificação",
+        "body": "Por meio de <gv></gv>: comprove seu domínio de e-mail; alguém em sua organização, encontrado de forma independente, confirma você."
+      },
+      "portal": {
+        "title": "Portal do operador",
+        "body": "Adicione seus caixas eletrônicos. Cada um é verificado em registros públicos e listas de outras instituições."
+      },
+      "trial": {
+        "title": "Teste grátis por 30 dias",
+        "body": "Monitore a partir do dia da sua verificação. O portal mantém um registro contínuo do que foi encontrado e do que você corrigiu."
+      },
+      "subscription": {
+        "title": "Subscrição",
+        "body": "Continue no Monitor, mude para o Intelligence ou permaneça no Free. Nada se renova automaticamente."
+      }
+    },
+    "trust": {
+      "badge": "Verificado por <gv></gv>",
+      "title": "Instituições verificadas, alegações checadas",
+      "body": "Antes de um banco poder publicar, ele comprova o controle de seu domínio de e-mail e alguém do banco, identificado independentemente do solicitante, confirma essa informação. Cada caixa eletrônico adicionado é verificado no mapa público e nas listas de outras instituições; um caixa eletrônico contestado permanece fora do mapa até que a situação seja resolvida. Cada decisão é registrada no <b><gv></gv></b>, o serviço de verificação da rede GEO. Não se trata de uma licença bancária. Verificada uma vez, a instituição passa a ser reconhecida em todos os produtos GEO.",
+      "dataTitle": "Seus dados continuam sendo seus.",
+      "dataBody": "Os relatórios de status, os uploads e as descobertas são visíveis apenas para sua organização e para a equipe GeoATM . Outras instituições visualizam seus caixas eletrônicos apenas como localizações no mapa público, a menos que você opte por compartilhar mais informações no plano Enterprise, mediante sua autorização. Seus próprios relatórios de tempo de atividade, histórico e para órgãos reguladores estão incluídos em todos os planos."
+    },
+    "faqTitle": "Perguntas que as instituições fazem",
+    "faq": {
+      "q1": "Precisamos conectar GeoATM aos nossos caixas eletrônicos?",
+      "a1": "Não. O Monitor funciona com base no seu inventário de caixas eletrônicos e no relatório de status diário que você já gera, comparando-os com o registro público de caixas eletrônicos. A conexão direta do seu próprio sistema de monitoramento é algo que discutimos com você no plano Enterprise.",
+      "q2": "O que a verificação estabelece?",
+      "a2": "Que sua organização controla seu domínio de e-mail e que alguém lá, que encontramos de forma independente, confirmou que você pode agir em nome dela. Não se trata de uma licença bancária; quando um órgão regulador publica uma lista, o registro mostra isso separadamente.",
+      "q3": "Outros bancos podem ver nossos dados?",
+      "a3": "A menos que você compartilhe. Seus relatórios de status, uploads e descobertas são seus. Outras instituições veem seus caixas eletrônicos apenas como localizações no mapa público, assim como você vê os delas, e isso é tudo o que uma comparação de rede utiliza. No plano Enterprise, você pode optar por compartilhar conjuntos de dados selecionados com uma organização específica, nos termos que você define e pode revogar.",
+      "q4": "Alguma associação ou órgão regulador paga para receber os dados que compartilhamos?",
+      "a4": "Não. O recebimento de dados compartilhados é gratuito; o destinatário registra sua própria conta organizacional. A análise desses dados (comparações, benchmarking, dashboards) requer um plano próprio do destinatário: os recursos da sua versão Enterprise não são transferidos com os dados.",
+      "q5": "Será que o compartilhamento substitui nossos relatórios regulatórios?",
+      "a5": "Não. Seus próprios relatórios regulatórios e exportações estão incluídos em todos os planos, inclusive no gratuito, e as divulgações exigidas por lei não dependem de uma assinatura. O compartilhamento baseado em consentimento se aplica a tudo o que você optar por compartilhar além desses relatórios.",
+      "q6": "GeoATM nos avisa quando um caixa eletrônico fica inativo?",
+      "a6": "Não funciona sozinho: GeoATM não está conectado às suas máquinas. Ele funciona com base nos relatórios de status que você envia, sinaliza exceções neles e envia e-mails aos seus administradores sobre novas descobertas. A conexão do seu próprio sistema de monitoramento é algo que discutimos com você na versão Enterprise.",
+      "q7": "Como é calculado o valor da fatura?",
+      "a7": "Por caixa eletrônico cadastrado no dia 1º do mês, com consumo mínimo mensal, cobrado por fatura. Planos anuais têm dois meses grátis. Upgrades entram em vigor imediatamente; downgrades, no período seguinte; nada é proporcional."
+    },
+    "alreadyRegistered": "Já está cadastrado? <a>Entrar</a>"
+  }
+}
