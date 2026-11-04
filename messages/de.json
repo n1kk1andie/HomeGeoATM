@@ -9,7 +9,7 @@
     "homeLabel": "GeoATM Startseite",
     "logoAlt": "GeoATM – Live, lokal überall",
     "primary": "Primär",
-    "open": "Open GeoATM",
+    "open": "GeoATM öffnen",
     "signIn": "Anmelden",
     "language": "Sprache"
   },
@@ -32,7 +32,7 @@
       "title2": "Bevor Sie gehen.",
       "sub": "GeoATM hilft Nutzern, Geldautomaten in der Nähe zu finden, die Bargeldverfügbarkeit zu prüfen und vertrauensvoll den richtigen Abhebungsort zu wählen.",
       "subOps": "Geldautomatenbetreiber können ihre Netzwerke kostenlos auflisten, die Leistung überwachen, Berichte für die Aufsichtsbehörden erstellen und auf leistungsstarke geografische Informationen zugreifen, um die Wettbewerbsposition zu analysieren, die Abdeckung zu verbessern und Expansionsentscheidungen zu treffen.",
-      "open": "Open GeoATM",
+      "open": "GeoATM öffnen",
       "operators": "Für Banken und Betreiber"
     },
     "stats": {
@@ -94,7 +94,7 @@
     },
     "how": {
       "title": "So funktioniert es",
-      "s1": "Open GeoATM",
+      "s1": "GeoATM öffnen",
       "s1sub": "Starten Sie die App oder Website",
       "s2": "GeoATM findet Geldautomaten in der Nähe",
       "s2sub": "Suche nach Standort oder GPS zulassen",
@@ -156,7 +156,7 @@
     "logoAlt": "GeoATM",
     "social": "Soziale Verbindungen",
     "consumers": "Für Verbraucher",
-    "open": "Open GeoATM",
+    "open": "GeoATM öffnen",
     "faq": "Häufig gestellte Fragen",
     "support": "Unterstützung",
     "privacy": "Datenschutzrichtlinie",

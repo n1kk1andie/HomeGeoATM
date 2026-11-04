@@ -9,7 +9,7 @@
     "homeLabel": "Accueil GeoATM",
     "logoAlt": "GeoATM — En direct, local partout",
     "primary": "Primaire",
-    "open": "Open GeoATM",
+    "open": "Ouvrir GeoATM",
     "signIn": "Se connecter",
     "language": "Langue"
   },
@@ -32,7 +32,7 @@
       "title2": "Avant de partir.",
       "sub": "GeoATM aide les utilisateurs à trouver les distributeurs automatiques de billets à proximité, à vérifier la disponibilité des espèces et à choisir où retirer de l'argent en toute confiance.",
       "subOps": "Les opérateurs de guichets automatiques peuvent référencer gratuitement leurs réseaux, surveiller leurs performances, générer des rapports réglementaires et accéder à des informations géographiques précises pour analyser leur positionnement concurrentiel, améliorer leur couverture et éclairer leurs décisions d'expansion.",
-      "open": "Open GeoATM",
+      "open": "Ouvrir GeoATM",
       "operators": "Pour les banques et les opérateurs"
     },
     "stats": {
@@ -94,7 +94,7 @@
     },
     "how": {
       "title": "Comment ça marche",
-      "s1": "Open GeoATM",
+      "s1": "Ouvrir GeoATM",
       "s1sub": "Lancez l'application ou le site web",
       "s2": "GeoATM trouve les distributeurs automatiques de billets à proximité",
       "s2sub": "Recherche par lieu ou autorisation GPS",
@@ -156,7 +156,7 @@
     "logoAlt": "GeoATM",
     "social": "Liens sociaux",
     "consumers": "Pour les consommateurs",
-    "open": "Open GeoATM",
+    "open": "Ouvrir GeoATM",
     "faq": "FAQ",
     "support": "Soutien",
     "privacy": "politique de confidentialité",
