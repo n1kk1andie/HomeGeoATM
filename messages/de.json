@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": "Heim",
+    "home": "Startseite",
     "about": "Um",
     "how": "So funktioniert es",
     "operators": "Für Betreiber",
@@ -18,8 +18,8 @@
       "title": "Häufig gestellte Fragen",
       "q1": "Was ist GeoATM ?",
       "a1": "GeoATM ist eine intelligente Plattform für den Bargeldzugriff. Sie kombiniert ein Verzeichnis von mehr als {atms} Geldautomatenstandorten mit der von teilnehmenden Instituten gemeldeten Live-Verfügbarkeit, sodass Sie den besten Ort zum Abheben von Bargeld finden können – nicht nur den nächstgelegenen PIN-Code.",
-      "q2": "Wie erkennt GeoATM , ob Bargeld verfügbar ist?",
-      "a2": "Teilnehmende Institute übermitteln den aktuellen Status ihrer Automaten direkt an GeoATM , und GeoATM zeigt ihn gemäß der Meldung des Betreibers an. Ist ein Automat noch nicht in einem Live-Feed erfasst, wird er anhand öffentlicher Kartendaten angezeigt und deutlich als geschätzt gekennzeichnet – GeoATM gibt niemals einen aktuellen Bargeldstatus an, den es nicht bestätigen kann.",
+      "q2": "Wie erkennt GeoATM, ob Bargeld verfügbar ist?",
+      "a2": "Teilnehmende Institute übermitteln den aktuellen Status ihrer Automaten direkt an GeoATM, und GeoATM zeigt ihn gemäß der Meldung des Betreibers an. Ist ein Automat noch nicht in einem Live-Feed erfasst, wird er anhand öffentlicher Kartendaten angezeigt und deutlich als geschätzt gekennzeichnet – GeoATM gibt niemals einen aktuellen Bargeldstatus an, den es nicht bestätigen kann.",
       "q3": "Ist GeoATM kostenlos nutzbar?",
       "a3": "Ja. Die Suche nach Geldautomaten und die Überprüfung der Verfügbarkeit in der Verbraucher-App ist überall dort kostenlos, wo GeoATM verfügbar ist.",
       "q4": "Wie beteiligen sich Institutionen?",
@@ -109,7 +109,7 @@
       "body": "Banken und Geldautomatenbetreiber listen ihre Geldautomaten kostenlos auf, und Monitor zeigt, wie ihr Netzwerk für die Welt aussieht: Lücken, nahegelegene Institutionen und Ausnahmen werden in eigenen Berichten aufgeführt.",
       "operators": "Sehen Sie, was die Betreiber erhalten",
       "register": "Registrieren Sie Ihre Institution",
-      "alt": "Bereits registriert? <signin>Anmelden</signin> · Zentralbanken und Verbände: <mail> {email} </mail>"
+      "alt": "Bereits registriert? <signin>Anmelden</signin> · Zentralbanken und Verbände: <mail>{email}</mail>"
     },
     "about": {
       "title": "Über GeoATM",
@@ -119,7 +119,7 @@
     "contact": {
       "title": "Kontakt",
       "body": "Wir freuen uns, von Ihnen zu hören. Für allgemeine Anfragen und Partnerschaftsanfragen können Sie uns jederzeit kontaktieren.",
-      "email": "E-Mail: <mail> {email} </mail>",
+      "email": "E-Mail: <mail>{email}</mail>",
       "button": "Kontaktieren Sie uns"
     },
     "mock": {
@@ -168,15 +168,15 @@
     "partnerships": "Kontakt Partnerschaften",
     "company": "Unternehmen",
     "aboutGeo": "Über GeoATM",
-    "geoev": "GeoEV : Laden von Elektrofahrzeugen",
+    "geoev": "GeoEV: Laden von Elektrofahrzeugen",
     "api": "Geo-API für Entwickler",
     "careers": "Karriere",
     "holdings": "Tumblehill Holdings",
-    "by": "GeoATM ™ von <a> Tumblehill Labs </a>",
+    "by": "GeoATM ™ von <a>Tumblehill Labs</a>",
     "partOf": "Teil des <a>GEO-Aufklärungsnetzwerks</a>",
-    "studio": "Ein Produktstudio von <a> Tumblehill Holdings LLC</a>",
+    "studio": "Ein Produktstudio von <a>Tumblehill Holdings LLC</a>",
     "rights": "© 2026 Tumblehill Holdings LLC. Alle Rechte vorbehalten.",
-    "maps": "Karten © <a> OpenStreetMap </a>-Mitwirkende. Die App-Bilder dienen der Veranschaulichung."
+    "maps": "Karten © <a>OpenStreetMap</a> -Mitwirkende. Die App-Bilder dienen der Veranschaulichung."
   },
   "subscribe": {
     "title": "GeoATM Updates abrufen",
@@ -269,7 +269,7 @@
     "intelligenceNote": "Die Suchstatistiken basieren auf den Nutzern von GeoATM und steigen mit der Nutzung; wir speichern keine Besucher- oder Transaktionsdaten. Die Zahlung erfolgt ab Aktivierung, und wir bieten Ihnen gerne vorab eine Demo an: {email}",
     "sharingEyebrow": "Enterprise · Unterstützt von <gt></gt>",
     "sharingTitle": "Teilen Sie die Informationen mit Verbänden und Aufsichtsbehörden – zu Ihren Bedingungen.",
-    "sharingLead": "GeoATM entwickelt von <gt></gt>, ermöglicht die sichere, einwilligungsbasierte Datenweitergabe an Bankenverbände, Aufsichtsbehörden und andere autorisierte Organisationen. Sie bestimmen, welche Informationen mit wem, zu welchem Zweck und wie lange geteilt werden. Berechtigungen können jederzeit widerrufen werden, und jede Weitergabe wird protokolliert.",
+    "sharingLead": "Mit <gt></gt> ermöglicht GeoATM die sichere, einwilligungsbasierte Datenweitergabe an Bankenverbände, Aufsichtsbehörden und andere autorisierte Organisationen. Sie bestimmen, welche Informationen mit wem, zu welchem Zweck und wie lange geteilt werden. Berechtigungen können jederzeit widerrufen werden, und jede Weitergabe wird protokolliert.",
     "sharingBadge": "<gt></gt> · Einwilligung, Berechtigungen und Audit",
     "sharingAlt": "Zwei Telefone zeigen das Betreiberportal GeoATM : eine Bank, die einem Zahlungsforum die Zustimmung erteilt, ihren Status und ihre Historie einzusehen, und der Bildschirm „Mit mir geteilt“ eines Bankenverbandes mit der Zustimmung der Bank und den Informationen, die sie an die Aufsichtsbehörde weitergeleitet hat.",
     "sharingCaption": "Eine Bank erteilt ihre Zustimmung, und was der Verband unter „Mit mir geteilt“ sieht. Beispielhafte Daten.",
