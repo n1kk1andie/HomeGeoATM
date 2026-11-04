@@ -147,7 +147,8 @@
       "lower": "Couverture inférieure",
       "higher": "plus haut",
       "demand": "La demande se concentre dans les corridors urbains.",
-      "cityCentre": "Centre-ville"
+      "cityCentre": "Centre-ville",
+      "secondPlace": "Gare centrale"
     }
   },
   "footer": {

@@ -147,7 +147,8 @@
       "lower": "Cobertura inferior",
       "higher": "mais alto",
       "demand": "A demanda está concentrada nos corredores urbanos.",
-      "cityCentre": "Centro da cidade"
+      "cityCentre": "Centro da cidade",
+      "secondPlace": "Estação Central"
     }
   },
   "footer": {

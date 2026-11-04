@@ -147,7 +147,8 @@
       "lower": "覆盖率较低",
       "higher": "更高",
       "demand": "需求集中在城市走廊地带",
-      "cityCentre": "市中心"
+      "cityCentre": "市中心",
+      "secondPlace": "中央车站"
     }
   },
   "footer": {
