@@ -1,0 +1,389 @@
+{
+  "nav": {
+    "home": "Hogar",
+    "about": "Acerca de",
+    "how": "Cómo funciona",
+    "operators": "Para operadores",
+    "faq": "Preguntas frecuentes",
+    "contact": "Contacto",
+    "homeLabel": "Página principal GeoATM",
+    "logoAlt": "GeoATM : en vivo y local en todas partes.",
+    "primary": "Primario",
+    "open": "Abrir GeoATM",
+    "signIn": "Iniciar sesión",
+    "language": "Idioma"
+  },
+  "home": {
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿Qué es GeoATM ?",
+      "a1": "GeoATM es una plataforma inteligente de acceso a efectivo. Combina un directorio de más de {atms} cajeros automáticos con información de disponibilidad en tiempo real proporcionada por las instituciones participantes, para que puedas encontrar el mejor lugar para retirar efectivo, no solo el cajero automático más cercano.",
+      "q2": "¿Cómo sabe GeoATM si hay efectivo disponible?",
+      "a2": "Las instituciones participantes publican el estado en tiempo real de sus cajeros automáticos directamente en GeoATM , y GeoATM lo muestra como información proporcionada por el operador. Si un cajero automático aún no forma parte de la transmisión en vivo, se muestra a partir de datos de mapas públicos y se marca claramente como estimado; GeoATM nunca afirma un estado de efectivo en tiempo real que no pueda confirmar.",
+      "q3": "¿Es GeoATM de uso gratuito?",
+      "a3": "Sí. Encontrar cajeros automáticos y consultar su disponibilidad en la aplicación para el consumidor es gratuito en todos los lugares donde opera GeoATM .",
+      "q4": "¿Cómo participan las instituciones?",
+      "a4": "Los bancos, operadores de cajeros automáticos, procesadores y bancos centrales pueden unirse a la red GeoATM para publicar la disponibilidad en tiempo real y obtener mayor visibilidad. Registre su institución en línea: verificaremos su organización y, a continuación, comenzará su prueba gratuita de 30 días de Monitor. Los bancos centrales y las asociaciones pueden escribirnos.",
+      "q5": "¿Qué países están incluidos?",
+      "a5": "El directorio de GeoATM muestra la ubicación de más de {atms} cajeros automáticos en {countries} países y territorios. La disponibilidad en tiempo real, según lo informado por los operadores, se amplía a medida que más instituciones se unen a la red."
+    },
+    "hero": {
+      "title1": "Sepa dónde está el dinero en efectivo.",
+      "title2": "Antes de irte.",
+      "sub": "GeoATM ayuda a las personas a encontrar cajeros automáticos cercanos, comprobar la disponibilidad de efectivo y elegir dónde retirar dinero con total confianza.",
+      "subOps": "Los operadores de cajeros automáticos pueden publicar sus redes de forma gratuita, supervisar el rendimiento, generar informes regulatorios y acceder a información geográfica valiosa para analizar su posicionamiento competitivo, mejorar la cobertura y fundamentar las decisiones de expansión.",
+      "open": "Abrir GeoATM",
+      "operators": "Para bancos y operadores"
+    },
+    "stats": {
+      "countriesMid": "Países y territorios",
+      "countriesSub": "Con ubicaciones de cajeros automáticos en el mapa",
+      "atmsMid": "Ubicaciones de cajeros automáticos",
+      "atmsSub": "Mapas disponibles en todo el mundo, actualizados semanalmente.",
+      "growing": "Creciente",
+      "networkMid": "Red",
+      "networkSub": "de las instituciones participantes",
+      "live": "Vivir",
+      "liveMid": "Estado informado por el operador",
+      "liveSub": "Expansión global"
+    },
+    "aud": {
+      "title": "Diseñado para todo el ecosistema de efectivo.",
+      "consumers": "Para los consumidores",
+      "consumersLead": "Encuentra el mejor cajero automático cercano, no solo el que esté más próximo.",
+      "c1": "Encuentra cajeros automáticos cercanos",
+      "c2": "Estado en tiempo real de los bancos participantes",
+      "c3": "Comparar accesos a efectivo cercanos",
+      "c4": "Recomendaciones inteligentes",
+      "c5": "Disponible en {countries} países y territorios",
+      "launch": "Iniciar aplicación",
+      "fi": "Para instituciones financieras",
+      "fiLead": "Únete a la red GeoATM .",
+      "fiBody": "Publica la disponibilidad de cajeros automáticos en tiempo real, mejora la experiencia del cliente y llega a clientes en {atms} ubicaciones de cajeros automáticos mapeadas en {countries} países y territorios.",
+      "fiLink": "Vea lo que obtienen los operadores",
+      "assoc": "Asociaciones industriales",
+      "assocLead": "Coordina el acceso al efectivo entre todos tus miembros.",
+      "assocBody": "Ofrecer a los miembros y al público una visión compartida y actualizada de la red de cajeros automáticos del sector, al tiempo que se reduce la duplicación en la recopilación y publicación de datos.",
+      "a1": "Mantener una visión consolidada de las redes ATM miembros.",
+      "a2": "Reducir la duplicación en la recopilación y conciliación de información de cajeros automáticos.",
+      "a3": "Publicar información coherente sobre cajeros automáticos y acceso a efectivo para el sector.",
+      "a4": "Vea qué instituciones y regiones ofrecen cobertura y dónde persisten las deficiencias.",
+      "a5": "Realizar un seguimiento de los cambios en la disponibilidad de la red y el alcance geográfico.",
+      "a6": "Proporcionar a los miembros información compartida sobre la demanda de efectivo de los consumidores y sus patrones de acceso.",
+      "assocLink": "Explorar el acceso a la industria",
+      "auth": "Bancos centrales y autoridades públicas",
+      "authLead": "Gestionar el panorama nacional del acceso al efectivo.",
+      "authBody": "Para las autoridades que ya recopilan, mantienen, supervisan o publican información sobre cajeros automáticos, GeoATM puede convertirse en una capa de infraestructura común para mantener actualizada esa información, comprender si la infraestructura está realmente disponible y comunicar el acceso al efectivo al público.",
+      "p1": "Mantener una visión nacional consolidada de la infraestructura de cajeros automáticos.",
+      "p2": "Reducir la recopilación, conciliación y publicación manual de información de cajeros automáticos.",
+      "p3": "Distinga la ubicación de los cajeros automáticos de las máquinas que realmente están disponibles para los consumidores.",
+      "p4": "Supervisar la cobertura geográfica y las brechas emergentes en el acceso a efectivo.",
+      "p5": "Comprender la resiliencia de la red cuando las instituciones o áreas experimentan interrupciones",
+      "p6": "Publicar información confiable y actualizada sobre el acceso al efectivo a través de una red orientada al consumidor.",
+      "p7": "Utilice la inteligencia agregada sobre la demanda y el recorrido del cliente para ver dónde buscan efectivo las personas.",
+      "authLink": "Solicite una sesión informativa institucional."
+    },
+    "why": {
+      "title": "¿Por qué GeoATM ?",
+      "dirTitle": "Directorio global",
+      "dirBody": "Ubicaciones de cajeros {atms} mapeadas en {countries} país y territorio, actualizadas semanalmente.",
+      "opTitle": "Estado informado por el operador",
+      "opBody": "Las instituciones participantes publican la disponibilidad de los cajeros automáticos en tiempo real directamente para sus clientes.",
+      "recTitle": "Recomendaciones inteligentes",
+      "recBody": "GeoATM no solo muestra el cajero automático más cercano, sino que recomienda el mejor lugar para obtener efectivo con total confianza."
+    },
+    "how": {
+      "title": "Cómo funciona",
+      "s1": "Abrir GeoATM",
+      "s1sub": "Inicie la aplicación o el sitio web.",
+      "s2": "GeoATM encuentra cajeros automáticos cercanos.",
+      "s2sub": "Buscar por ubicación o permitir GPS",
+      "s3": "Las instituciones participantes publican el estado en tiempo real.",
+      "s3sub": "Disponibilidad en directo de los socios participantes",
+      "s4": "Elige el mejor lugar para obtener dinero en efectivo.",
+      "s4sub": "Ve con confianza"
+    },
+    "inst": {
+      "eyebrow": "Para instituciones financieras",
+      "title": "Conviértete en participante GeoATM",
+      "body": "Los bancos y los operadores de cajeros automáticos indican que sus cajeros son gratuitos, y Monitor muestra cómo se ve su red para el mundo: enumera las deficiencias, las instituciones cercanas y las excepciones en sus propios informes.",
+      "operators": "Vea lo que obtienen los operadores",
+      "register": "Registre su institución",
+      "alt": "¿Ya estás registrado? <signin>Iniciar sesión</signin> · Bancos centrales y asociaciones: <mail> {email} </mail>"
+    },
+    "about": {
+      "title": "Acerca de GeoATM",
+      "body": "GeoATM está construyendo la red de acceso a efectivo más confiable del mundo. Al combinar un directorio global de cajeros automáticos con información en tiempo real sobre la disponibilidad proporcionada por las instituciones participantes, GeoATM ayuda a los consumidores a tomar mejores decisiones y, al mismo tiempo, permite a las instituciones financieras brindar un mejor servicio a sus clientes.",
+      "logoAlt": "GeoATM"
+    },
+    "contact": {
+      "title": "Contacto",
+      "body": "Nos encantaría saber de ti. Para consultas generales y solicitudes de colaboración, contáctanos cuando quieras.",
+      "email": "Correo electrónico: <mail> {email} </mail>",
+      "button": "Contáctanos"
+    },
+    "mock": {
+      "bestPlaces": "Los mejores lugares para obtener dinero en efectivo cerca de aquí.",
+      "metaBest": "{km} km · {atms, plural, one {# ATM} other {# Cajeros automáticos}} · 24 horas",
+      "metaSecond": "{km} km · {atms, plural, one {# ATM} other {# Cajeros automáticos}}",
+      "cashAvailable": "Efectivo disponible",
+      "locationOnly": "Ubicación solamente",
+      "recommended": "Recomendado para pagos en efectivo, no solo por la distancia.",
+      "operatorReported": "El operador informó",
+      "liveStatus": "Estado del cajero automático en tiempo real",
+      "liveFromBank": "En directo desde el banco",
+      "reach": "Alcance del cliente",
+      "sector": "Vista de la red sectorial",
+      "memberStatus": "Estado de informes de los miembros",
+      "reporting": "Informes",
+      "late": "Tarde",
+      "coverage": "Cobertura de red",
+      "gaps": "Se han detectado nuevas brechas de acceso.",
+      "national": "Acceso nacional al efectivo",
+      "liveReported": "Reportado por el operador y en directo",
+      "located": "Localizado, sin estado en vivo",
+      "underserved": "Áreas desatendidas",
+      "resilience": "resiliencia de la red",
+      "lower": "Cobertura más baja",
+      "higher": "más alto",
+      "demand": "La demanda se concentra en los corredores urbanos.",
+      "cityCentre": "Centro de la ciudad"
+    }
+  },
+  "footer": {
+    "tagline": "La red inteligente de acceso a efectivo del mundo.",
+    "logoAlt": "GeoATM",
+    "social": "Enlaces sociales",
+    "consumers": "Para los consumidores",
+    "open": "Abrir GeoATM",
+    "faq": "Preguntas frecuentes",
+    "support": "Apoyo",
+    "privacy": "política de privacidad",
+    "terms": "Condiciones de uso",
+    "institutions": "Para instituciones",
+    "plans": "Para operadores: planes y precios",
+    "status": "Estado informado por el operador",
+    "benefits": "Beneficios para socios",
+    "partnerships": "Colaboraciones de contacto",
+    "company": "Compañía",
+    "aboutGeo": "Acerca de GeoATM",
+    "geoev": "GeoEV : Carga de vehículos eléctricos",
+    "api": "API geográfica para desarrolladores",
+    "careers": "Carreras profesionales",
+    "holdings": "Tumblehill Holdings",
+    "by": "GeoATM ™ de <a> Tumblehill Labs </a>",
+    "partOf": "Parte de la <a>red de inteligencia GEO</a>",
+    "studio": "Un estudio de productos de <a> Tumblehill Holdings LLC</a>",
+    "rights": "© 2026 Tumblehill Holdings LLC. Todos los derechos reservados.",
+    "maps": "Mapas © Colaboradores de <a> OpenStreetMap </a>. Las imágenes de la aplicación utilizan datos ilustrativos."
+  },
+  "subscribe": {
+    "title": "Obtén actualizaciones GeoATM",
+    "body": "Cambios en el estado de los cajeros automáticos en tu zona, además de noticias. Sin spam; puedes darte de baja cuando quieras.",
+    "done": "Gracias, ya estás suscrito.",
+    "email": "Dirección de correo electrónico",
+    "area": "Tu zona",
+    "areaOptional": "Tu zona (opcional)",
+    "button": "Suscribir",
+    "error": "Algo salió mal. Por favor, inténtalo de nuevo."
+  },
+  "operators": {
+    "eyebrow": "Para bancos y operadores de cajeros automáticos",
+    "title1": "Decisiones sobre su red de cajeros automáticos,",
+    "title2": "No es solo un mapa.",
+    "sub": "Vea la cobertura de su red, su posición con respecto a otras instituciones y dónde su próximo cajero automático podría marcar la mayor diferencia. Todo ello a partir de su propio inventario e informes, el registro público de cajeros automáticos y las búsquedas en la aplicación GeoATM .",
+    "register": "Registre su institución",
+    "signIn": "Iniciar sesión",
+    "small": "La publicación es gratuita. Monitor comienza con una prueba gratuita de 30 días. Enterprise añade <a>el intercambio de información con asociaciones y organismos reguladores basado en el consentimiento</a>.",
+    "devicesAlt": "El portal del operador GeoATM en una tableta muestra la red de cajeros automáticos de un banco en todo Londres, incluyendo otras instituciones, zonas sin cobertura y áreas sin cobertura; y en un teléfono, muestra la disponibilidad con excepciones, ubicaciones de la competencia y problemas de los clientes.",
+    "devicesCaption": "El portal del operador. Datos ilustrativos.",
+    "decisionsTitle": "Tres decisiones, una red",
+    "decisions": {
+      "coverage": {
+        "title": "Cobertura de red",
+        "body": "Dónde se encuentran sus cajeros automáticos, cómo aparece cada uno en el registro público y dónde las personas que buscaron en la aplicación GeoATM no encontraron ningún cajero automático dentro de la distancia que usted eligió.",
+        "plan": "Listados en Monitor · brechas de búsqueda en Intelligence"
+      },
+      "competitive": {
+        "title": "Posición competitiva",
+        "body": "Su red en comparación con la de cualquier otra institución en un país: cuántos cajeros automáticos tiene cada una, qué porcentaje del país cubre cada una, con qué frecuencia se encuentran a menos de 1 km de distancia entre sí y dónde se encuentra cada una aislada.",
+        "plan": "Dos redes en Monitor · hasta cinco en Intelligence"
+      },
+      "expansion": {
+        "title": "Oportunidades de expansión",
+        "body": "Comparación de posibles ubicaciones: el cajero automático más cercano, otras instituciones a menos de 1 km, el cajero automático más cercano de cualquier institución y, en Intelligence, las búsquedas en torno a cada una.",
+        "plan": "Dos sitios en Monitor · hasta cinco en Intelligence"
+      }
+    },
+    "monitorTitle": "Monitorización: tu red, día a día.",
+    "monitor": {
+      "availability": {
+        "title": "Disponibilidad",
+        "body": "Historial de disponibilidad de cada cajero automático, a partir del informe de estado diario que usted ya genera. Incluido en todos los planes."
+      },
+      "exceptions": {
+        "title": "Excepciones",
+        "body": "Máquinas sin conexión en varios informes en ejecución, estados que cambian constantemente, máquinas que faltan en su último informe e informes que se han detenido."
+      },
+      "competitors": {
+        "title": "Ubicaciones de la competencia",
+        "body": "Cajeros automáticos de otras instituciones ubicados a menos de 500 m y 1 km del suyo, sus ubicaciones más disputadas y una comparación directa de dos redes. Solo ubicaciones: nunca se muestra el estado ni los datos de otros bancos."
+      },
+      "customers": {
+        "title": "Problemas de los clientes",
+        "body": "Cuando los clientes dicen que un cajero automático no tenía efectivo o estaba fuera de servicio, usted ve esa información asociada al estado que reportó. Esta función se actualiza a medida que más personas usan GeoATM ."
+      },
+      "listings": {
+        "title": "Sus listados en comparación con el registro público",
+        "body": "Cajeros automáticos que no aparecen en el mapa público, ubicados en lugares incorrectos o duplicados, listados a tu nombre que no están en tu inventario y horarios diferentes. Tus administradores reciben notificaciones de nuevos hallazgos por correo electrónico, como máximo una vez al día."
+      },
+      "osm": {
+        "title": "Arregla el mapa público, no solo tus registros.",
+        "body": "Envía a OpenStreetMap un informe sobre tu cajero automático a modo de nota para que los cartógrafos locales lo revisen, después de comprobar exactamente qué información contiene."
+      }
+    },
+    "intelligenceTitle": "Inteligencia: planificando adónde ir después",
+    "intelligence": {
+      "coverage": {
+        "title": "Análisis de cobertura",
+        "body": "Áreas donde las personas buscaron y no encontraron cajeros automáticos dentro de la distancia que usted elija (5, 10, 15, 20 km o la suya propia), en comparación con los cajeros automáticos mapeados hoy, con los huecos cerca de su red en su propio mapa."
+      },
+      "expansion": {
+        "title": "Comparaciones de expansión",
+        "body": "Hasta cinco ubicaciones candidatas en un mismo país, mostradas una al lado de la otra: las búsquedas en torno a cada una, el cajero automático más cercano y las instituciones que ya operan allí."
+      },
+      "network": {
+        "title": "Comparaciones de redes",
+        "body": "Hasta cinco instituciones en cualquier país: presencia, solapamiento y las áreas donde hay competidores y donde usted no."
+      },
+      "demand": {
+        "title": "Indicadores de demanda",
+        "body": "Las búsquedas se contabilizan por área de aproximadamente 2 km, mes a mes. Las áreas con menos de tres búsquedas al mes nunca se muestran."
+      },
+      "excel": {
+        "title": "Descargas de Excel",
+        "body": "Todas las comparaciones (redes, emplazamientos y, en Enterprise, el referente regional) y las cifras de demanda, descargables en formato Excel para su junta directiva y sus equipos de planificación."
+      }
+    },
+    "intelligenceNote": "Los recuentos de búsquedas provienen de personas que usan GeoATM y aumentan con el uso; no almacenamos datos de afluencia ni de transacciones. El pago se realiza desde la activación, y con gusto le haremos una demostración primero: {email}",
+    "sharingEyebrow": "Empresa · Desarrollado por <gt></gt>",
+    "sharingTitle": "Compártelo con asociaciones y organismos reguladores, según tus condiciones.",
+    "sharingLead": "Con tecnología de <gt></gt>, GeoATM permite compartir datos de forma segura y con consentimiento con entidades bancarias, organismos reguladores y otras organizaciones autorizadas. Usted controla qué información se comparte, con quién, con qué fin y durante cuánto tiempo. Los permisos pueden revocarse y cada acción de intercambio queda registrada.",
+    "sharingBadge": "<gt></gt> · consentimiento, permisos y auditoría",
+    "sharingAlt": "Dos teléfonos que muestran el portal del operador GeoATM : un banco que otorga a un foro de pagos el consentimiento para ver su estado e historial, y la pantalla \"Compartido conmigo\" de una asociación bancaria con el consentimiento del banco y lo que transmitió al regulador.",
+    "sharingCaption": "Un banco otorga su consentimiento y lo que la asociación ve en Compartido conmigo. Datos ilustrativos.",
+    "sharing": {
+      "terms": {
+        "title": "Tú pones las condiciones",
+        "body": "Seleccione el destinatario, los conjuntos de datos, la finalidad, el período y si solo podrán visualizarlos o también descargarlos."
+      },
+      "onward": {
+        "title": "Compartir solo según lo permitas",
+        "body": "Una asociación solo puede transmitir datos a un organismo regulador si usted ha especificado dicho organismo, solo la información que ha compartido y nunca más."
+      },
+      "revoke": {
+        "title": "Revocar en cualquier momento",
+        "body": "Modifica o revoca con un clic. Cada solicitud se verifica con tu consentimiento en ese momento, por lo que el acceso se interrumpe de inmediato."
+      },
+      "history": {
+        "title": "Una historia que no se puede reescribir.",
+        "body": "Cada concesión, modificación, revocación, transferencia y descarga queda registrada en un historial de auditoría encadenado que muestra cualquier manipulación."
+      }
+    },
+    "sharingSmall": "Los destinatarios registran su propia cuenta de organización sin costo alguno. Recibir datos no les otorga las funciones de su plan. La exportación de sus propios datos y sus informes regulatorios se mantienen en todos los planes.",
+    "plansTitle": "Planes",
+    "plansLead": "Por cajero automático al mes, en dólares estadounidenses, facturado mediante recibo. Dos meses gratis con pago anual.",
+    "unit": "por cajero automático / mes · mínimo {min}",
+    "plans": {
+      "free": {
+        "for": "Todos los bancos y operadores de cajeros automáticos",
+        "items": {
+          "1": "Enumera y corrige tus cajeros automáticos.",
+          "2": "Su estado se muestra en GeoATM",
+          "3": "Sus propios informes sobre tiempo de actividad, historial y organismos reguladores."
+        }
+      },
+      "monitor": {
+        "for": "Tu red, día a día",
+        "items": {
+          "1": "Excepciones en sus propios informes de estado",
+          "2": "Sus listados en comparación con el registro público",
+          "3": "Cajeros automáticos de otras instituciones cerca del suyo",
+          "4": "Lo que los clientes reportan en sus cajeros automáticos",
+          "5": "Compara dos redes o dos sitios web en tu país.",
+          "6": "Enviar correcciones a OpenStreetMap"
+        },
+        "note": "Prueba gratuita de 30 días, a partir del día en que se verifique tu cuenta."
+      },
+      "intelligence": {
+        "for": "Planificación y expansión",
+        "items": {
+          "1": "Todo en Monitor",
+          "2": "Búsquedas que no encontraron cajeros automáticos, a la distancia que usted elija",
+          "3": "Zonas sin cobertura cerca de su red",
+          "4": "Compara hasta cinco redes o sitios web en un mismo país.",
+          "5": "Recuentos de búsqueda para cada sitio candidato",
+          "6": "Descargue comparativas y cifras de demanda a Excel."
+        }
+      },
+      "enterprise": {
+        "for": "Redes más amplias y colaboración con asociaciones y organismos reguladores.",
+        "items": {
+          "1": "Todo en inteligencia",
+          "2": "Compartir información con asociaciones, organismos reguladores y otras instituciones basándose en el consentimiento.",
+          "3": "Compara hasta diez redes y veinte sitios web, sin importar las fronteras.",
+          "4": "Evaluación comparativa regional",
+          "5": "Integración con sus sistemas de monitoreo de cajeros automáticos, definida en conjunto con usted."
+        }
+      }
+    },
+    "stepsTitle": "Cómo funciona el autoservicio",
+    "steps": {
+      "register": {
+        "title": "Registro",
+        "body": "Seleccione su institución del registro e indíquenos quién es usted."
+      },
+      "verification": {
+        "title": "Verificación",
+        "body": "Mediante <gv></gv>: compruebe su dominio de correo electrónico; alguien de su organización, encontrado de forma independiente, lo confirma."
+      },
+      "portal": {
+        "title": "Portal del operador",
+        "body": "Agrega tus cajeros automáticos. Cada uno se verifica con el registro público y las listas de otras instituciones."
+      },
+      "trial": {
+        "title": "Prueba gratuita de 30 días",
+        "body": "Monitorea desde el día en que se verifica tu cuenta. El portal lleva un registro continuo de lo que encontró y lo que solucionaste."
+      },
+      "subscription": {
+        "title": "Suscripción",
+        "body": "Continúa en Monitor, pasa a Inteligencia o quédate en Gratis. Nada se renueva automáticamente."
+      }
+    },
+    "trust": {
+      "badge": "Verificado por <gv></gv>",
+      "title": "Instituciones verificadas, afirmaciones contrastadas",
+      "body": "Antes de que un banco pueda publicar, debe demostrar que controla su dominio de correo electrónico y que una persona del banco, independiente del solicitante, lo confirma. Cada cajero automático que añade se coteja con el mapa público y los listados de otras instituciones; un cajero automático en disputa permanece fuera del mapa hasta que se resuelva el problema. Cada decisión se registra en <b><gv></gv></b>, el servicio de verificación de la red GEO. No se trata de una licencia bancaria. Una vez verificada, una institución es reconocida en todos los productos GEO.",
+      "dataTitle": "Tus datos siguen siendo tuyos.",
+      "dataBody": "Los informes de estado, las cargas de datos y los resultados solo son visibles para su organización y el equipo GeoATM . Otras instituciones solo ven sus cajeros automáticos como ubicaciones en el mapa público, a menos que usted decida compartir más información en Enterprise, con su consentimiento. Sus informes de tiempo de actividad, historial y cumplimiento normativo están incluidos en todos los planes."
+    },
+    "faqTitle": "Preguntas que hacen las instituciones",
+    "faq": {
+      "q1": "¿Necesitamos conectar GeoATM a nuestros cajeros automáticos?",
+      "a1": "No. El monitoreo funciona a partir de su inventario de cajeros automáticos y el informe de estado diario que ya genera, comparándolo con el registro público de cajeros automáticos. Conectar su propio sistema de monitoreo directamente es algo que analizamos con usted en Enterprise.",
+      "q2": "¿Qué establece la verificación?",
+      "a2": "Que su organización controle su dominio de correo electrónico y que una persona de la misma, a quien encontramos de forma independiente, confirmara que usted está autorizado para actuar en su nombre. No se trata de una licencia bancaria; cuando un organismo regulador publica una lista, el registro la muestra por separado.",
+      "q3": "¿Pueden otros bancos ver nuestros datos?",
+      "a3": "Solo si lo compartes. Tus informes de estado, cargas y resultados son tuyos. Otras instituciones solo ven tus cajeros automáticos como ubicaciones en el mapa público, al igual que tú ves los suyos, y eso es todo lo que utiliza la comparación de redes. En Enterprise, puedes optar por compartir conjuntos de datos específicos con una organización determinada, bajo los términos que tú definas y que puedas revocar.",
+      "q4": "¿Alguna asociación u organismo regulador paga por recibir los datos que compartimos?",
+      "a4": "No. Recibir datos compartidos es gratuito; el destinatario registra su propia cuenta de organización. Para analizarlos (comparaciones, análisis comparativos, paneles de control) se requiere el plan del destinatario: las funciones de su plan Enterprise no se transfieren con los datos.",
+      "q5": "¿Compartir información sustituye a nuestros informes reglamentarios?",
+      "a5": "No. Tus propios informes regulatorios y exportaciones están incluidos en todos los planes, incluido el gratuito, y las divulgaciones que exige la ley no dependen de una suscripción. El intercambio basado en el consentimiento se aplica a todo aquello que decidas compartir más allá de lo estipulado.",
+      "q6": "¿ GeoATM nos avisa cuando un cajero automático deja de funcionar?",
+      "a6": "GeoATM no funciona de forma independiente: no está conectado a tus máquinas. Se basa en los informes de estado que subes, detecta excepciones y notifica a tus administradores por correo electrónico sobre los nuevos hallazgos. La conexión de tu propio sistema de monitorización es un aspecto que analizamos contigo en la versión Enterprise.",
+      "q7": "¿Cómo se calcula la factura?",
+      "a7": "Por cajero automático listado el día 1 del mes, con un mínimo mensual, facturado mediante factura. Los contratos anuales incluyen dos meses gratis. Las actualizaciones entran en vigor de inmediato; las degradaciones, a partir del siguiente período; no se aplican prorrateos."
+    },
+    "alreadyRegistered": "¿Ya estás registrado? <a>Inicia sesión</a>"
+  }
+}
