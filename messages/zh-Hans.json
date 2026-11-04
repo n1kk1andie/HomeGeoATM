@@ -9,7 +9,7 @@
     "homeLabel": "GeoATM主页",
     "logoAlt": "GeoATM随时随地，实时本地化",
     "primary": "基本的",
-    "open": "开放式GeoATM",
+    "open": "打开 GeoATM",
     "signIn": "登入",
     "language": "语言"
   },
@@ -32,7 +32,7 @@
       "title2": "在你离开之前。",
       "sub": "GeoATM帮助人们找到附近的 ATM 机，查看现金可用性，并自信地选择取款地点。",
       "subOps": "ATM 运营商可以免费列出其网络，监控性能，生成监管报告，并获取强大的地理信息，以分析竞争地位、改善覆盖范围并为扩展决策提供信息。",
-      "open": "开放式GeoATM",
+      "open": "打开 GeoATM",
       "operators": "适用于银行和运营商"
     },
     "stats": {
@@ -94,7 +94,7 @@
     },
     "how": {
       "title": "工作原理",
-      "s1": "开放式GeoATM",
+      "s1": "打开 GeoATM",
       "s1sub": "启动应用程序或网站",
       "s2": "GeoATM查找附近的 ATM",
       "s2sub": "按位置搜索或允许 GPS 定位",
@@ -156,7 +156,7 @@
     "logoAlt": "GeoATM",
     "social": "社交链接",
     "consumers": "对于消费者而言",
-    "open": "开放式GeoATM",
+    "open": "打开 GeoATM",
     "faq": "常问问题",
     "support": "支持",
     "privacy": "隐私政策",

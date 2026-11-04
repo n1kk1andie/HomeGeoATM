@@ -9,7 +9,7 @@
     "homeLabel": "Página inicial GeoATM",
     "logoAlt": "GeoATM — Ao vivo, local em todos os lugares",
     "primary": "Primário",
-    "open": "Abra GeoATM",
+    "open": "Abrir GeoATM",
     "signIn": "Entrar",
     "language": "Linguagem"
   },
@@ -32,7 +32,7 @@
       "title2": "Antes de ir.",
       "sub": "GeoATM ajuda as pessoas a encontrar caixas eletrônicos próximos, verificar a disponibilidade de dinheiro e escolher onde sacar com segurança.",
       "subOps": "Os operadores de caixas eletrônicos podem listar suas redes gratuitamente, monitorar o desempenho, gerar relatórios regulatórios e acessar informações geográficas valiosas para analisar o posicionamento da concorrência, melhorar a cobertura e embasar decisões de expansão.",
-      "open": "Abra GeoATM",
+      "open": "Abrir GeoATM",
       "operators": "Para bancos e operadores"
     },
     "stats": {
@@ -94,7 +94,7 @@
     },
     "how": {
       "title": "Como funciona",
-      "s1": "Abra GeoATM",
+      "s1": "Abrir GeoATM",
       "s1sub": "Inicie o aplicativo ou o site.",
       "s2": "GeoATM encontra caixas eletrônicos próximos.",
       "s2sub": "Pesquise por localização ou ative o GPS.",
@@ -156,7 +156,7 @@
     "logoAlt": "GeoATM",
     "social": "Links para redes sociais",
     "consumers": "Para consumidores",
-    "open": "Abra GeoATM",
+    "open": "Abrir GeoATM",
     "faq": "Perguntas frequentes",
     "support": "Apoiar",
     "privacy": "política de Privacidade",
