@@ -2,16 +2,18 @@
   "name": "homegeoatm",
   "version": "1.0.0",
   "private": true,
-  "description": "GeoATM marketing site — home.geoatm.app. Static informational landing page; no data, cash or admin code.",
+  "description": "GeoATM marketing site \u2014 home.geoatm.app. Static informational landing page; no data, cash or admin code.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prebuild": "node scripts/sync-messages.mjs messages --soft"
   },
   "dependencies": {
     "@vercel/analytics": "^1.4.1",
     "next": "^14.2.0",
+    "next-intl": "^3.26.5",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"
   },
