@@ -126,7 +126,7 @@
       "bestPlaces": "आस-पास नकदी प्राप्त करने के सर्वोत्तम स्थान",
       "metaBest": "{km} किमी · {atms, plural, one {#} other {#}} · 24 घंटे",
       "metaSecond": "{km} किमी {atms, plural, one {#} other {#}}",
-      "cashAvailable": "नकद उपलब्ध है",
+      "cashAvailable": "नकदी उपलब्ध",
       "locationOnly": "केवल स्थान",
       "recommended": "नकद भुगतान के लिए अनुशंसित, दूरी के लिए नहीं।",
       "operatorReported": "ऑपरेटर ने रिपोर्ट किया",

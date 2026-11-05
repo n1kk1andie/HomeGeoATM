@@ -126,7 +126,7 @@
       "bestPlaces": "附近最佳取款地点",
       "metaBest": "{km}公里 · {atms, plural, one {#通机} other {# ATM 机}} · 24 小时",
       "metaSecond": "{km}公里 · {atms, plural, one {#通机} other {# ATM 机}}",
-      "cashAvailable": "可用现金",
+      "cashAvailable": "有现金",
       "locationOnly": "仅限地点",
       "recommended": "推荐用于现金交易，而不仅仅是距离。",
       "operatorReported": "操作员报告",
