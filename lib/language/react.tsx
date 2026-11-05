@@ -45,16 +45,17 @@ export const useLanguage = () => {
   return { lang, dir, setLanguage, languages };
 };
 
-const Globe = ({ size = 16 }: { size?: number }) => (
-  <svg aria-hidden="true" viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.8">
-    <circle cx="12" cy="12" r="9" />
-    <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" />
+// A small down arrow, so the short code reads as a menu. (No globe: several
+// product logos already use one.)
+const Chevron = ({ size = 12 }: { size?: number }) => (
+  <svg aria-hidden="true" viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M6 9l6 6 6-6" />
   </svg>
 );
 
 /**
- * The language picker every product uses. `compact` (for headers) shows a
- * globe and a short code; tapping opens the device's own list with every
+ * The language picker every product uses. `compact` (for headers) shows the
+ * short code and a down arrow; tapping opens the device's own list with every
  * language written in its own script. Choosing one remembers it across the
  * product's app and website and reloads.
  */
@@ -65,10 +66,14 @@ export function LanguageSelect({ current, compact, label = "Language", className
     <label
       className={className}
       title={label}
-      style={{ position: "relative", display: "inline-flex", alignItems: "center", gap: 6, cursor: "pointer", ...(compact ? { padding: "6px 10px", border: "1px solid currentColor", borderRadius: 999, fontSize: 13, fontWeight: 600, lineHeight: 1, opacity: 0.85 } : {}) }}
+      style={{ position: "relative", display: "inline-flex", alignItems: "center", gap: 4, cursor: "pointer", ...(compact ? { padding: "6px 10px", border: "1px solid currentColor", borderRadius: 999, fontSize: 13, fontWeight: 600, lineHeight: 1, opacity: 0.85 } : {}) }}
     >
-      <Globe />
-      {compact ? <span aria-hidden="true">{short}</span> : null}
+      {compact ? (
+        <>
+          <span aria-hidden="true">{short}</span>
+          <Chevron />
+        </>
+      ) : null}
       <select
         aria-label={label}
         value={lang.code}
