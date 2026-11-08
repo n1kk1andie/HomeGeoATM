@@ -302,7 +302,8 @@
           "1": "List and correct your ATMs",
           "2": "Their status shown in GeoATM",
           "3": "Your own uptime, history and regulator reports"
-        }
+        },
+        "cta": "List your ATMs free"
       },
       "monitor": {
         "for": "Your network, day to day",
@@ -314,7 +315,8 @@
           "5": "Compare two networks, or two sites, in your country",
           "6": "Send corrections to OpenStreetMap"
         },
-        "note": "30-day free trial, from the day you're verified"
+        "note": "30-day free trial, from the day you're verified",
+        "cta": "Start your free trial"
       },
       "intelligence": {
         "for": "Planning and expansion",
@@ -325,7 +327,8 @@
           "4": "Compare up to five networks or sites, in any one country",
           "5": "Search counts for each candidate site",
           "6": "Download comparisons and demand figures to Excel"
-        }
+        },
+        "cta": "Choose Intelligence"
       },
       "enterprise": {
         "for": "Larger networks, and sharing with associations and regulators",
@@ -335,7 +338,8 @@
           "3": "Compare up to ten networks and twenty sites, across borders",
           "4": "Regional benchmarking",
           "5": "Integration with your ATM monitoring systems, scoped with you"
-        }
+        },
+        "cta": "Choose Enterprise"
       }
     },
     "stepsTitle": "How self-service works",

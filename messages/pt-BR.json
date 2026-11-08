@@ -302,7 +302,8 @@
           "1": "Liste e corrija seus caixas eletrônicos.",
           "2": "O status deles é mostrado no GeoATM",
           "3": "Seu próprio tempo de atividade, histórico e relatórios para órgãos reguladores."
-        }
+        },
+        "cta": "Cadastre seus caixas grátis"
       },
       "monitor": {
         "for": "Sua rede de contatos, dia após dia.",
@@ -314,7 +315,8 @@
           "5": "Compare duas redes, ou dois sites, em seu país.",
           "6": "Enviar correções para OpenStreetMap"
         },
-        "note": "Teste grátis por 30 dias, a partir da data de verificação da sua conta."
+        "note": "Teste grátis por 30 dias, a partir da data de verificação da sua conta.",
+        "cta": "Começar o teste grátis"
       },
       "intelligence": {
         "for": "Planejamento e expansão",
@@ -325,7 +327,8 @@
           "4": "Compare até cinco redes ou sites em qualquer país.",
           "5": "Contagem de buscas para cada site candidato",
           "6": "Baixe as comparações e os dados de demanda para o Excel."
-        }
+        },
+        "cta": "Escolher Intelligence"
       },
       "enterprise": {
         "for": "Redes maiores e compartilhamento com associações e órgãos reguladores.",
@@ -335,7 +338,8 @@
           "3": "Compare até dez redes e vinte locais, além-fronteiras.",
           "4": "Comparação regional",
           "5": "Integração com seus sistemas de monitoramento de caixas eletrônicos, definida em conjunto com você."
-        }
+        },
+        "cta": "Escolher Enterprise"
       }
     },
     "stepsTitle": "Como funciona o autoatendimento",
