@@ -193,7 +193,7 @@
     "title1": "Decisions about your ATM network,",
     "title2": "not just a map.",
     "sub": "See how your network is covered, where you stand against other institutions, and where your next ATM could make the greatest difference. Built from your own inventory and reports, the public record of ATMs and searches in the GeoATM app.",
-    "register": "Register your institution",
+    "register": "Sign up",
     "signIn": "Sign in",
     "small": "Listing is free. Monitor starts with a 30-day free trial. Enterprise adds <a>consent-based sharing with associations and regulators</a>.",
     "devicesAlt": "The GeoATM operator portal on a tablet, showing a bank's ATM network across London with other institutions, network gaps and coverage gaps, and on a phone, showing availability with exceptions, competitor locations and customer issues.",
@@ -315,7 +315,7 @@
           "5": "Compare two networks, or two sites, in your country",
           "6": "Send corrections to OpenStreetMap"
         },
-        "note": "30-day free trial, from the day you're verified",
+        "note": "30-day free trial, from the day you sign up",
         "cta": "Start your free trial"
       },
       "intelligence": {
@@ -345,20 +345,20 @@
     "stepsTitle": "How self-service works",
     "steps": {
       "register": {
-        "title": "Register",
-        "body": "Choose your institution from the register and tell us who you are."
+        "title": "Sign up",
+        "body": "Tell us who you are and choose a plan. Your account opens straight away."
       },
       "verification": {
-        "title": "Verification",
-        "body": "Through <gv></gv>: prove your email domain; someone at your organisation, found independently, confirms you."
+        "title": "Official profile (optional)",
+        "body": "To show your ATMs and their live status on the public map as their operator, or to share with regulators, verify through <gv></gv>: prove your email domain, and someone at your organisation, found independently, confirms you."
       },
       "portal": {
         "title": "Operator portal",
-        "body": "Add your ATMs. Each is checked against the public record and other institutions' listings."
+        "body": "Add your ATMs; they stay private to your account. Each is checked against the public record and other institutions' listings."
       },
       "trial": {
         "title": "30-day free trial",
-        "body": "Monitor, from the day you're verified. The portal keeps a running tally of what it found and what you fixed."
+        "body": "Monitor, from the day you sign up. The portal keeps a running tally of what it found and what you fixed."
       },
       "subscription": {
         "title": "Subscription",
@@ -389,6 +389,6 @@
       "q7": "How is the bill worked out?",
       "a7": "Per ATM listed on the 1st of the month, with a monthly minimum, billed by invoice. Annual terms get two months free. Upgrades start straight away; downgrades from the next period; nothing is prorated."
     },
-    "alreadyRegistered": "Already registered? <a>Sign in</a>"
+    "alreadyRegistered": "Already have an account? <a>Sign in</a>"
   }
 }

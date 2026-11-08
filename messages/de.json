@@ -193,7 +193,7 @@
     "title1": "Entscheidungen bezüglich Ihres Geldautomatennetzes,",
     "title2": "nicht nur eine Karte.",
     "sub": "Sehen Sie, wie Ihr Netzwerk abgedeckt ist, wie Sie im Vergleich zu anderen Instituten dastehen und wo Ihr nächster Geldautomat den größten Unterschied machen könnte. Die Daten basieren auf Ihrem eigenen Bestand und Ihren Berichten sowie den öffentlichen Geldautomaten-Datenbanken und Suchanfragen der GeoATM App.",
-    "register": "Registrieren Sie Ihre Institution",
+    "register": "Registrieren",
     "signIn": "anmelden",
     "small": "Der Eintrag ist kostenlos. Monitor bietet eine 30-tägige kostenlose Testphase. Enterprise beinhaltet zusätzlich die <a>einwilligungsbasierte Weitergabe an Verbände und Aufsichtsbehörden</a>.",
     "devicesAlt": "Das GeoATM -Betreiberportal auf einem Tablet zeigt das Geldautomatennetz einer Bank in ganz London zusammen mit anderen Instituten, Netzwerklücken und Abdeckungslücken an, und auf einem Smartphone zeigt es die Verfügbarkeit mit Ausnahmen, Standorte von Wettbewerbern und Kundenprobleme an.",
@@ -315,7 +315,7 @@
           "5": "Vergleichen Sie zwei Netzwerke oder zwei Standorte in Ihrem Land",
           "6": "Senden Sie Korrekturen an OpenStreetMap"
         },
-        "note": "30 Tage kostenlos testen, ab dem Tag Ihrer Verifizierung",
+        "note": "30 Tage kostenlos testen, ab dem Tag der Registrierung",
         "cta": "Kostenlos testen"
       },
       "intelligence": {
@@ -345,20 +345,20 @@
     "stepsTitle": "So funktioniert Selbstbedienung",
     "steps": {
       "register": {
-        "title": "Registrieren",
-        "body": "Wählen Sie Ihre Institution aus dem Verzeichnis aus und teilen Sie uns mit, wer Sie sind."
+        "title": "Registrierung",
+        "body": "Sagen Sie uns, wer Sie sind, und wählen Sie einen Tarif. Ihr Konto ist sofort eröffnet."
       },
       "verification": {
-        "title": "Überprüfung",
-        "body": "Über <gv></gv>: Weisen Sie Ihre E-Mail-Domain nach; eine unabhängig gefundene Person in Ihrer Organisation bestätigt dies."
+        "title": "Offizielles Profil (optional)",
+        "body": "Um Ihre Geldautomaten und ihren Live-Status auf der öffentlichen Karte als Betreiber zu zeigen oder Daten mit Aufsichtsbehörden zu teilen, lassen Sie sich über <gv></gv> verifizieren: Sie weisen Ihre E-Mail-Domain nach, und eine unabhängig ermittelte Person in Ihrer Organisation bestätigt Sie."
       },
       "portal": {
         "title": "Betreiberportal",
-        "body": "Fügen Sie Ihre Geldautomaten hinzu. Jeder einzelne wird mit dem öffentlichen Register und den Verzeichnissen anderer Institutionen abgeglichen."
+        "body": "Fügen Sie Ihre Geldautomaten hinzu; sie bleiben in Ihrem Konto privat. Jeder wird mit dem öffentlichen Register und den Einträgen anderer Institute abgeglichen."
       },
       "trial": {
         "title": "30 Tage kostenlos testen",
-        "body": "Überwachen Sie die Einstellungen ab dem Tag Ihrer Verifizierung. Das Portal führt eine fortlaufende Liste der gefundenen und von Ihnen behobenen Fehler."
+        "body": "Monitor, ab dem Tag der Registrierung. Das Portal führt Buch darüber, was es gefunden und was Sie behoben haben."
       },
       "subscription": {
         "title": "Abonnement",
@@ -389,6 +389,6 @@
       "q7": "Wie setzt sich die Rechnung zusammen?",
       "a7": "Pro Geldautomat, der am 1. des Monats gelistet ist, mit einem monatlichen Mindestbetrag, Abrechnung per Rechnung. Bei jährlicher Laufzeit erhalten Sie zwei Monate gratis. Upgrades beginnen sofort; Downgrades ab der nächsten Laufzeit; es erfolgt keine anteilige Berechnung."
     },
-    "alreadyRegistered": "Bereits registriert? <a>Anmelden</a>"
+    "alreadyRegistered": "Schon ein Konto? <a>Anmelden</a>"
   }
 }
