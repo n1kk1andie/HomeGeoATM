@@ -193,7 +193,7 @@
     "title1": "Décisions concernant votre réseau de guichets automatiques,",
     "title2": "Pas seulement une carte.",
     "sub": "Découvrez la couverture de votre réseau, comparez-vous aux autres établissements et identifiez les emplacements où votre prochain distributeur automatique de billets pourrait avoir le plus d'impact. Cette analyse repose sur votre propre inventaire, vos rapports, le registre public des distributeurs automatiques et les recherches effectuées dans l'application GeoATM.",
-    "register": "Inscrivez votre établissement",
+    "register": "S'inscrire",
     "signIn": "Se connecter",
     "small": "L'inscription est gratuite. Monitor propose un essai gratuit de 30 jours. La version Enterprise ajoute le <a>partage avec consentement avec les associations et les organismes de réglementation</a>.",
     "devicesAlt": "Le portail opérateur GeoATM sur tablette, affichant le réseau de guichets automatiques d'une banque à travers Londres avec d'autres institutions, les lacunes du réseau et les zones non couvertes, et sur téléphone, affichant la disponibilité avec exceptions, les emplacements des concurrents et les problèmes rencontrés par les clients.",
@@ -315,7 +315,7 @@
           "5": "Comparez deux réseaux, ou deux sites, dans votre pays",
           "6": "Envoyer les corrections à OpenStreetMap"
         },
-        "note": "Essai gratuit de 30 jours à compter de la date de vérification.",
+        "note": "Essai gratuit de 30 jours, dès votre inscription",
         "cta": "Commencer l'essai gratuit"
       },
       "intelligence": {
@@ -345,20 +345,20 @@
     "stepsTitle": "Comment fonctionne le libre-service ?",
     "steps": {
       "register": {
-        "title": "Registre",
-        "body": "Choisissez votre établissement dans le registre et dites-nous qui vous êtes."
+        "title": "Inscription",
+        "body": "Dites-nous qui vous êtes et choisissez une formule. Votre compte s'ouvre immédiatement."
       },
       "verification": {
-        "title": "Vérification",
-        "body": "Via <gv></gv> : prouvez votre domaine de messagerie ; une personne de votre organisation, trouvée indépendamment, vous confirme."
+        "title": "Profil officiel (facultatif)",
+        "body": "Pour afficher vos guichets et leur état en direct sur la carte publique en tant qu'exploitant, ou pour partager avec les régulateurs, faites-vous vérifier par <gv></gv> : prouvez votre domaine de messagerie, et une personne de votre organisation, trouvée de manière indépendante, vous confirme."
       },
       "portal": {
         "title": "Portail opérateur",
-        "body": "Ajoutez vos distributeurs automatiques de billets. Chacun est vérifié par rapport aux registres publics et aux listes d'autres institutions."
+        "body": "Ajoutez vos guichets ; ils restent privés à votre compte. Chacun est vérifié par rapport au registre public et aux annonces des autres établissements."
       },
       "trial": {
         "title": "essai gratuit de 30 jours",
-        "body": "Surveillez votre compte dès sa vérification. Le portail conserve un historique des problèmes détectés et de ceux que vous avez corrigés."
+        "body": "Monitor, dès votre inscription. Le portail tient le compte de ce qu'il a trouvé et de ce que vous avez corrigé."
       },
       "subscription": {
         "title": "Abonnement",
@@ -389,6 +389,6 @@
       "q7": "Comment le projet de loi est-il établi ?",
       "a7": "Par distributeur automatique de billets (DAB) listé le 1er du mois, avec un minimum mensuel, facturé sur facture. Les abonnements annuels bénéficient de deux mois gratuits. Les mises à niveau sont effectives immédiatement ; les rétrogradations à partir de la période suivante ; aucun remboursement au prorata n'est effectué."
     },
-    "alreadyRegistered": "Déjà inscrit(e) ? <a>Se connecter</a>"
+    "alreadyRegistered": "Déjà un compte ? <a>Se connecter</a>"
   }
 }

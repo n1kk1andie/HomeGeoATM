@@ -36,7 +36,8 @@ const MONITOR = ["availability", "exceptions", "competitors", "customers", "list
 const INTELLIGENCE = ["coverage", "expansion", "network", "demand", "excel"] as const;
 /** Enterprise: consent-based sharing. Only what the portal enforces today. */
 const SHARING = ["terms", "onward", "revoke", "history"] as const;
-const STEPS = ["register", "verification", "portal", "trial", "subscription"] as const;
+/** Open sign-up: the account opens at once; verification is only for an official profile, last and optional. */
+const STEPS = ["register", "trial", "portal", "subscription", "verification"] as const;
 const FAQ = [1, 2, 3, 4, 5, 6, 7] as const;
 
 /** "Geo" + the coloured product name, as the brand is always written. */

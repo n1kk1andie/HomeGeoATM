@@ -193,7 +193,7 @@
     "title1": "Decisiones sobre su red de cajeros automáticos,",
     "title2": "No es solo un mapa.",
     "sub": "Vea la cobertura de su red, su posición con respecto a otras instituciones y dónde su próximo cajero automático podría marcar la mayor diferencia. Todo ello a partir de su propio inventario e informes, el registro público de cajeros automáticos y las búsquedas en la aplicación GeoATM.",
-    "register": "Registre su institución",
+    "register": "Registrarse",
     "signIn": "Iniciar sesión",
     "small": "La publicación es gratuita. Monitor comienza con una prueba gratuita de 30 días. Enterprise añade <a>el intercambio de información con asociaciones y organismos reguladores basado en el consentimiento</a>.",
     "devicesAlt": "El portal del operador GeoATM en una tableta muestra la red de cajeros automáticos de un banco en todo Londres, incluyendo otras instituciones, zonas sin cobertura y áreas sin cobertura; y en un teléfono, muestra la disponibilidad con excepciones, ubicaciones de la competencia y problemas de los clientes.",
@@ -315,7 +315,7 @@
           "5": "Compara dos redes o dos sitios web en tu país.",
           "6": "Enviar correcciones a OpenStreetMap"
         },
-        "note": "Prueba gratuita de 30 días, a partir del día en que se verifique tu cuenta.",
+        "note": "Prueba gratuita de 30 días, desde el día en que se registra",
         "cta": "Empezar la prueba gratuita"
       },
       "intelligence": {
@@ -346,19 +346,19 @@
     "steps": {
       "register": {
         "title": "Registro",
-        "body": "Seleccione su institución del registro e indíquenos quién es usted."
+        "body": "Díganos quién es y elija un plan. Su cuenta se abre al instante."
       },
       "verification": {
-        "title": "Verificación",
-        "body": "Mediante <gv></gv>: compruebe su dominio de correo electrónico; alguien de su organización, encontrado de forma independiente, lo confirma."
+        "title": "Perfil oficial (opcional)",
+        "body": "Para mostrar sus cajeros y su estado en vivo en el mapa público como su operador, o para compartir con reguladores, verifíquese con <gv></gv>: demuestre su dominio de correo y una persona de su organización, localizada de forma independiente, lo confirma."
       },
       "portal": {
         "title": "Portal del operador",
-        "body": "Agrega tus cajeros automáticos. Cada uno se verifica con el registro público y las listas de otras instituciones."
+        "body": "Añada sus cajeros; quedan privados en su cuenta. Cada uno se contrasta con el registro público y con los listados de otras instituciones."
       },
       "trial": {
         "title": "Prueba gratuita de 30 días",
-        "body": "Monitorea desde el día en que se verifica tu cuenta. El portal lleva un registro continuo de lo que encontró y lo que solucionaste."
+        "body": "Monitor, desde el día en que se registra. El portal lleva la cuenta de lo que encontró y de lo que usted corrigió."
       },
       "subscription": {
         "title": "Suscripción",
@@ -389,6 +389,6 @@
       "q7": "¿Cómo se calcula la factura?",
       "a7": "Por cajero automático listado el día 1 del mes, con un mínimo mensual, facturado mediante factura. Los contratos anuales incluyen dos meses gratis. Las actualizaciones entran en vigor de inmediato; las degradaciones, a partir del siguiente período; no se aplican prorrateos."
     },
-    "alreadyRegistered": "¿Ya estás registrado? <a>Inicia sesión</a>"
+    "alreadyRegistered": "¿Ya tiene una cuenta? <a>Inicie sesión</a>"
   }
 }

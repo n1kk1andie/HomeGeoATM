@@ -193,7 +193,7 @@
     "title1": "Decisões sobre sua rede de caixas eletrônicos,",
     "title2": "Não é apenas um mapa.",
     "sub": "Veja como sua rede está coberta, sua posição em relação a outras instituições e onde seu próximo caixa eletrônico poderia fazer a maior diferença. A partir do seu próprio inventário e relatórios, e do registro público de caixas eletrônicos e buscas no aplicativo GeoATM.",
-    "register": "Registre sua instituição",
+    "register": "Cadastrar-se",
     "signIn": "Entrar",
     "small": "O cadastro é gratuito. O Monitor oferece um período de teste gratuito de 30 dias. A versão Enterprise inclui o compartilhamento com base <a>consentimento com associações e órgãos reguladores</a>",
     "devicesAlt": "O portal do operador GeoATM em um tablet mostra a rede de caixas eletrônicos de um banco em Londres, juntamente com outras instituições, lacunas na rede e áreas sem cobertura. Em um celular, o portal exibe a disponibilidade com exceções, a localização de concorrentes e problemas relatados pelos clientes.",
@@ -315,7 +315,7 @@
           "5": "Compare duas redes, ou dois sites, em seu país.",
           "6": "Enviar correções para OpenStreetMap"
         },
-        "note": "Teste grátis por 30 dias, a partir da data de verificação da sua conta.",
+        "note": "Teste grátis de 30 dias, a partir do dia do cadastro",
         "cta": "Começar o teste grátis"
       },
       "intelligence": {
@@ -345,20 +345,20 @@
     "stepsTitle": "Como funciona o autoatendimento",
     "steps": {
       "register": {
-        "title": "Cadastre-se",
-        "body": "Selecione sua instituição no cadastro e diga-nos quem você é."
+        "title": "Cadastro",
+        "body": "Diga quem você é e escolha um plano. Sua conta é aberta na hora."
       },
       "verification": {
-        "title": "Verificação",
-        "body": "Por meio de <gv></gv>: comprove seu domínio de e-mail; alguém em sua organização, encontrado de forma independente, confirma você."
+        "title": "Perfil oficial (opcional)",
+        "body": "Para mostrar seus caixas e o status ao vivo no mapa público como operador, ou para compartilhar com reguladores, verifique-se pelo <gv></gv>: comprove seu domínio de e-mail, e alguém da sua organização, encontrado de forma independente, confirma você."
       },
       "portal": {
         "title": "Portal do operador",
-        "body": "Adicione seus caixas eletrônicos. Cada um é verificado em registros públicos e listas de outras instituições."
+        "body": "Adicione seus caixas; eles ficam privados na sua conta. Cada um é conferido com o registro público e com os cadastros de outras instituições."
       },
       "trial": {
         "title": "Teste grátis por 30 dias",
-        "body": "Monitore a partir do dia da sua verificação. O portal mantém um registro contínuo do que foi encontrado e do que você corrigiu."
+        "body": "Monitor, a partir do dia do cadastro. O portal acompanha o que encontrou e o que você corrigiu."
       },
       "subscription": {
         "title": "Subscrição",
@@ -389,6 +389,6 @@
       "q7": "Como é calculado o valor da fatura?",
       "a7": "Por caixa eletrônico cadastrado no dia 1º do mês, com consumo mínimo mensal, cobrado por fatura. Planos anuais têm dois meses grátis. Upgrades entram em vigor imediatamente; downgrades, no período seguinte; nada é proporcional."
     },
-    "alreadyRegistered": "Já está cadastrado? <a>Entrar</a>"
+    "alreadyRegistered": "Já tem uma conta? <a>Entrar</a>"
   }
 }
