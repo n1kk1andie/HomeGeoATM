@@ -302,7 +302,8 @@
           "1": "Erstellen und korrigieren Sie Ihre Geldautomaten.",
           "2": "Ihr Status wird in GeoATM angezeigt",
           "3": "Ihre eigenen Betriebszeit-, Verlaufs- und Regulierungsberichte"
-        }
+        },
+        "cta": "Geldautomaten kostenlos eintragen"
       },
       "monitor": {
         "for": "Ihr Netzwerk, Tag für Tag",
@@ -314,7 +315,8 @@
           "5": "Vergleichen Sie zwei Netzwerke oder zwei Standorte in Ihrem Land",
           "6": "Senden Sie Korrekturen an OpenStreetMap"
         },
-        "note": "30 Tage kostenlos testen, ab dem Tag Ihrer Verifizierung"
+        "note": "30 Tage kostenlos testen, ab dem Tag Ihrer Verifizierung",
+        "cta": "Kostenlos testen"
       },
       "intelligence": {
         "for": "Planung und Erweiterung",
@@ -325,7 +327,8 @@
           "4": "Vergleichen Sie bis zu fünf Netzwerke oder Websites in einem beliebigen Land.",
           "5": "Suchzählungen für jede Kandidatenseite",
           "6": "Vergleiche und Nachfragezahlen in Excel herunterladen"
-        }
+        },
+        "cta": "Intelligence wählen"
       },
       "enterprise": {
         "for": "Größere Netzwerke und Austausch mit Verbänden und Aufsichtsbehörden",
@@ -335,7 +338,8 @@
           "3": "Vergleichen Sie bis zu zehn Netzwerke und zwanzig Standorte, auch über Ländergrenzen hinweg.",
           "4": "Regionale Vergleichsanalyse",
           "5": "Integration in Ihre Geldautomaten-Überwachungssysteme, Umfang abgestimmt auf Ihre Bedürfnisse"
-        }
+        },
+        "cta": "Enterprise wählen"
       }
     },
     "stepsTitle": "So funktioniert Selbstbedienung",

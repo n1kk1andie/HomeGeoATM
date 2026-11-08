@@ -302,7 +302,8 @@
           "1": "Listez et corrigez vos distributeurs automatiques de billets",
           "2": "Leur statut est affiché dans GeoATM",
           "3": "Vos propres rapports de disponibilité, d'historique et de réglementation"
-        }
+        },
+        "cta": "Inscrire vos guichets gratuitement"
       },
       "monitor": {
         "for": "Votre réseau, au quotidien",
@@ -314,7 +315,8 @@
           "5": "Comparez deux réseaux, ou deux sites, dans votre pays",
           "6": "Envoyer les corrections à OpenStreetMap"
         },
-        "note": "Essai gratuit de 30 jours à compter de la date de vérification."
+        "note": "Essai gratuit de 30 jours à compter de la date de vérification.",
+        "cta": "Commencer l'essai gratuit"
       },
       "intelligence": {
         "for": "Planification et expansion",
@@ -325,7 +327,8 @@
           "4": "Comparez jusqu'à cinq réseaux ou sites, dans n'importe quel pays.",
           "5": "Nombre de recherches pour chaque site candidat",
           "6": "Téléchargez les données comparatives et les chiffres de la demande dans Excel"
-        }
+        },
+        "cta": "Choisir Intelligence"
       },
       "enterprise": {
         "for": "Des réseaux plus étendus et le partage avec les associations et les organismes de réglementation",
@@ -335,7 +338,8 @@
           "3": "Comparez jusqu'à dix réseaux et vingt sites, par-delà les frontières.",
           "4": "Analyse comparative régionale",
           "5": "Intégration avec vos systèmes de surveillance de guichets automatiques, définie avec vous"
-        }
+        },
+        "cta": "Choisir Enterprise"
       }
     },
     "stepsTitle": "Comment fonctionne le libre-service ?",

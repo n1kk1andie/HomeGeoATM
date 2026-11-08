@@ -2,6 +2,7 @@
  * The commercial page: what banks and ATM operators get, how self-service
  * works, and what it costs. Registration and everything after it happen in
  * the operator portal (admin.geoatm.app); nothing here takes data or payment.
+ * Each plan card opens the application with that plan chosen.
  * Describe only what the portal does today. */
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -190,6 +191,15 @@ export default async function ProductPage() {
                   ))}
                 </ul>
                 {"note" in p && p.note && <div className="pp-plan-note">{t(`plans.${p.id}.note`)}</div>}
+                {/* Into the application with this plan chosen; payment follows verification, in the portal. */}
+                <a
+                  className={`btn ${"lead" in p && p.lead ? "btn-red" : "btn-outline-red"} pp-plan-cta`}
+                  href={`${REGISTER_URL}?plan=${p.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t(`plans.${p.id}.cta`)}
+                </a>
               </div>
             ))}
           </div>

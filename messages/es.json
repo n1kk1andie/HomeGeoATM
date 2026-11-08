@@ -302,7 +302,8 @@
           "1": "Enumera y corrige tus cajeros automáticos.",
           "2": "Su estado se muestra en GeoATM",
           "3": "Sus propios informes sobre tiempo de actividad, historial y organismos reguladores."
-        }
+        },
+        "cta": "Registre sus cajeros gratis"
       },
       "monitor": {
         "for": "Tu red, día a día",
@@ -314,7 +315,8 @@
           "5": "Compara dos redes o dos sitios web en tu país.",
           "6": "Enviar correcciones a OpenStreetMap"
         },
-        "note": "Prueba gratuita de 30 días, a partir del día en que se verifique tu cuenta."
+        "note": "Prueba gratuita de 30 días, a partir del día en que se verifique tu cuenta.",
+        "cta": "Empezar la prueba gratuita"
       },
       "intelligence": {
         "for": "Planificación y expansión",
@@ -325,7 +327,8 @@
           "4": "Compara hasta cinco redes o sitios web en un mismo país.",
           "5": "Recuentos de búsqueda para cada sitio candidato",
           "6": "Descargue comparativas y cifras de demanda a Excel."
-        }
+        },
+        "cta": "Elegir Intelligence"
       },
       "enterprise": {
         "for": "Redes más amplias y colaboración con asociaciones y organismos reguladores.",
@@ -335,7 +338,8 @@
           "3": "Compara hasta diez redes y veinte sitios web, sin importar las fronteras.",
           "4": "Evaluación comparativa regional",
           "5": "Integración con sus sistemas de monitoreo de cajeros automáticos, definida en conjunto con usted."
-        }
+        },
+        "cta": "Elegir Enterprise"
       }
     },
     "stepsTitle": "Cómo funciona el autoservicio",
