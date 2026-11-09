@@ -7,11 +7,11 @@ import { getTranslations } from "next-intl/server";
 const READY = false;
 
 const RATINGS = [
-  { src: "/ratings/esrb-everyone.svg", alt: "ESRB: Everyone" },
-  { src: "/ratings/pegi-3.svg", alt: "PEGI 3" },
-  { src: "/ratings/usk-0.svg", alt: "USK ab 0" },
+  { src: "/ratings/esrb-everyone.png", alt: "ESRB: Everyone" },
+  { src: "/ratings/pegi-3.png", alt: "PEGI 3" },
+  { src: "/ratings/usk-0.png", alt: "USK ab 0" },
   { src: "/ratings/classind-l.svg", alt: "ClassInd: L (Livre)" },
-  { src: "/ratings/rars-0.svg", alt: "RARS 0+" },
+  { src: "/ratings/rars-0.png", alt: "RARS 0+" },
 ];
 
 export default async function RatingIcons() {
