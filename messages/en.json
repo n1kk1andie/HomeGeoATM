@@ -176,7 +176,8 @@
     "partOf": "Part of the <a>GEO intelligence network</a>",
     "studio": "A product studio of <a>Tumblehill Holdings LLC</a>",
     "rights": "© 2026 Tumblehill Holdings LLC. All rights reserved.",
-    "maps": "Maps © <a>OpenStreetMap</a> contributors. App pictures use illustrative data."
+    "maps": "Maps © <a>OpenStreetMap</a> contributors. App pictures use illustrative data.",
+    "playAlt": "Get it on Google Play"
   },
   "subscribe": {
     "title": "Get GeoATM updates",
