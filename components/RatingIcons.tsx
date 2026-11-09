@@ -3,6 +3,9 @@ import { getTranslations } from "next-intl/server";
 // The app's age ratings from IARC, as each board's own icon: suitable for all
 // ages everywhere. Icons are the rating boards' trademarks, shown unaltered
 // for the rating the app was given.
+/** All five icons are in public/ratings. */
+const READY = false;
+
 const RATINGS = [
   { src: "/ratings/esrb-everyone.svg", alt: "ESRB: Everyone" },
   { src: "/ratings/pegi-3.svg", alt: "PEGI 3" },
@@ -12,6 +15,8 @@ const RATINGS = [
 ];
 
 export default async function RatingIcons() {
+  // Switched on once all five icons are in public/ratings: never a partial row or a broken image.
+  if (!READY) return null;
   const t = await getTranslations("footer");
   return (
     <div className="ratings" role="list" aria-label={t("ratingsLabel")}>
