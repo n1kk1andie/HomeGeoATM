@@ -4,6 +4,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import NavActions from "@/components/NavActions";
+import PlayBadge from "@/components/PlayBadge";
 import SiteFooter from "@/components/SiteFooter";
 import { IconGlobe, IconPin, IconBank, IconBankBig, IconNetwork, IconScales, IconShield, IconUser, IconBulb, IconPhone, IconCheck, IconArrowRight, IconExternal, IconChevron, IconMap, IconList, IconHeart, IconMore } from "@/components/icons";
 
@@ -83,6 +84,7 @@ export default async function HomePage() {
               <a className="btn btn-outline" href="/operators">
                 <IconBank /> {t("hero.operators")}
               </a>
+              <PlayBadge />
             </div>
           </div>
           <div className="hero-visual" aria-hidden>

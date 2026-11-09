@@ -433,3 +433,8 @@ img { max-width: 100%; display: block; }
 .pp-trust .geo-badge { margin-bottom: 10px; }
 /* GeoTrust and GeoVerify: "Trust" and "Verify" always in GEO green */
 .gname { color: #108B35; }
+
+/* Google Play badge: sized to sit with the hero buttons; Google's artwork keeps its own corners */
+.play-badge { display: inline-flex; align-items: center; border-radius: 9px; }
+.play-badge:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.footer-play { margin-top: 16px; }

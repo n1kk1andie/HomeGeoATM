@@ -176,7 +176,8 @@
     "partOf": "جزء من <a>شبكة GEO للمعلومات الجغرافية</a>",
     "studio": "استوديو منتجات تابع لشركة <a>Tumblehill Holdings LLC</a>",
     "rights": "© ٢٠٢٦ شركة Tumblehill Holdings ذ.م.م. جميع الحقوق محفوظة.",
-    "maps": "الخرائط © مساهمو <a>OpenStreetMap</a>. تستخدم صور التطبيق بيانات توضيحية."
+    "maps": "الخرائط © مساهمو <a>OpenStreetMap</a>. تستخدم صور التطبيق بيانات توضيحية.",
+    "playAlt": "احصل عليه من Google Play"
   },
   "subscribe": {
     "title": "احصل على تحديثات GeoATM",
