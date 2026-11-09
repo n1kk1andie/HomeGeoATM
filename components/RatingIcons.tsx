@@ -4,14 +4,14 @@ import { getTranslations } from "next-intl/server";
 // ages everywhere. Icons are the rating boards' trademarks, shown unaltered
 // for the rating the app was given.
 /** All five icons are in public/ratings. */
-const READY = false;
+const READY = true;
 
 const RATINGS = [
-  { src: "/ratings/esrb-everyone.svg", alt: "ESRB: Everyone" },
-  { src: "/ratings/pegi-3.svg", alt: "PEGI 3" },
-  { src: "/ratings/usk-0.svg", alt: "USK ab 0" },
-  { src: "/ratings/classind-l.svg", alt: "ClassInd: L (Livre)" },
-  { src: "/ratings/rars-0.svg", alt: "RARS 0+" },
+  { src: "/ratings/esrb-everyone.png", alt: "ESRB: Everyone" },
+  { src: "/ratings/pegi-3.png", alt: "PEGI 3" },
+  { src: "/ratings/usk-0.png", alt: "USK ab 0" },
+  { src: "/ratings/classind-l.png", alt: "ClassInd: L (Livre)" },
+  { src: "/ratings/rars-0.png", alt: "RARS 0+" },
 ];
 
 export default async function RatingIcons() {
