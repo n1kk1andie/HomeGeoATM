@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Subscribe from "@/components/Subscribe";
 import PlayBadge from "@/components/PlayBadge";
+import RatingIcons from "@/components/RatingIcons";
 import { IconInstagram, IconLinkedIn, IconFacebook } from "@/components/icons";
 
 // The GeoATM site footer, shared by the home and product pages.
@@ -16,7 +17,7 @@ export default async function SiteFooter() {
     <>
       {/* ---------- Footer ---------- */}
       <footer className="footer">
-        <Subscribe />
+        <Subscribe below={<RatingIcons />} />
         <div className="wrap footer-grid">
           <div className="footer-brand">
             <img src="/geoatm-lockup-white.png" alt={t("logoAlt")} />
@@ -26,7 +27,7 @@ export default async function SiteFooter() {
               <a href="https://www.instagram.com/tumblehill.labs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><IconInstagram /></a>
               <a href="https://www.linkedin.com/company/tumblehillholdings/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><IconLinkedIn /></a>
             </div>
-            <PlayBadge height={40} className="footer-play" />
+            <PlayBadge small className="footer-play" />
           </div>
 
           <FooterCol

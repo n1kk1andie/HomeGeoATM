@@ -177,7 +177,9 @@
     "studio": "Ein Produktstudio von <a>Tumblehill Holdings LLC</a>",
     "rights": "© 2026 Tumblehill Holdings LLC. Alle Rechte vorbehalten.",
     "maps": "Karten © <a>OpenStreetMap</a> -Mitwirkende. Die App-Bilder dienen der Veranschaulichung.",
-    "playAlt": "Jetzt bei Google Play"
+    "playAlt": "Jetzt bei Google Play",
+    "ratingsLabel": "Altersfreigaben",
+    "playTop": "JETZT BEI"
   },
   "subscribe": {
     "title": "GeoATM Updates abrufen",

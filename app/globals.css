@@ -434,7 +434,19 @@ img { max-width: 100%; display: block; }
 /* GeoTrust and GeoVerify: "Trust" and "Verify" always in GEO green */
 .gname { color: #108B35; }
 
-/* Google Play badge: sized to sit with the hero buttons; Google's artwork keeps its own corners */
-.play-badge { display: inline-flex; align-items: center; border-radius: 9px; }
-.play-badge:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+/* "Get it on Google Play": the site's white rounded button with Google's Play logo */
+.play-btn { gap: 12px; padding: 9px 22px 9px 18px; text-align: left; }
+.play-btn img { width: 26px; height: auto; display: block; }
+.play-txt { display: flex; flex-direction: column; line-height: 1.05; }
+.play-txt small { font-family: "IBM Plex Sans", sans-serif; font-weight: 600; font-size: 10.5px; letter-spacing: .06em; color: var(--dim); }
+.play-txt b { font-family: "Sora", sans-serif; font-weight: 700; font-size: 18px; color: var(--ink); }
+.play-btn:hover .play-txt b { color: var(--red); }
+.play-btn-sm { padding: 7px 16px 7px 13px; gap: 9px; }
+.play-btn-sm img { width: 20px; }
+.play-btn-sm .play-txt b { font-size: 15px; }
+.play-btn-sm .play-txt small { font-size: 9px; }
 .footer-play { margin-top: 16px; }
+
+/* Age ratings under "Get GeoATM updates": the boards' own icons, same height */
+.ratings { display: flex; align-items: center; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+.ratings img { height: 36px; width: auto; display: block; }
