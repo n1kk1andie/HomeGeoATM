@@ -177,7 +177,9 @@
     "studio": "استوديو منتجات تابع لشركة <a>Tumblehill Holdings LLC</a>",
     "rights": "© ٢٠٢٦ شركة Tumblehill Holdings ذ.م.م. جميع الحقوق محفوظة.",
     "maps": "الخرائط © مساهمو <a>OpenStreetMap</a>. تستخدم صور التطبيق بيانات توضيحية.",
-    "playAlt": "احصل عليه من Google Play"
+    "playAlt": "احصل عليه من Google Play",
+    "ratingsLabel": "التصنيفات العمرية",
+    "playTop": "احصل عليه من"
   },
   "subscribe": {
     "title": "احصل على تحديثات GeoATM",

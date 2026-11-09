@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { useTranslations } from "next-intl";
 
 const PARISHES = [
@@ -9,7 +9,7 @@ const PARISHES = [
 ];
 
 // "Get GeoATM updates" in the footer: one field, one button.
-export default function Subscribe() {
+export default function Subscribe({ below }: { below?: ReactNode }) {
   const t = useTranslations("subscribe");
   const [email, setEmail] = useState("");
   const [area, setArea] = useState("");
@@ -41,6 +41,7 @@ export default function Subscribe() {
       <div className="nl-copy">
         <h3>{t("title")}</h3>
         <p>{t("body")}</p>
+        {below}
       </div>
       {state === "done" ? (
         <p className="nl-done">{t("done")}</p>

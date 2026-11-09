@@ -177,7 +177,9 @@
     "studio": "<a>Tumblehill Holdings</a>的产品工作室",
     "rights": "© 2026 Tumblehill Holdings LLC。保留所有权利。",
     "maps": "地图版权归OpenStreetMap</a> <a>。应用图片仅供参考。",
-    "playAlt": "下载应用，请到 Google Play"
+    "playAlt": "下载应用，请到 Google Play",
+    "ratingsLabel": "年龄分级",
+    "playTop": "下载应用，请到"
   },
   "subscribe": {
     "title": "获取GeoATM更新",

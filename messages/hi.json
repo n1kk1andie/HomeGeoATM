@@ -177,7 +177,9 @@
     "studio": "<a>Tumblehill Holdings</a> का एक उत्पाद स्टूडियो",
     "rights": "© 2026 Tumblehill Holdings एलएलसी। सर्वाधिकार सुरक्षित।",
     "maps": "मानचित्र © <a>OpenStreetMap</a> के योगदानकर्ता। ऐप में उपयोग किए गए चित्र केवल उदाहरण के लिए हैं।",
-    "playAlt": "इसे Google Play पर पाएं"
+    "playAlt": "इसे Google Play पर पाएं",
+    "ratingsLabel": "आयु रेटिंग",
+    "playTop": "इसे यहाँ पाएँ"
   },
   "subscribe": {
     "title": "GeoATM अपडेट प्राप्त करें",
