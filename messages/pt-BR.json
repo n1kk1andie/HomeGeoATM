@@ -17,20 +17,14 @@
     "faq": {
       "title": "Perguntas frequentes",
       "q1": "O que é GeoATM ?",
-      "a1": "GeoATM é uma plataforma inteligente de acesso a dinheiro. Ele combina um diretório com mais de {atms} caixas eletrônicos com a disponibilidade em tempo real informada pelas instituições participantes, para que você possa encontrar o melhor lugar para sacar dinheiro — e não apenas o caixa eletrônico mais próximo.",
       "q2": "Como GeoATM sabe se há dinheiro disponível?",
-      "a2": "As instituições participantes publicam o status em tempo real de seus caixas eletrônicos diretamente para a GeoATM, e GeoATM o exibe conforme relatado pela operadora. Quando um caixa eletrônico ainda não faz parte de um feed em tempo real, ele é exibido a partir de dados de mapas públicos e claramente marcado como estimado — GeoATM nunca divulga um status de caixa em tempo real que não possa confirmar.",
       "q3": "GeoATM é gratuito?",
-      "a3": "Sim. Encontrar caixas eletrônicos e verificar a disponibilidade no aplicativo para o consumidor é gratuito em todos os locais onde GeoATM opera.",
       "q4": "Como as instituições participam?",
-      "a4": "Bancos, operadores de caixas eletrônicos, processadores e bancos centrais podem se juntar à rede GeoATM para publicar a disponibilidade em tempo real e obter visibilidade. Cadastre sua instituição online: verificamos sua organização e, em seguida, seu período de teste gratuito de 30 dias do Monitor começa. Bancos centrais e associações podem entrar em contato conosco.",
-      "q5": "Quais países estão incluídos?",
-      "a5": "O diretório da GeoATM mapeia mais de {atms} locais de caixas eletrônicos em {countries} países e territórios. A disponibilidade em tempo real, relatada pelas operadoras, aumenta à medida que mais instituições aderem à rede."
+      "q5": "Quais países estão incluídos?"
     },
     "hero": {
       "title1": "Saiba onde está o dinheiro.",
       "title2": "Antes de ir.",
-      "sub": "GeoATM ajuda as pessoas a encontrar caixas eletrônicos próximos, verificar a disponibilidade de dinheiro e escolher onde sacar com segurança.",
       "subOps": "Os operadores de caixas eletrônicos podem listar suas redes gratuitamente, monitorar o desempenho, gerar relatórios regulatórios e acessar informações geográficas valiosas para analisar o posicionamento da concorrência, melhorar a cobertura e embasar decisões de expansão.",
       "open": "Abrir GeoATM",
       "operators": "Para bancos e operadores"
@@ -42,24 +36,19 @@
       "atmsSub": "Mapeado mundialmente, atualizado semanalmente",
       "growing": "Crescente",
       "networkMid": "Rede",
-      "networkSub": "das instituições participantes",
-      "live": "Em tempo real",
-      "liveMid": "Status relatado pelo operador",
-      "liveSub": "Expandindo globalmente"
+      "networkSub": "das instituições participantes"
     },
     "aud": {
       "title": "Projetado para todo o ecossistema de dinheiro em espécie.",
       "consumers": "Para consumidores",
       "consumersLead": "Encontre o melhor caixa eletrônico por perto — não apenas o mais próximo.",
       "c1": "Encontre caixas eletrônicos próximos",
-      "c2": "Status em tempo real dos bancos participantes",
       "c3": "Compare as opções de acesso a dinheiro em espécie nas proximidades.",
       "c4": "Recomendações inteligentes",
       "c5": "Disponível em {countries} países e territórios",
       "launch": "Iniciar aplicativo",
       "fi": "Para instituições financeiras",
       "fiLead": "Junte-se à rede GeoATM.",
-      "fiBody": "Publique a disponibilidade de caixas eletrônicos em tempo real, melhore a experiência do cliente e alcance clientes em {atms} locais de caixas eletrônicos mapeados em {countries} países e territórios.",
       "fiLink": "Veja o que os operadores obtêm",
       "assoc": "Associações industriais",
       "assocLead": "Organize o acesso ao dinheiro em espécie entre seus membros.",
@@ -87,8 +76,6 @@
       "title": "Por que GeoATM ?",
       "dirTitle": "Diretório Global",
       "dirBody": "{atms} Localizações de caixas eletrônicos mapeadas em {countries} países e territórios, atualizadas semanalmente.",
-      "opTitle": "Status relatado pelo operador",
-      "opBody": "As instituições participantes divulgam a disponibilidade dos caixas eletrônicos em tempo real diretamente aos clientes.",
       "recTitle": "Recomendações inteligentes",
       "recBody": "GeoATM não se limita a mostrar o caixa eletrônico mais próximo. Ele recomenda o melhor lugar para sacar dinheiro com segurança."
     },
@@ -98,8 +85,6 @@
       "s1sub": "Inicie o aplicativo ou o site.",
       "s2": "GeoATM encontra caixas eletrônicos próximos.",
       "s2sub": "Pesquise por localização ou ative o GPS.",
-      "s3": "As instituições participantes publicam o status em tempo real.",
-      "s3sub": "Disponibilidade ao vivo dos parceiros participantes",
       "s4": "Escolha o melhor lugar para sacar dinheiro.",
       "s4sub": "Vá com confiança."
     },
@@ -113,7 +98,6 @@
     },
     "about": {
       "title": "Sobre GeoATM",
-      "body": "GeoATM está construindo a rede mundial de acesso a dinheiro em espécie mais confiável. Ao combinar um diretório global de caixas eletrônicos com a disponibilidade em tempo real informada pelas instituições participantes, GeoATM ajuda os consumidores a tomarem decisões mais acertadas, ao mesmo tempo que auxilia as instituições financeiras a atenderem melhor seus clientes.",
       "logoAlt": "GeoATM"
     },
     "contact": {
@@ -130,8 +114,6 @@
       "locationOnly": "Localização apenas",
       "recommended": "Recomendado para quem busca dinheiro, não apenas distância.",
       "operatorReported": "O operador relatou",
-      "liveStatus": "Status do caixa eletrônico em tempo real",
-      "liveFromBank": "Ao vivo do banco",
       "reach": "Alcance do cliente",
       "sector": "Visão da rede setorial",
       "memberStatus": "Status de relatório do membro",
@@ -140,8 +122,6 @@
       "coverage": "Cobertura de rede",
       "gaps": "Lacunas de acesso emergentes foram sinalizadas.",
       "national": "Acesso nacional a dinheiro",
-      "liveReported": "Relatado pelo operador e ao vivo",
-      "located": "Localizado, sem status ao vivo",
       "underserved": "Áreas carentes",
       "resilience": "Resiliência da rede",
       "lower": "Cobertura inferior",

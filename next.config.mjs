@@ -15,7 +15,7 @@ const csp = [
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' data: https://fonts.gstatic.com",
   "script-src 'self' 'unsafe-inline'",
-  "connect-src 'self'",
+  "connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com",
   "form-action 'self'",
   "upgrade-insecure-requests",
 ].join("; ");
@@ -35,6 +35,14 @@ const nextConfig = {
   poweredByHeader: false,
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
+  },
+  // The policies live with the app (www.geoatm.app); the usual paths on this
+  // marketing site send people there instead of a 404.
+  async redirects() {
+    return [
+      { source: "/privacy", destination: "https://www.geoatm.app/privacy", permanent: false },
+      { source: "/terms", destination: "https://www.geoatm.app/terms", permanent: false },
+    ];
   },
 };
 
