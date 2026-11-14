@@ -17,20 +17,14 @@
     "faq": {
       "title": "Foire aux questions",
       "q1": "Qu'est-ce que GeoATM ?",
-      "a1": "GeoATM est une plateforme intelligente d'accès aux espèces. Elle combine un répertoire de plus de {atms} distributeurs automatiques de billets avec leur disponibilité en temps réel, signalée par les établissements participants. Vous pouvez ainsi trouver le meilleur endroit pour retirer de l'argent, et pas seulement le distributeur le plus proche.",
       "q2": "Comment GeoATM sait-il si de l'argent liquide est disponible ?",
-      "a2": "Les établissements participants communiquent en temps réel l'état de leurs distributeurs automatiques à GeoATM, GeoATM l'affiche tel que déclaré par l'opérateur. Lorsqu'un distributeur n'est pas encore intégré au flux de données en temps réel, son état est indiqué à partir de données cartographiques publiques et clairement précisé comme étant estimé ; GeoATM ne prétend jamais afficher un état de disponibilité en temps réel qu'il ne peut confirmer.",
       "q3": "GeoATM est-il gratuit à utiliser ?",
-      "a3": "Oui. La recherche de distributeurs automatiques et la vérification de leur disponibilité dans l'application grand public sont gratuites, partout où GeoATM est présent.",
       "q4": "Comment les institutions participent-elles ?",
-      "a4": "Les banques, les opérateurs de distributeurs automatiques de billets, les sociétés de traitement et les banques centrales peuvent rejoindre le réseau GeoATM pour publier la disponibilité en temps réel et gagner en visibilité. Inscrivez votre établissement en ligne : nous vérifions votre organisation, puis vous bénéficiez d’un essai gratuit de 30 jours de Monitor. Les banques centrales et les associations peuvent nous contacter.",
-      "q5": "Quels pays sont concernés ?",
-      "a5": "Le répertoire de GeoATM recense plus de {atms} emplacements de distributeurs automatiques de billets dans {countries} pays et territoires. La disponibilité en temps réel, telle que signalée par les opérateurs, s'étend à mesure que de nouveaux établissements rejoignent le réseau."
+      "q5": "Quels pays sont concernés ?"
     },
     "hero": {
       "title1": "Sachez où se trouve l'argent liquide.",
       "title2": "Avant de partir.",
-      "sub": "GeoATM aide les utilisateurs à trouver les distributeurs automatiques de billets à proximité, à vérifier la disponibilité des espèces et à choisir où retirer de l'argent en toute confiance.",
       "subOps": "Les opérateurs de guichets automatiques peuvent référencer gratuitement leurs réseaux, surveiller leurs performances, générer des rapports réglementaires et accéder à des informations géographiques précises pour analyser leur positionnement concurrentiel, améliorer leur couverture et éclairer leurs décisions d'expansion.",
       "open": "Ouvrir GeoATM",
       "operators": "Pour les banques et les opérateurs"
@@ -42,24 +36,19 @@
       "atmsSub": "Cartographie mondiale, mise à jour hebdomadaire",
       "growing": "Croissance",
       "networkMid": "Réseau",
-      "networkSub": "des institutions participantes",
-      "live": "En direct",
-      "liveMid": "État signalé par l'opérateur",
-      "liveSub": "Expansion mondiale"
+      "networkSub": "des institutions participantes"
     },
     "aud": {
       "title": "Conçu pour l'ensemble de l'écosystème monétaire",
       "consumers": "Pour les consommateurs",
       "consumersLead": "Trouvez le meilleur distributeur automatique de billets à proximité, et pas seulement le plus proche.",
       "c1": "Trouvez les distributeurs automatiques de billets à proximité",
-      "c2": "État en direct des banques participantes",
       "c3": "Comparez les accès aux espèces à proximité",
       "c4": "Recommandations intelligentes",
       "c5": "Disponible dans {countries} pays et territoires",
       "launch": "Lancer l'application",
       "fi": "Pour les institutions financières",
       "fiLead": "Rejoignez le réseau GeoATM.",
-      "fiBody": "Publier la disponibilité en direct des guichets automatiques, améliorer l'expérience client et atteindre les clients sur {atms} emplacements de guichets automatiques cartographiés dans {countries} pays et territoires.",
       "fiLink": "Découvrez ce que les opérateurs obtiennent",
       "assoc": "Associations professionnelles",
       "assocLead": "Coordonner l'accès aux espèces pour l'ensemble de vos membres.",
@@ -87,8 +76,6 @@
       "title": "Pourquoi GeoATM ?",
       "dirTitle": "Annuaire mondial",
       "dirBody": "{atms} emplacements de guichets automatiques cartographiés dans {countries} pays et territoires, mis à jour chaque semaine.",
-      "opTitle": "État signalé par l'opérateur",
-      "opBody": "Les établissements participants publient en temps réel la disponibilité des guichets automatiques directement à leurs clients.",
       "recTitle": "Recommandations intelligentes",
       "recBody": "GeoATM ne se contente pas d'afficher le distributeur automatique le plus proche. Il recommande le meilleur endroit pour retirer de l'argent en toute confiance."
     },
@@ -98,8 +85,6 @@
       "s1sub": "Lancez l'application ou le site web",
       "s2": "GeoATM trouve les distributeurs automatiques de billets à proximité",
       "s2sub": "Recherche par lieu ou autorisation GPS",
-      "s3": "Les institutions participantes publient un état en direct",
-      "s3sub": "Disponibilité en direct auprès des partenaires participants",
       "s4": "Choisissez le meilleur endroit pour retirer de l'argent.",
       "s4sub": "Allez-y en toute confiance"
     },
@@ -113,7 +98,6 @@
     },
     "about": {
       "title": "À propos de GeoATM",
-      "body": "GeoATM construit le réseau mondial d'accès aux espèces le plus fiable. En combinant un répertoire mondial de distributeurs automatiques de billets avec les données de disponibilité en temps réel fournies par les établissements participants, GeoATM aide les consommateurs à prendre de meilleures décisions et permet aux institutions financières de mieux servir leurs clients.",
       "logoAlt": "GeoATM"
     },
     "contact": {
@@ -130,8 +114,6 @@
       "locationOnly": "Localisation uniquement",
       "recommended": "Recommandé pour le paiement en espèces, pas seulement pour la distance",
       "operatorReported": "L'opérateur a signalé",
-      "liveStatus": "État des distributeurs automatiques en direct",
-      "liveFromBank": "En direct de la banque",
       "reach": "Portée des clients",
       "sector": "vue du réseau sectoriel",
       "memberStatus": "Statut de déclaration des membres",
@@ -140,8 +122,6 @@
       "coverage": "Couverture du réseau",
       "gaps": "Des lacunes d'accès émergentes ont été signalées.",
       "national": "Accès national aux liquidités",
-      "liveReported": "Signalé par l'opérateur et en direct",
-      "located": "Localisé, aucun statut en direct",
       "underserved": "zones mal desservies",
       "resilience": "résilience du réseau",
       "lower": "Couverture inférieure",

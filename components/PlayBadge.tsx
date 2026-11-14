@@ -12,8 +12,8 @@ export default async function PlayBadge({ small = false, className }: { small?: 
       href={PLAY_URL}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={t("playAlt")}
     >
+      {/* Named by its visible text ("Get it on Google Play"), so speech users can say what they see. */}
       <img src="/google-play-logo.png" alt="" aria-hidden="true" />
       <span className="play-txt">
         <small>{t("playTop")}</small>

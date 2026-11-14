@@ -17,20 +17,14 @@
     "faq": {
       "title": "Preguntas frecuentes",
       "q1": "¿Qué es GeoATM?",
-      "a1": "GeoATM es una plataforma inteligente de acceso a efectivo. Combina un directorio de más de {atms} cajeros automáticos con información de disponibilidad en tiempo real proporcionada por las instituciones participantes, para que puedas encontrar el mejor lugar para retirar efectivo, no solo el cajero automático más cercano.",
       "q2": "¿Cómo sabe GeoATM si hay efectivo disponible?",
-      "a2": "Las instituciones participantes publican el estado en tiempo real de sus cajeros automáticos directamente en GeoATM, y GeoATM lo muestra como información proporcionada por el operador. Si un cajero automático aún no forma parte de la transmisión en vivo, se muestra a partir de datos de mapas públicos y se marca claramente como estimado; GeoATM nunca afirma un estado de efectivo en tiempo real que no pueda confirmar.",
       "q3": "¿Es GeoATM de uso gratuito?",
-      "a3": "Sí. Encontrar cajeros automáticos y consultar su disponibilidad en la aplicación para el consumidor es gratuito en todos los lugares donde opera GeoATM.",
       "q4": "¿Cómo participan las instituciones?",
-      "a4": "Los bancos, operadores de cajeros automáticos, procesadores y bancos centrales pueden unirse a la red GeoATM para publicar la disponibilidad en tiempo real y obtener mayor visibilidad. Registre su institución en línea: verificaremos su organización y, a continuación, comenzará su prueba gratuita de 30 días de Monitor. Los bancos centrales y las asociaciones pueden escribirnos.",
-      "q5": "¿Qué países están incluidos?",
-      "a5": "El directorio de GeoATM muestra la ubicación de más de {atms} cajeros automáticos en {countries} países y territorios. La disponibilidad en tiempo real, según lo informado por los operadores, se amplía a medida que más instituciones se unen a la red."
+      "q5": "¿Qué países están incluidos?"
     },
     "hero": {
       "title1": "Sepa dónde está el dinero en efectivo.",
       "title2": "Antes de irte.",
-      "sub": "GeoATM ayuda a las personas a encontrar cajeros automáticos cercanos, comprobar la disponibilidad de efectivo y elegir dónde retirar dinero con total confianza.",
       "subOps": "Los operadores de cajeros automáticos pueden publicar sus redes de forma gratuita, supervisar el rendimiento, generar informes regulatorios y acceder a información geográfica valiosa para analizar su posicionamiento competitivo, mejorar la cobertura y fundamentar las decisiones de expansión.",
       "open": "Abrir GeoATM",
       "operators": "Para bancos y operadores"
@@ -42,24 +36,19 @@
       "atmsSub": "Mapas disponibles en todo el mundo, actualizados semanalmente.",
       "growing": "Creciente",
       "networkMid": "Red",
-      "networkSub": "de las instituciones participantes",
-      "live": "En tiempo real",
-      "liveMid": "Estado informado por el operador",
-      "liveSub": "Expansión global"
+      "networkSub": "de las instituciones participantes"
     },
     "aud": {
       "title": "Diseñado para todo el ecosistema de efectivo.",
       "consumers": "Para los consumidores",
       "consumersLead": "Encuentra el mejor cajero automático cercano, no solo el que esté más próximo.",
       "c1": "Encuentra cajeros automáticos cercanos",
-      "c2": "Estado en tiempo real de los bancos participantes",
       "c3": "Comparar accesos a efectivo cercanos",
       "c4": "Recomendaciones inteligentes",
       "c5": "Disponible en {countries} países y territorios",
       "launch": "Iniciar aplicación",
       "fi": "Para instituciones financieras",
       "fiLead": "Únete a la red GeoATM.",
-      "fiBody": "Publica la disponibilidad de cajeros automáticos en tiempo real, mejora la experiencia del cliente y llega a clientes en {atms} ubicaciones de cajeros automáticos mapeadas en {countries} países y territorios.",
       "fiLink": "Vea lo que obtienen los operadores",
       "assoc": "Asociaciones industriales",
       "assocLead": "Coordina el acceso al efectivo entre todos tus miembros.",
@@ -87,8 +76,6 @@
       "title": "¿Por qué GeoATM?",
       "dirTitle": "Directorio global",
       "dirBody": "Ubicaciones de cajeros {atms} mapeadas en {countries} país y territorio, actualizadas semanalmente.",
-      "opTitle": "Estado informado por el operador",
-      "opBody": "Las instituciones participantes publican la disponibilidad de los cajeros automáticos en tiempo real directamente para sus clientes.",
       "recTitle": "Recomendaciones inteligentes",
       "recBody": "GeoATM no solo muestra el cajero automático más cercano, sino que recomienda el mejor lugar para obtener efectivo con total confianza."
     },
@@ -98,8 +85,6 @@
       "s1sub": "Inicie la aplicación o el sitio web.",
       "s2": "GeoATM encuentra cajeros automáticos cercanos.",
       "s2sub": "Buscar por ubicación o permitir GPS",
-      "s3": "Las instituciones participantes publican el estado en tiempo real.",
-      "s3sub": "Disponibilidad en directo de los socios participantes",
       "s4": "Elige el mejor lugar para obtener dinero en efectivo.",
       "s4sub": "Ve con confianza"
     },
@@ -113,7 +98,6 @@
     },
     "about": {
       "title": "Acerca de GeoATM",
-      "body": "GeoATM está construyendo la red de acceso a efectivo más confiable del mundo. Al combinar un directorio global de cajeros automáticos con información en tiempo real sobre la disponibilidad proporcionada por las instituciones participantes, GeoATM ayuda a los consumidores a tomar mejores decisiones y, al mismo tiempo, permite a las instituciones financieras brindar un mejor servicio a sus clientes.",
       "logoAlt": "GeoATM"
     },
     "contact": {
@@ -130,8 +114,6 @@
       "locationOnly": "Ubicación solamente",
       "recommended": "Recomendado para pagos en efectivo, no solo por la distancia.",
       "operatorReported": "El operador informó",
-      "liveStatus": "Estado del cajero automático en tiempo real",
-      "liveFromBank": "En directo desde el banco",
       "reach": "Alcance del cliente",
       "sector": "Vista de la red sectorial",
       "memberStatus": "Estado de informes de los miembros",
@@ -140,8 +122,6 @@
       "coverage": "Cobertura de red",
       "gaps": "Se han detectado nuevas brechas de acceso.",
       "national": "Acceso nacional al efectivo",
-      "liveReported": "Reportado por el operador y en directo",
-      "located": "Localizado, sin estado en vivo",
       "underserved": "Áreas desatendidas",
       "resilience": "resiliencia de la red",
       "lower": "Cobertura más baja",

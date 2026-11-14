@@ -17,20 +17,14 @@
     "faq": {
       "title": "Häufig gestellte Fragen",
       "q1": "Was ist GeoATM ?",
-      "a1": "GeoATM ist eine intelligente Plattform für den Bargeldzugriff. Sie kombiniert ein Verzeichnis von mehr als {atms} Geldautomatenstandorten mit der von teilnehmenden Instituten gemeldeten Live-Verfügbarkeit, sodass Sie den besten Ort zum Abheben von Bargeld finden können – nicht nur den nächstgelegenen PIN-Code.",
       "q2": "Wie erkennt GeoATM, ob Bargeld verfügbar ist?",
-      "a2": "Teilnehmende Institute übermitteln den aktuellen Status ihrer Automaten direkt an GeoATM, und GeoATM zeigt ihn gemäß der Meldung des Betreibers an. Ist ein Automat noch nicht in einem Live-Feed erfasst, wird er anhand öffentlicher Kartendaten angezeigt und deutlich als geschätzt gekennzeichnet – GeoATM gibt niemals einen aktuellen Bargeldstatus an, den es nicht bestätigen kann.",
       "q3": "Ist GeoATM kostenlos nutzbar?",
-      "a3": "Ja. Die Suche nach Geldautomaten und die Überprüfung der Verfügbarkeit in der Verbraucher-App ist überall dort kostenlos, wo GeoATM verfügbar ist.",
       "q4": "Wie beteiligen sich Institutionen?",
-      "a4": "Banken, Geldautomatenbetreiber, Zahlungsdienstleister und Zentralbanken können dem GeoATM Netzwerk beitreten, um die Verfügbarkeit in Echtzeit zu veröffentlichen und mehr Transparenz zu schaffen. Registrieren Sie Ihr Institut online: Wir verifizieren Ihre Organisation, und anschließend beginnt Ihre 30-tägige kostenlose Testphase von Monitor. Zentralbanken und Verbände können uns kontaktieren.",
-      "q5": "Welche Länder sind abgedeckt?",
-      "a5": "Das Verzeichnis von GeoATM verzeichnet über {atms} Geldautomatenstandorte in {countries} Ländern und Gebieten. Die von den Betreibern gemeldete Verfügbarkeit in Echtzeit verbessert sich mit dem Beitritt weiterer Institute zum Netzwerk."
+      "q5": "Welche Länder sind abgedeckt?"
     },
     "hero": {
       "title1": "Wissen, wo sich Bargeld befindet.",
       "title2": "Bevor Sie gehen.",
-      "sub": "GeoATM hilft Nutzern, Geldautomaten in der Nähe zu finden, die Bargeldverfügbarkeit zu prüfen und vertrauensvoll den richtigen Abhebungsort zu wählen.",
       "subOps": "Geldautomatenbetreiber können ihre Netzwerke kostenlos auflisten, die Leistung überwachen, Berichte für die Aufsichtsbehörden erstellen und auf leistungsstarke geografische Informationen zugreifen, um die Wettbewerbsposition zu analysieren, die Abdeckung zu verbessern und Expansionsentscheidungen zu treffen.",
       "open": "GeoATM öffnen",
       "operators": "Für Banken und Betreiber"
@@ -42,24 +36,19 @@
       "atmsSub": "Weltweit kartiert, wöchentlich aktualisiert",
       "growing": "Anbau",
       "networkMid": "Netzwerk",
-      "networkSub": "der teilnehmenden Institutionen",
-      "live": "Live",
-      "liveMid": "Vom Betreiber gemeldeter Status",
-      "liveSub": "Globale Expansion"
+      "networkSub": "der teilnehmenden Institutionen"
     },
     "aud": {
       "title": "Entwickelt für das gesamte Bargeld-Ökosystem",
       "consumers": "Für Verbraucher",
       "consumersLead": "Finden Sie den besten Geldautomaten in der Nähe – nicht nur den nächstgelegenen.",
       "c1": "Finden Sie Geldautomaten in Ihrer Nähe",
-      "c2": "Aktueller Status der teilnehmenden Banken",
       "c3": "Vergleichen Sie die Bargeldabhebungsmöglichkeiten in Ihrer Nähe.",
       "c4": "Intelligente Empfehlungen",
       "c5": "Verfügbar in {countries} Ländern und Gebieten",
       "launch": "App starten",
       "fi": "Für Finanzinstitute",
       "fiLead": "Treten Sie dem GeoATM Netzwerk bei.",
-      "fiBody": "Veröffentlichen Sie die Verfügbarkeit von Geldautomaten in Echtzeit, verbessern Sie das Kundenerlebnis und erreichen Sie Kunden an {atms} kartierten Geldautomatenstandorten in {countries} Ländern und Gebieten.",
       "fiLink": "Sehen Sie, was die Betreiber erhalten",
       "assoc": "Branchenverbände",
       "assocLead": "Koordinieren Sie den Bargeldzugriff für alle Mitglieder.",
@@ -87,8 +76,6 @@
       "title": "Warum GeoATM ?",
       "dirTitle": "Globales Verzeichnis",
       "dirBody": "{atms} Geldautomatenstandorte in {countries} Ländern und Gebieten kartiert, wöchentlich aktualisiert.",
-      "opTitle": "Vom Betreiber gemeldeter Status",
-      "opBody": "Die teilnehmenden Institute veröffentlichen die aktuelle Verfügbarkeit der Geldautomaten direkt für ihre Kunden.",
       "recTitle": "Intelligente Empfehlungen",
       "recBody": "GeoATM zeigt nicht einfach nur den nächstgelegenen Geldautomaten an. Es empfiehlt den besten Ort, um sicher Bargeld abzuheben."
     },
@@ -98,8 +85,6 @@
       "s1sub": "Starten Sie die App oder Website",
       "s2": "GeoATM findet Geldautomaten in der Nähe",
       "s2sub": "Suche nach Standort oder GPS zulassen",
-      "s3": "Die teilnehmenden Institutionen veröffentlichen den Live-Status.",
-      "s3sub": "Live-Verfügbarkeit von teilnehmenden Partnern",
       "s4": "Wählen Sie den besten Ort, um Bargeld abzuheben.",
       "s4sub": "Gehen Sie mit Zuversicht"
     },
@@ -113,7 +98,6 @@
     },
     "about": {
       "title": "Über GeoATM",
-      "body": "GeoATM baut das weltweit vertrauenswürdige Netzwerk für Bargeldzugang auf. Durch die Kombination eines globalen Geldautomatenverzeichnisses mit den von teilnehmenden Instituten gemeldeten Echtzeit-Verfügbarkeitsdaten unterstützt GeoATM Verbraucher bei besseren Entscheidungen und hilft Finanzinstituten, ihren Kunden einen besseren Service zu bieten.",
       "logoAlt": "GeoATM"
     },
     "contact": {
@@ -130,8 +114,6 @@
       "locationOnly": "Nur Standort",
       "recommended": "Empfohlen für Barzahlung, nicht nur für Entfernungsmessung.",
       "operatorReported": "Der Betreiber meldete",
-      "liveStatus": "Live-ATM-Status",
-      "liveFromBank": "Live von der Bank",
       "reach": "Kundenreichweite",
       "sector": "Sektornetzwerkansicht",
       "memberStatus": "Meldestatus der Mitglieder",
@@ -140,8 +122,6 @@
       "coverage": "Netzwerkabdeckung",
       "gaps": "Aufkommende Zugangslücken hervorgehoben",
       "national": "Nationaler Bargeldzugang",
-      "liveReported": "Vom Betreiber gemeldet & live",
-      "located": "Gefunden, aber kein Live-Status",
       "underserved": "Unterversorgte Gebiete",
       "resilience": "Netzwerkresilienz",
       "lower": "Geringere Abdeckung",

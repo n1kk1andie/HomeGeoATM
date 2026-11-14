@@ -10,7 +10,7 @@
   --mist-2: #EEF1F5;
   --line: #E6E9EF;
   --dim: #5B6472;
-  --dim-2: #8A93A3;
+  --dim-2: #5F6878; /* WCAG AA on white */
   --green: #17A45B;
   --green-bg: #E4F6EC;
   --amber: #C98A00;
@@ -175,7 +175,7 @@ img { max-width: 100%; display: block; }
 .cm-txt b { font-family: "Sora"; font-size: 13px; color: var(--ink); }
 .cm-txt small { font-size: 11px; color: var(--dim); }
 .cm-badge { font-size: 10.5px; font-weight: 700; padding: 4px 8px; border-radius: 999px; background: var(--grey-bg, #F0ECEA); color: var(--dim); white-space: nowrap; }
-.cm-badge.ok { background: var(--green-bg, #E5F4EC); color: var(--green); }
+.cm-badge.ok { background: var(--green-bg, #E5F4EC); color: #0E7A42; }
 .dash-foot svg { width: 13px; height: 13px; flex-shrink: 0; color: var(--amber, #A07208); }
 .dash-foot { font-size: 11.5px; color: var(--dim); border-top: 1px solid var(--line); padding-top: 10px; margin-top: 12px; display: flex; align-items: center; gap: 7px; line-height: 1.3; }
 .gapdot { width: 8px; height: 8px; border-radius: 2px; background: var(--amber); flex-shrink: 0; }
