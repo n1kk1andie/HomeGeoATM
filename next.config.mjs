@@ -34,7 +34,11 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    return [
+      { source: "/:path*", headers: securityHeaders },
+      // The API (newsletter sign-up) is never a search result.
+      { source: "/api/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" }] },
+    ];
   },
   // The policies live with the app (www.geoatm.app); the usual paths on this
   // marketing site send people there instead of a 404.
