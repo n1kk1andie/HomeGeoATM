@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     "where to withdraw cash",
     "GeoATM",
   ],
-  authors: [{ name: "Tumblehill Labs" }],
-  creator: "Tumblehill Labs",
-  publisher: "GeoATM",
+  authors: [{ name: "Nicola Anderson", url: "https://www.linkedin.com/in/nicolaanderson/" }],
+  creator: "Nicola Anderson",
+  publisher: "Tumblehill Labs",
   category: "finance",
   alternates: { canonical: "/" },
   robots: {
@@ -71,6 +71,11 @@ export const viewport: Viewport = {
 };
 
 // Site-wide structured data: who GeoATM is, the site itself, and the app.
+// Creator and owner: in the metadata only, for search engines; never shown on the page.
+const CREATOR = { "@type": "Person", "@id": "https://about.pulsus.tech/#creator", name: "Nicola Anderson", jobTitle: "Founder", sameAs: ["https://www.linkedin.com/in/nicolaanderson/"] };
+const OWNER = { "@type": "Organization", name: "Tumblehill Holdings LLC", url: "https://www.tumblehillholdings.com", founder: CREATOR };
+const LABS = { "@type": "Organization", name: "Tumblehill Labs", founder: CREATOR, parentOrganization: OWNER };
+
 const JSON_LD = {
   "@context": "https://schema.org",
   "@graph": [
@@ -82,6 +87,7 @@ const JSON_LD = {
       logo: `${SITE}/og.png`,
       description: DESC,
       sameAs: ["https://www.tumblehillholdings.com/research/labs/geoatm"],
+      parentOrganization: LABS,
     },
     {
       "@type": "WebSite",
@@ -100,6 +106,9 @@ const JSON_LD = {
       url: APP,
       description: DESC,
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      creator: CREATOR,
+      publisher: LABS,
+      copyrightHolder: OWNER,
     },
   ],
 };
