@@ -1,17 +1,18 @@
-// Who may crawl home.geoatm.app. Search engines are welcome on every page; the
-// API (the newsletter sign-up) is not for crawling; crawlers that collect
-// material to train AI models are not allowed anywhere. The same list the other
-// Tumblehill sites publish (GeoATM, GeoEV, Astrum).
-export const AI_TRAINING_CRAWLERS = [
-  "GPTBot", "CCBot", "ClaudeBot", "anthropic-ai", "Claude-Web", "Google-Extended",
-  "Applebot-Extended", "Bytespider", "Amazonbot", "meta-externalagent", "Meta-ExternalAgent",
-  "FacebookBot", "cohere-ai", "cohere-training-data-crawler", "Diffbot", "omgili", "omgilibot",
-  "ImagesiftBot", "AI2Bot", "Ai2Bot-Dolma", "Timpibot", "PanguBot",
+// Who may crawl home.geoatm.app. It is a public marketing site, so search
+// engines and AI assistants are welcome on every page, so they can read and
+// describe GeoATM correctly. Bulk scrapers are not allowed anywhere, and the API
+// (the newsletter sign-up) is not for crawling by anyone.
+export const WELCOME = [
+  "Googlebot", "Bingbot", "Google-Extended", "GPTBot", "OAI-SearchBot", "ChatGPT-User",
+  "ClaudeBot", "Claude-SearchBot", "Claude-User", "anthropic-ai", "PerplexityBot",
+  "Perplexity-User", "Applebot", "Applebot-Extended", "DuckAssistBot", "meta-externalagent", "*",
 ];
+
+export const BULK_SCRAPERS = ["CCBot", "Bytespider"];
 
 export function robotsRules() {
   return [
-    { userAgent: AI_TRAINING_CRAWLERS, disallow: "/" },
-    { userAgent: "*", allow: "/", disallow: "/api/" },
+    { userAgent: BULK_SCRAPERS, disallow: "/" },
+    { userAgent: WELCOME, allow: "/", disallow: "/api/" },
   ];
 }

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { robotsRules } from "@/lib/robots";
 
-// Search engines on the pages; nobody on the API; AI training crawlers nowhere.
+// Search engines and AI assistants on every page; nobody on the API; bulk scrapers nowhere.
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: robotsRules(),

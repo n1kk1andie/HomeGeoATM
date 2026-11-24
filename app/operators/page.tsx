@@ -20,6 +20,16 @@ export const metadata: Metadata = {
   description:
     "Decisions about your ATM network, not just a map: how your network is covered, where you stand against other institutions, and how candidate sites compare. Free listing; Monitor with a 30-day free trial; consent-based sharing with associations and regulators on Enterprise.",
   alternates: { canonical: "/operators" },
+  openGraph: {
+    title: "For banks and ATM operators · GeoATM",
+    description:
+      "Decisions about your ATM network, not just a map: how your network is covered, where you stand against other institutions, and how candidate sites compare.",
+    siteName: "GeoATM",
+    url: "/operators",
+    type: "website",
+    locale: "en_US",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "GeoATM — Know where cash is, before you go" }],
+  },
 };
 
 /** Plans: names and prices stay in code; what each includes comes from the messages. */
