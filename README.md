@@ -46,3 +46,12 @@ public/
 ---
 
 GeoATM™ by Tumblehill Labs.
+
+## IndexNow
+
+IndexNow key (Bing, Yandex and other engines): `6589a70edefc060c8df79e5dc92e2882`,
+served from `public/6589a70edefc060c8df79e5dc92e2882.txt` at
+`https://home.geoatm.app/6589a70edefc060c8df79e5dc92e2882.txt`. To resubmit the
+sitemap's pages after a change: `node scripts/indexnow.mjs home.geoatm.app` from
+the `pulsus-about` repo (it reads the live sitemap and POSTs to
+`https://api.indexnow.org/indexnow`).
