@@ -72,7 +72,7 @@ export const viewport: Viewport = {
 
 // Site-wide structured data: who GeoATM is, the site itself, and the app.
 // Creator and owner: in the metadata only, for search engines; never shown on the page.
-const CREATOR = { "@type": "Person", "@id": "https://about.pulsus.tech/#creator", name: "Nicola Anderson", jobTitle: "Founder", sameAs: ["https://www.linkedin.com/in/nicolaanderson/"] };
+const CREATOR = { "@type": "Person", "@id": "https://about.pulsus.tech/#creator", name: "Nicola Anderson", alternateName: ["Nicola Onju Isak", "Nicola (Anderson) Onju Isak"], jobTitle: "Founder", sameAs: ["https://www.linkedin.com/in/nicolaanderson/"] };
 const OWNER = { "@type": "Organization", name: "Tumblehill Holdings LLC", url: "https://www.tumblehillholdings.com", founder: CREATOR };
 const LABS = { "@type": "Organization", name: "Tumblehill Labs", founder: CREATOR, parentOrganization: OWNER };
 
