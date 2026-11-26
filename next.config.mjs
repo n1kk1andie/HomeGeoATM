@@ -14,8 +14,8 @@ const csp = [
   "img-src 'self' data:",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' data: https://fonts.gstatic.com",
-  "script-src 'self' 'unsafe-inline'",
-  "connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com",
+  "script-src 'self' https://executive.pulsus.tech 'unsafe-inline'",
+  "connect-src 'self' https://executive.pulsus.tech https://fonts.googleapis.com https://fonts.gstatic.com",
   "form-action 'self'",
   "upgrade-insecure-requests",
 ].join("; ");
