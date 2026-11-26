@@ -133,6 +133,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>{children}</NextIntlClientProvider>
         <Analytics />
+        {/* Visit counter (no cookies; no IP address is kept): executive.pulsus.tech/t.js */}
+        <script src="https://executive.pulsus.tech/t.js" async />
       </body>
     </html>
   );
